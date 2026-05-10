@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // Thay bằng URL của bạn
+  baseURL: "https://ic3-3-production.vercel.app/", // Thay bằng URL của bạn
   headers: {
     'Content-Type': 'application/json',
   },
