@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // Thay bằng URL của bạn
+  baseURL: "https://my-spring-app-ic3.onrender.com/api/v1", // Thay bằng URL của bạn
   headers: {
     'Content-Type': 'application/json',
   },
