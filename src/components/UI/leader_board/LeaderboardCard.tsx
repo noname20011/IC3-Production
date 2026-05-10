@@ -1,15 +1,15 @@
 import { SchoolIcon, Star, UserPlus2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect } from "react";
-import { LeaderboardEntry } from "../../../../types";
 import { convertTime } from "../../../utils/convertTime";
+import { LeaderBoard } from "@/pages/LeaderboardPage";
 
 interface dataSlide {
   title: string;
   label: string;
   level: string;
   color: string;
-  user: LeaderboardEntry;
+  user: LeaderBoard;
   class: string;
   point: number;
   time: number;
@@ -99,7 +99,7 @@ const LeaderboardCard = (props: LeaderboardCard) => {
                           <div className="w-32 h-32 rounded-full border-2 border-devotion-gold relative z-10 bg-devotion-bg shadow-[0_0_50px_rgba(234,179,8,0.25)]">
                             <img
                               src="/assets/graduate.png"
-                              alt={slide.user.name}
+                              alt={slide.user.studentName}
                               className="w-full h-full rounded-full object-cover bg-white"
                               referrerPolicy="no-referrer"
                             />
@@ -128,14 +128,14 @@ const LeaderboardCard = (props: LeaderboardCard) => {
                             </div>
                           </div>
                           <h3 className="text-2xl md:text-4xl font-display font-black tracking-tighter leading-tight">
-                            {slide.user.name}
+                            {slide.user.studentName}
                           </h3>
                           <div className="flex items-end gap-2 text-slate-400">
                             <SchoolIcon className="text-devotion-gold"
                               size={20}
                             />
                             <span className="text-sm tracking-widest font-bold">
-                              {slide.user.school}
+                              {slide.user.school_name}
                             </span>
                           </div>
                           <div className="flex items-end gap-2 text-slate-400">
@@ -143,7 +143,7 @@ const LeaderboardCard = (props: LeaderboardCard) => {
                               size={20}
                             />
                             <span className="text-sm tracking-widest font-bold">
-                              {slide.user.class}
+                              {slide.user.class_name}
                             </span>
                           </div>
                         </div>
