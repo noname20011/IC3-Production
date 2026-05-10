@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-  baseURL: "https://ic3-3-production.vercel.app/", // Thay bằng URL của bạn
+  baseURL: "https://my-spring-app-ic3.onrender.com/api/v1", // Thay bằng URL của bạn
   headers: {
     'Content-Type': 'application/json',
   },
