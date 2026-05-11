@@ -1,8 +1,12 @@
 import PodiumCard from "@/components/UI/leader_board/PodiumCard";
+import Loading from "@/components/UI/Loading";
 import { MOCK_LEADERBOARD } from "@/data/mockData";
+import { useFetchData } from "@/hooks/useBaseQuery";
 import { useStompSubscription } from "@/hooks/useStompSubscription";
+import leaderboardService from "@/services/leaderboardService";
 import { convertTime } from "@/utils/convertTime";
 import { AnimatePresence, motion } from "framer-motion";
+import { data } from "framer-motion/client";
 import {
   ChevronDown,
   ChevronUp,
@@ -13,10 +17,11 @@ import {
   Trophy,
   Users,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export interface LeaderBoard {
-  id: string,
+  id: string;
   class_name: string;
   level_name?: string;
   part_name?: string;
@@ -24,7 +29,7 @@ export interface LeaderBoard {
   score: number;
   studentName: string;
   time_spent: number;
-  rank?: number
+  rank?: number;
 }
 
 /* ─── Trend icon based on value ─────────────────────────────── */
@@ -37,10 +42,45 @@ function TrendIcon({ trend }: { trend: string | number }) {
 
 /* ─── Main Component ─────────────────────────────────────────────── */
 export default function Leaderboard() {
-  const [ranks, setRanks] = useState<LeaderBoard[]>(MOCK_LEADERBOARD);
+  const [ranks, setRanks] = useState<LeaderBoard[]>([
+    {
+      id: "",
+      class_name: "",
+      level_name: "",
+      part_name: "",
+      school_name: "",
+      score: 0,
+      studentName: "",
+      time_spent: 0,
+      rank: 0,
+    },
+  ]);
+
+  const { classId, partId } = useParams();
+
+  const shouldFetch = !!classId && !!partId;
+
+  const { data, isLoading, isError } = useFetchData<any>(
+    ["leaderboard-by-class-and-part", classId, partId],
+    () => leaderboardService.getLeaderboardByClassAndPart(classId!, partId!),
+    {
+      enabled: shouldFetch,
+    },
+  );
+
+  useEffect(() => {
+    if (!shouldFetch) {
+      setRanks(MOCK_LEADERBOARD);
+      return;
+    }
+
+    if (data?.data) {
+      setRanks(data.data);
+    }
+  }, [shouldFetch, data]);
 
   // Socket
-  useStompSubscription("/topic/leaderboard", (data: LeaderBoard[]) => {
+  useStompSubscription<LeaderBoard[]>("/topic/leaderboard", (data) => {
     setRanks(data); // Trigger Flip Animation ngay khi có data mới
   });
 
@@ -66,8 +106,20 @@ export default function Leaderboard() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
             {[
-              { icon: Users, label: "Students", value: Array.from( new Map(ranks.map(item => [item.studentName, item]))).length },
-              { icon: School, label: "Schools", value: Array.from( new Map(ranks.map(item => [item.school_name, item]))).length },
+              {
+                icon: Users,
+                label: "Students",
+                value: Array.from(
+                  new Map(ranks.map((item) => [item.studentName, item])),
+                ).length,
+              },
+              {
+                icon: School,
+                label: "Schools",
+                value: Array.from(
+                  new Map(ranks.map((item) => [item.school_name, item])),
+                ).length,
+              },
               { icon: TrendingUp, label: "Average Score", value: "430" },
               { icon: Target, label: "Highest Score", value: "450" },
             ].map((stat) => {
@@ -107,13 +159,9 @@ export default function Leaderboard() {
                 <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
               )}
               {/* 1st place */}
-              {ranks[0] && (
-                <PodiumCard entry={ranks[0]} rank={1} delay={0} />
-              )}
+              {ranks[0] && <PodiumCard entry={ranks[0]} rank={1} delay={0} />}
               {/* 3rd place */}
-              {ranks[2] && (
-                <PodiumCard entry={ranks[2]} rank={3} delay={0.3} />
-              )}
+              {ranks[2] && <PodiumCard entry={ranks[2]} rank={3} delay={0.3} />}
             </div>
           </div>
         )}
@@ -125,13 +173,16 @@ export default function Leaderboard() {
               Full Leaderboard
             </h3>
             <span className="text-xs text-muted-foreground">
-              {Array.from( new Map(ranks.map(item => [item.studentName, item]))).length} students
+              {
+                Array.from(
+                  new Map(ranks.map((item) => [item.studentName, item])),
+                ).length
+              }{" "}
+              students
             </span>
           </div>
-          {ranks.length === 0 ? (
-            <div className="p-8 text-center text-muted-foreground">
-              Loading...
-            </div>
+          {isLoading ? (
+            <Loading />
           ) : ranks.length === 0 ? (
             <div className="p-12 text-center text-muted-foreground">
               <Trophy className="w-10 h-10 mx-auto mb-3 opacity-40" />

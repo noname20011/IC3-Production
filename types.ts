@@ -6,7 +6,7 @@ export interface QuizLevel {
 }
 
 export interface QuizPart {
-  id: string | number;
+  id: string;
   name: string;
   levelId: string;
   description?: string;

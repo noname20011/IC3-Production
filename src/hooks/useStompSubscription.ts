@@ -1,30 +1,43 @@
-// src/hooks/useStompSubscription.ts
-import { stompClient } from '@/api/socket/stompClient';
-import { useEffect } from 'react';
+import { useEffect, useRef } from "react";
+import { StompSubscription } from "@stomp/stompjs";
+import { stompClient } from "@/api/socket/stompClient";
 
 export const useStompSubscription = <T>(
-  topic: string, 
+  topic: string,
   onMessageReceived: (data: T) => void
 ) => {
+  const subscriptionRef = useRef<StompSubscription | null>(null);
+
   useEffect(() => {
-    // Kiểm tra nếu client chưa kết nối thì đợi
+    if (!topic) return;
+
     const subscribe = () => {
-      stompClient.subscribe(topic, (message) => {
-        const payload = JSON.parse(message.body);
-        onMessageReceived(payload);
-      });
+      // tránh subscribe trùng
+      if (subscriptionRef.current) return;
+
+      subscriptionRef.current = stompClient.subscribe(
+        topic,
+        (message) => {
+          const payload = JSON.parse(message.body);
+          onMessageReceived(payload);
+        }
+      );
     };
 
     if (stompClient.connected) {
       subscribe();
     } else {
-      stompClient.onConnect = subscribe;
+      const originalOnConnect = stompClient.onConnect;
+
+      stompClient.onConnect = (frame) => {
+        originalOnConnect?.(frame);
+        subscribe();
+      };
     }
 
-    // Quan trọng: Phải unsubscribe khi component unmount để tránh leak bộ nhớ
     return () => {
-      // Tìm và unsubscribe subscription hiện tại của topic này (nếu cần logic phức tạp hơn)
-      // Với STOMP đơn giản, có thể lưu id subscription để hủy
+      subscriptionRef.current?.unsubscribe();
+      subscriptionRef.current = null;
     };
-  }, [topic, onMessageReceived]);
+  }, [topic]);
 };
