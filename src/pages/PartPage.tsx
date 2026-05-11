@@ -121,7 +121,7 @@ export default function PartsPage() {
         </div>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {level.parts.map((part, index) => (
           <PartCard
             key={part.id}
