@@ -1,22 +1,21 @@
+import { QuestionTypeEntity } from "@/types/questions";
+import { pickRandom } from "@/utils/shuffleArray";
 import {
   ArrowRight,
   BookOpen,
   Clock,
   FileText,
-  HandMetal,
-  LoaderPinwheel,
+  LoaderPinwheel
 } from "lucide-react";
 import { motion } from "motion/react";
 import { QuizPart } from "../../types";
-import { Button } from "./core/buttons/MainButton";
-import { pickRandom } from "@/utils/shuffleArray";
 import questionsData from "../data/questions.json";
-import { QuestionTypeEntity } from "@/types/questions";
+import { Button } from "./core/buttons/MainButton";
 
 interface PartCardProps {
   part: QuizPart;
   index: number;
-  setChoosePart: (partId: number) => void;
+  setChoosePart: (partId: string) => void;
   setShowPopup: () => void;
 }
 

@@ -13,7 +13,7 @@ export const MOCK_LEVELS: QuizLevel[] = [
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 1",
         duration: 2000,
-        questionCount: 12,
+        questionCount: 23,
       },
 
       {
@@ -22,7 +22,7 @@ export const MOCK_LEVELS: QuizLevel[] = [
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 2",
         duration: 2000,
-        questionCount: 22,
+        questionCount: 12,
       },
 
       {
@@ -78,7 +78,7 @@ export const MOCK_LEVELS: QuizLevel[] = [
     description: "Full-length simulation of the final assessment.",
     parts: [
       {
-        id: "1d21942d-99d5-47cb-befe-8e784741956a",
+        id: "29d957d9-76ac-439d-a6ec-59f4f57d0be0",
         name: "Random Test Level 1",
         levelId: "practice",
         description: "45 câu ngẫu nhiên của Level 1",
