@@ -6,7 +6,6 @@ import { useStompSubscription } from "@/hooks/useStompSubscription";
 import leaderboardService from "@/services/leaderboardService";
 import { convertTime } from "@/utils/convertTime";
 import { AnimatePresence, motion } from "framer-motion";
-import { data } from "framer-motion/client";
 import {
   ChevronDown,
   ChevronUp,
@@ -18,7 +17,7 @@ import {
   Users,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export interface LeaderBoard {
   id: string;
@@ -56,7 +55,10 @@ export default function Leaderboard() {
     },
   ]);
 
-  const { classId, partId } = useParams();
+  const [searchParams] = useSearchParams();
+
+  const partId = searchParams.get("partId");
+  const classId = searchParams.get("classId");
 
   const shouldFetch = !!classId && !!partId;
 

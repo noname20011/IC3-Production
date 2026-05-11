@@ -115,7 +115,7 @@ export default function UserReviewPanel({
         className="hover:bg-devotion-gold/90 bg-transparent border text-white mt-6 w-full relative overflow-hidden rounded-xl py-4 block"
         onClick={() => {
           const classId = JSON.parse(localStorage.getItem("student") || "{}")?.classId
-          navigate(`/leaderboard?partId/${partId}/${classId}`);
+          navigate(`/leaderboard?partId=${partId}&classId=${classId}`);
           localStorage.clear();
           sessionStorage.clear();
         }}
