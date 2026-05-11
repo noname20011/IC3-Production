@@ -23,7 +23,7 @@ export default function PartCard(props: PartCardProps) {
   const { part, index, setChoosePart, setShowPopup } = props;
 
   return (
-    <motion.button
+    <motion.div
       key={part.id}
       whileHover={{ scale: 1.02, y: -5 }}
       whileTap={{ scale: 0.98 }}
@@ -74,6 +74,6 @@ export default function PartCard(props: PartCardProps) {
           <ArrowRight size={20} />
         </Button>
       </div>
-    </motion.button>
+    </motion.div>
   );
 }

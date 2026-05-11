@@ -60,7 +60,7 @@ export default function Quiz() {
   // Get questions data by partId
   const { partId } = useParams();
 
-  const questions: QuestionTypeEntity[] = partId === "1d21942d-99d5-47cb-befe-8e784741956a" ? JSON.parse(sessionStorage.getItem("test") || "[]") : questionsData.find(
+  const questions: QuestionTypeEntity[] = partId === "29d957d9-76ac-439d-a6ec-59f4f57d0be0" ? JSON.parse(sessionStorage.getItem("test") || "[]") : questionsData.find(
     (q) => q.partId === partId,
   )?.questions;
   
