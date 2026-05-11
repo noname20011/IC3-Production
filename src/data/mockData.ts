@@ -8,21 +8,21 @@ export const MOCK_LEVELS: QuizLevel[] = [
     description: "Foundational concepts and basic knowledge.",
     parts: [
       {
-        id: "61fa749d-4122-4504-b5e7-c4bdd65984a7",
+        id: "eaad19b7-3965-44c3-a1fd-cbb0d3e3ce72",
         name: "Bổ Sung 1",
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 1",
         duration: 2000,
-        questionCount: 23,
+        questionCount: 12,
       },
 
       {
-        id: "eaad19b7-3965-44c3-a1fd-cbb0d3e3ce72",
+        id: "61fa749d-4122-4504-b5e7-c4bdd65984a7",
         name: "Bổ Sung 2",
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 2",
         duration: 2000,
-        questionCount: 12,
+        questionCount: 24,
       },
 
       {
