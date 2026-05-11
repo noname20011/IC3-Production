@@ -84,6 +84,8 @@ export default function Leaderboard() {
     setRanks(data); // Trigger Flip Animation ngay khi có data mới
   });
 
+  console.log(data);
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
