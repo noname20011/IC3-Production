@@ -62,7 +62,7 @@ export default function Leaderboard() {
 
   const shouldFetch = !!classId && !!partId;
 
-  const { data, isLoading, isError } = useFetchData<any>(
+  const { data, isLoading } = useFetchData<any>(
     ["leaderboard-by-class-and-part", classId, partId],
     () => leaderboardService.getLeaderboardByClassAndPart(classId!, partId!),
     {
