@@ -36,8 +36,6 @@ import {
   typeColors,
   typeLabels,
 } from "../types/questions";
-import { useHandleMutation } from "@/hooks/useBaseQuery";
-import { quizService } from "@/services";
 
 // ─── Main Quiz component ───────────────────────────────────────────────────────
 

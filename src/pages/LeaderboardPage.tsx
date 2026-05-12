@@ -83,10 +83,11 @@ export default function Leaderboard() {
 
   // Socket
   useStompSubscription<LeaderBoard[]>("/topic/leaderboard", (data) => {
+    
     setRanks(data); // Trigger Flip Animation ngay khi có data mới
   });
 
-  console.log(data);
+  console.log(ranks);
 
   return (
     <div className="min-h-screen bg-background">
@@ -158,31 +159,24 @@ export default function Leaderboard() {
             </p>
             {/* Cards: 2nd | 1st | 3rd  — 1st is taller and centered */}
             <div className="grid grid-cols-3 items-end gap-3 sm:gap-5 justify-center md:px-10">
-              {ranks.length === 1 && (
-                <>
-                  <div className="hidden">
-                    <PodiumCard entry={ranks[0]} rank={2} delay={0} />
-                  </div>
-                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
-                  <div className="hidden">
-                    <PodiumCard entry={ranks[0]} rank={3} delay={0} />
-                  </div>
-                </>
-              )}
-              {ranks.length === 2 && (
-                <>
-                  <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
-                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
-                  <div className="hidden">
-                    <PodiumCard entry={ranks[0]} rank={3} delay={0} />
-                  </div>
-                </>
-              )}
-              {ranks.length === 3 && (
+              { ranks.length >= 3 && (
                 <>
                   <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
                   <PodiumCard entry={ranks[0]} rank={1} delay={0} />
                   <PodiumCard entry={ranks[2]} rank={3} delay={0.3} />
+                </>
+              )}
+              {ranks && ranks.length === 2 && (
+                <>
+                  <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
+                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
+                </>
+              )}
+              {ranks.length === 1 && (
+                <>
+                  <div className=""></div>
+                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
+                  <div className=""></div>
                 </>
               )}
             </div>
