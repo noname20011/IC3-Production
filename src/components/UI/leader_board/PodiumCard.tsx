@@ -93,7 +93,7 @@ export default function PodiumCard({ entry, rank, delay = 0 }: PodiumCardProps) 
             <p className="font-bold text-white text-sm leading-tight truncate">
               {entry.studentName}
             </p>
-            {entry.class && (
+            {entry.class_name && (
               <p
                 className="text-xs mt-0.5"
                 style={{ color: cfg.textColor, opacity: 0.8 }}

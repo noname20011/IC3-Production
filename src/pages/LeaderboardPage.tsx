@@ -87,7 +87,7 @@ export default function Leaderboard() {
   });
 
   console.log(data);
-  
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -151,21 +151,40 @@ export default function Leaderboard() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         {/* ── Top 3 Podium ── */}
-        {ranks.length >= 3 && (
+        {ranks && ranks.length > 0 && (
           <div className="mb-10">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-5">
               🏆 Top 3 the most outstanding students
             </p>
             {/* Cards: 2nd | 1st | 3rd  — 1st is taller and centered */}
             <div className="grid grid-cols-3 items-end gap-3 sm:gap-5 justify-center md:px-10">
-              {/* 2nd place */}
-              {ranks[1] && (
-                <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
+              {ranks.length === 1 && (
+                <>
+                  <div className="hidden">
+                    <PodiumCard entry={ranks[0]} rank={2} delay={0} />
+                  </div>
+                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
+                  <div className="hidden">
+                    <PodiumCard entry={ranks[0]} rank={3} delay={0} />
+                  </div>
+                </>
               )}
-              {/* 1st place */}
-              {ranks[0] && <PodiumCard entry={ranks[0]} rank={1} delay={0} />}
-              {/* 3rd place */}
-              {ranks[2] && <PodiumCard entry={ranks[2]} rank={3} delay={0.3} />}
+              {ranks.length === 2 && (
+                <>
+                  <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
+                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
+                  <div className="hidden">
+                    <PodiumCard entry={ranks[0]} rank={3} delay={0} />
+                  </div>
+                </>
+              )}
+              {ranks.length === 3 && (
+                <>
+                  <PodiumCard entry={ranks[1]} rank={2} delay={0.15} />
+                  <PodiumCard entry={ranks[0]} rank={1} delay={0} />
+                  <PodiumCard entry={ranks[2]} rank={3} delay={0.3} />
+                </>
+              )}
             </div>
           </div>
         )}
