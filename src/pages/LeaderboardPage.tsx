@@ -123,8 +123,8 @@ export default function Leaderboard() {
                   new Map(ranks.map((item) => [item.school_name, item])),
                 ).length,
               },
-              { icon: TrendingUp, label: "Average Score", value: ranks.reduce((acc, cur) => acc + cur.score, 0) / ranks.length },
-              { icon: Target, label: "Highest Score", value: ranks.sort((a, b) => b.score - a.score)[0].score },
+              { icon: TrendingUp, label: "Average Score", value: ranks.reduce((acc, cur) => acc + cur?.score, 0) / (ranks.length || 1) },
+              { icon: Target, label: "Highest Score", value: ranks.sort((a, b) => b.score - a.score)[0]?.score || 0 },
             ].map((stat) => {
               const Icon = stat.icon;
               return (
