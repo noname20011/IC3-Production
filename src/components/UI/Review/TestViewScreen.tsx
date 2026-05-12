@@ -28,6 +28,7 @@ import { AnswerListReview, QuestionScore } from "../../../types/questionScore";
 import ReviewQuestionBody from "../quizz/ReviewQuestionBody";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
 import UserReviewPanel from "./UserReviewPanel";
+import { useNavigate } from "react-router-dom";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -176,6 +177,8 @@ const TestReviewScreen = ({
   // get saved state from localStorage
   const userData = JSON.parse(localStorage.getItem("student") || "{}");
   const {showList, setShowList } = useCustomContext();
+  const navigate = useNavigate();
+
   const answerListReview: AnswerListReview[] =
     questions
       .map((q) => scoreQuestion(q, answers))
@@ -204,6 +207,7 @@ const TestReviewScreen = ({
         onSuccess: (response) => {
           // Chỉ khi API thành công mới chuyển trạng thái UI
             toast({ title: "Submit successfully. Let go to the Leaderboard", variant: "success" });
+            localStorage.removeItem("quiz_state");
           },
         onError: (error) => {
           alert("Can't submit!");

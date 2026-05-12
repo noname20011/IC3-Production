@@ -87,8 +87,6 @@ export default function Leaderboard() {
     setRanks(data); // Trigger Flip Animation ngay khi có data mới
   });
 
-  console.log(ranks);
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -125,8 +123,8 @@ export default function Leaderboard() {
                   new Map(ranks.map((item) => [item.school_name, item])),
                 ).length,
               },
-              { icon: TrendingUp, label: "Average Score", value: "430" },
-              { icon: Target, label: "Highest Score", value: "450" },
+              { icon: TrendingUp, label: "Average Score", value: ranks.reduce((acc, cur) => acc + cur.score, 0) / ranks.length },
+              { icon: Target, label: "Highest Score", value: ranks.sort((a, b) => b.score - a.score)[0].score },
             ].map((stat) => {
               const Icon = stat.icon;
               return (
@@ -236,7 +234,7 @@ export default function Leaderboard() {
                     >
                       {index + 1}
                     </div>
-                    <div className="flex-1 min-w-0">
+                    <div className="flex-1 min-w-72">
                       <div className="flex items-center gap-2">
                         <p className="font-medium text-foreground text-sm truncate">
                           {entry.studentName}
