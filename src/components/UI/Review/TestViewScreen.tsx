@@ -1,5 +1,11 @@
 import { Button } from "@/components/core/buttons/MainButton";
+import { checkCollision } from "@/components/UI/quizz/ReviewQuestionBody";
+import { toast } from "@/hooks/use-toast";
+import { useHandleMutation } from "@/hooks/useBaseQuery";
+import { quizService } from "@/services";
+import scrollToAnchorWithOffset from "@/utils/scrollToAnchorElement";
 import { Circle, Flag, X } from "lucide-react";
+import { useEffect } from "react";
 import { useCustomContext } from "../../../hooks/use-context";
 import {
   AnswerMap,
@@ -22,12 +28,6 @@ import { AnswerListReview, QuestionScore } from "../../../types/questionScore";
 import ReviewQuestionBody from "../quizz/ReviewQuestionBody";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
 import UserReviewPanel from "./UserReviewPanel";
-import scrollToAnchorWithOffset from "@/utils/scrollToAnchorElement";
-import { checkCollision } from "@/components/UI/quizz/ReviewQuestionBody";
-import { useEffect } from "react";
-import { useHandleMutation } from "@/hooks/useBaseQuery";
-import { quizService } from "@/services";
-import { toast } from "@/hooks/use-toast";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -197,6 +197,7 @@ const TestReviewScreen = ({
         studentId: userData?.studentId,
         score: answerListReview.filter((q) => q.isCorrect).length * 10,
         timeSpent: Number(localStorage.getItem("timedDoTest") ?? 0),
+        classId: userData?.classId,
         partId: partId
       };
       mutate(payload, {
