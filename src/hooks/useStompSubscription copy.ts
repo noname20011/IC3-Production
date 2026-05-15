@@ -2,21 +2,14 @@ import { useEffect, useRef } from "react";
 import { StompSubscription } from "@stomp/stompjs";
 import { stompClient } from "@/api/socket/stompClient";
 
-type UseStompSubscriptionOptions = {
-  enabled?: boolean;
-};
-
 export const useStompSubscription = <T>(
   topic: string,
-  onMessageReceived: (data: T) => void,
-  options?: UseStompSubscriptionOptions
+  onMessageReceived: (data: T) => void
 ) => {
   const subscriptionRef = useRef<StompSubscription | null>(null);
 
-  const enabled = options?.enabled ?? true;
-
   useEffect(() => {
-    if (!enabled || !topic) return;
+    if (!topic) return;
 
     const subscribe = () => {
       // tránh subscribe trùng
@@ -46,5 +39,5 @@ export const useStompSubscription = <T>(
       subscriptionRef.current?.unsubscribe();
       subscriptionRef.current = null;
     };
-  }, [topic, enabled]);
+  }, [topic]);
 };

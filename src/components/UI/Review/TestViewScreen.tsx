@@ -189,7 +189,7 @@ const TestReviewScreen = ({
 
   const scores = questions.map((q) => scoreQuestion(q, answers));
 
-    const { mutate, isPending } = useHandleMutation(
+    const { mutate } = useHandleMutation(
       (newClass) => quizService.create(newClass),
       [['quiz-submit' ]]
     );
@@ -206,11 +206,11 @@ const TestReviewScreen = ({
       mutate(payload, {
         onSuccess: (response) => {
           // Chỉ khi API thành công mới chuyển trạng thái UI
-            toast({ title: "Submit successfully. Let go to the Leaderboard", variant: "success" });
+            toast({ description: "Nộp bài thành công. Hãy tới bảng xếp hạng", variant: "success" });
             localStorage.removeItem("quiz_state");
           },
         onError: (error) => {
-          alert("Can't submit!");
+          toast({ description: "Có lỗi! Hãy kiểm tra kết nối mạng.", variant: "error"});
         }
       });
     }, 1000)

@@ -8,23 +8,21 @@ export const MOCK_LEVELS: QuizLevel[] = [
     description: "Foundational concepts and basic knowledge.",
     parts: [
       {
+        id: "61fa749d-4122-4504-b5e7-c4bdd65984a7",
+        name: "Bổ Sung 2",
+        levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
+        description: "Phần ôn tập sổ sung số 1",
+        duration: 2000,
+        questionCount: 24,
+      },
+      {
         id: "eaad19b7-3965-44c3-a1fd-cbb0d3e3ce72",
-        name: "Bổ Sung 1",
+        name: "Bổ Sung 2",
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 1",
         duration: 2000,
         questionCount: 12,
       },
-
-      {
-        id: "61fa749d-4122-4504-b5e7-c4bdd65984a7",
-        name: "Bổ Sung 2",
-        levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
-        description: "Phần ôn tập sổ sung số 2",
-        duration: 2000,
-        questionCount: 24,
-      },
-
       {
         id: "d051e1f8-2410-4c53-8650-438afbcdd894",
         name: "OT1",
@@ -33,7 +31,6 @@ export const MOCK_LEVELS: QuizLevel[] = [
         duration: 2700,
         questionCount: 45,
       },
-
       {
         id: "005fc9a6-fb8d-46c0-9f45-a36cf54be110",
         name: "OT2",
@@ -42,7 +39,6 @@ export const MOCK_LEVELS: QuizLevel[] = [
         duration: 2700,
         questionCount: 45,
       },
-
       {
         id: "94160047-c31a-4388-967b-215b8378fa2a",
         name: "OT3",

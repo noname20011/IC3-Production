@@ -2645,8 +2645,8 @@
         "type": "multiple",
         "text": "Đâu là ba yếu tố phải có trong trích dẫn về một cuốn sách đã xuất bản? (Chọn 3)",
         "options": [
-          { "id": 1, "value": "Ngày truy cập", "isCorrect": true },
-          { "id": 2, "value": "Ngày xuất bản", "isCorrect": false },
+          { "id": 1, "value": "Ngày truy cập", "isCorrect": false },
+          { "id": 2, "value": "Ngày xuất bản", "isCorrect": true },
           { "id": 3, "value": "Tình trạng bản quyền", "isCorrect": false },
           { "id": 4, "value": "Tên sách", "isCorrect": true },
           { "id": 5, "value": "Tên tác giả", "isCorrect": true },
