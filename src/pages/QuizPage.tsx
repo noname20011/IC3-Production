@@ -1,7 +1,7 @@
 import { Button } from "@/components/core/buttons/MainButton";
 import { AlertCircle, AlignLeft, Flag } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import PopUp from "../components/core/popups/PopUp";
 import HeaderNavQuestion from "../components/UI/quizz/HeaderNavQuestion";
 import QuestionListDrawer from "../components/UI/quizz/QuestionListDrawer";
@@ -57,6 +57,7 @@ export default function Quiz() {
 
   // Get questions data by partId
   const { partId } = useParams();
+  const navigate = useNavigate();
 
   const questions: QuestionTypeEntity[] = partId === "29d957d9-76ac-439d-a6ec-59f4f57d0be0" ? JSON.parse(sessionStorage.getItem("test") || "[]") : questionsData.find(
     (q) => q.partId === partId,
@@ -66,6 +67,15 @@ export default function Quiz() {
   const answered = Object.keys(answers).length;
   const isFlagged = flagged.has(q.id);
   
+  // Check if submit auto redirect /
+  useEffect(() => {
+  const student = localStorage.getItem("student");
+  if (student === null || student === "") {
+    navigate("/level");
+  }
+}, [navigate]);
+
+
   useEffect(() => {
     localStorage.setItem(
       "quiz_state",

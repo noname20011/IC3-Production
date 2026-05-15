@@ -6,11 +6,11 @@ export class LeaderboardService<T> extends BaseService<T> {
     super(endpoint);
   }
 
-  getLeaderboardByPart(partId: string) {
+  getLeaderboardByPart(partId: string | number) {
     return axiosClient.get(`${this.endpoint}/by-part/${partId}`);
   }
 
-  getLeaderboardByClassAndPart(classId: string, partId: string) {
+  getLeaderboardByClassAndPart(classId: string, partId: string | number) {
     return axiosClient.get(`${this.endpoint}/by-class/${classId}/part/${partId}`);
   }
   
