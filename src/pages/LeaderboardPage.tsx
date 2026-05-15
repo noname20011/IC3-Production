@@ -114,13 +114,9 @@ export default function Leaderboard() {
   );
 
   useEffect(() => {
-    if (!!filterFetch.levelId || !!filterFetch.partId) {
-      setRanks([]);
-      return;
-    }
-
+    if (filterFetch.levelId === "") return;
     if (topByPart?.data) {
-      setRanks(topByPart.data);
+      setRanks(topByPart?.data?.content);
     }
   }, [filterFetch.levelId, filterFetch.partId, topByPart]);
 

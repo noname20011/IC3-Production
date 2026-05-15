@@ -74,7 +74,7 @@ export default function PartsPage() {
   const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (formData.password !== "OT626") {
-      toast({ title: "Password is incorrect", variant: "destructive" });
+      toast({ description: "Password is incorrect", variant: "error" });
       return;
     }
 
