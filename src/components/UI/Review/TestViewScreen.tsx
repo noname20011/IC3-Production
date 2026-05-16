@@ -176,8 +176,8 @@ const TestReviewScreen = ({
 }: TestViewScreenProps) => {
   // get saved state from localStorage
   const userData = JSON.parse(localStorage.getItem("student") || "{}");
+  const timedDoTest = JSON.parse(localStorage.getItem("timeDoTest") || "{}")
   const {showList, setShowList } = useCustomContext();
-  const navigate = useNavigate();
 
   const answerListReview: AnswerListReview[] =
     questions
@@ -199,7 +199,7 @@ const TestReviewScreen = ({
       const payload = {
         studentId: userData?.studentId,
         score: answerListReview.filter((q) => q.isCorrect).length * 10,
-        timeSpent: Number(localStorage.getItem("timedDoTest") ?? 0),
+        timeSpent: timedDoTest?.timeSuspend ?? 0,
         classId: userData?.classId,
         partId: partId
       };
@@ -208,12 +208,13 @@ const TestReviewScreen = ({
           // Chỉ khi API thành công mới chuyển trạng thái UI
             toast({ description: "Nộp bài thành công. Hãy tới bảng xếp hạng", variant: "success" });
             localStorage.removeItem("quiz_state");
+            localStorage.removeItem("timeDoTest");
           },
         onError: (error) => {
           toast({ description: "Có lỗi! Hãy kiểm tra kết nối mạng.", variant: "error"});
         }
       });
-    }, 1000)
+    }, 500)
     return () => clearTimeout(id);
   }, [])
 
