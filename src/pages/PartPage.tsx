@@ -88,6 +88,8 @@ export default function PartsPage() {
     };
 
     localStorage.setItem("student", JSON.stringify(studentInfo));
+    const timeDoTest = MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration;
+    localStorage.setItem("timeDoTest", JSON.stringify({totalTime: timeDoTest, timeSuspend: timeDoTest, timeRemaining: timeDoTest}));
     navigate(
       `/quiz/${levelId}/${choosePart}?time=${MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration}`,
     );

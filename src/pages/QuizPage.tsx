@@ -104,7 +104,8 @@ export default function Quiz() {
   useEffect(() => {
     const id = setTimeout(() => {
       if (timeCountDown === 0) {
-        localStorage.setItem("timedDoTest", String(timeDoTest - timeCountDown));
+        const timedDoTest = JSON.parse(localStorage.getItem("timeDoTest") || "{}")?.timeSuspend || 0;
+        localStorage.setItem("timedDoTest", timedDoTest);
         setSubmitted(true);
       }}, 2000);
     return () => clearTimeout(id);
@@ -113,6 +114,8 @@ export default function Quiz() {
   useEffect(() => {
     const id = setTimeout(() => {
       if (submitted) {
+        const timedDoTest = JSON.parse(localStorage.getItem("timeDoTest") || "{}")?.timeSuspend || 0;
+        localStorage.setItem("timedDoTest", timedDoTest);
         setReviewing(true);
       }}, 2000);
     return () => clearTimeout(id);
@@ -145,7 +148,6 @@ export default function Quiz() {
             submitted={submitted}
             setSubmitted={setSubmitted}
             answers={answers}
-            timedDoTest={timeDoTest - timeCountDown}
           />
         </header>
         {/* ── Question body (scrollable) ── */}
@@ -339,6 +341,8 @@ export default function Quiz() {
                 <div className="flex flex-col gap-3">
                   <button
                     onClick={() => {
+                      const timedDoTest = JSON.parse(localStorage.getItem("timeDoTest") || "{}")?.timeSuspend || 0;
+                      localStorage.setItem("timedDoTest", timedDoTest);
                       setReviewing(true);
                       setCompleteQuiz(true);
                     }}

@@ -1,37 +1,92 @@
-import { ChevronLeft, LayoutDashboard, LayoutList } from "lucide-react";
-import { useCustomContext } from "../../hooks/use-context";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
 import { convertTime } from "@/utils/convertTime";
+import { LayoutDashboard, LayoutList } from "lucide-react";
+import { useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { useCustomContext } from "../../hooks/use-context";
 
 interface HeaderProps {
   onBack: () => void;
   locationPath: string;
 }
 const Header = (props: HeaderProps) => {
-  const { onBack, locationPath } = props;
-    const navigate = useNavigate();
+  const { locationPath } = props;
+  const navigate = useNavigate();
+  const {
+    setShowList,
+    setTimeCountDown,
+    timeCountDown,
+    setTimeDoTest,
+    completeQuiz,
+  } = useCustomContext();
 
   const [searchParams] = useSearchParams();
   const timeParam = Number(searchParams.get("time")) || 0;
-  const { setShowList, setTimeCountDown, timeCountDown, setTimeDoTest, completeQuiz } = useCustomContext();
 
-    useEffect(() => {
+  useEffect(() => {
+    if (completeQuiz) return;
+    // 1. Đọc dữ liệu từ localStorage
 
-      setTimeCountDown(timeParam);
-      setTimeDoTest(timeParam);
+    if (!timeParam || Number(timeParam) <= 0) return;
 
-      const id = setInterval(() => {
-        setTimeCountDown((prev: number) => {
-          if (prev <= 1) {
-            clearInterval(id);
-            return 0;
-          }
-          return prev - 1;
-        });
-    }, 1000);
+    const savedTimeData = JSON.parse(
+      localStorage.getItem("timeDoTest") || "{}",
+    );
+    let id: NodeJS.Timeout | undefined;
+    if (savedTimeData !== undefined) {
+      // Lấy totalTime gốc, nếu chưa có (lần đầu vào) thì lấy từ timeParam trên URL hoặc context
+
+      const totalTime = Number(savedTimeData?.totalTime) || timeParam;
+
+      // Ưu tiên lấy thời gian đang chạy dở, nếu không có thì lấy đúng bằng totalTime ban đầu
+      const initialTimeLeft =
+        savedTimeData?.timeRemaining !== undefined
+          ? Number(savedTimeData.timeRemaining)
+          : totalTime;
+
+      // 2. Khởi tạo giá trị ban đầu cho Context (Đảm bảo không bao giờ bị undefined)
+      setTimeCountDown(initialTimeLeft);
+      setTimeDoTest(totalTime);
+
+      // Biến tạm để chạy ngầm chuẩn xác từng giây
+      let currentSeconds = initialTimeLeft;
+
+      // 3. Chạy đồng hồ đếm ngược
+      id = setInterval(() => {
+        if (currentSeconds <= 1) {
+          clearInterval(id);
+          localStorage.setItem(
+            "timeDoTest",
+            JSON.stringify({
+              totalTime,
+              timeSuspend: totalTime,
+              timeRemaining: totalTime,
+            }),
+          );
+          return;
+        }
+
+        currentSeconds -= 1;
+
+        // Cập nhật lên giao diện (Context)
+        setTimeCountDown(currentSeconds);
+
+        // Tính số giây ĐÃ LÀM chuẩn xác = Tổng thời gian - Thời gian còn lại
+        const actualTimeSpent = totalTime - currentSeconds;
+
+        // Lưu vào bộ nhớ tạm phòng khi học sinh F5
+        localStorage.setItem(
+          "timeDoTest",
+          JSON.stringify({
+            totalTime,
+            timeSuspend: actualTimeSpent, // Luôn tăng tiến chính xác, không sợ F5
+            timeRemaining: currentSeconds,
+          }),
+        );
+      }, 1000);
+    }
+
     return () => clearInterval(id);
-    }, [timeParam]);
+  }, [setTimeCountDown, setTimeDoTest, completeQuiz, timeParam]);
 
   return (
     <>
@@ -55,13 +110,20 @@ const Header = (props: HeaderProps) => {
               </h1>
             </div>
           </div> */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate("/")}>
+          <div
+            className="flex items-center gap-3 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             <div className="w-10 h-10 glass-card flex items-center justify-center text-devotion-gold">
               <LayoutDashboard size={24} />
             </div>
             <div>
-              <h1 className="font-display font-bold text-xl tracking-tight">QUIZZY</h1>
-              <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em]">Quiz Platform</p>
+              <h1 className="font-display font-bold text-xl tracking-tight">
+                QUIZZY
+              </h1>
+              <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em]">
+                Quiz Platform
+              </p>
             </div>
           </div>
 
@@ -85,7 +147,10 @@ const Header = (props: HeaderProps) => {
               </svg>
               {locationPath.includes("/quiz") && (
                 <span className="text-xs font-mono font-semibold text-[#c8a46e]">
-                  {completeQuiz ? convertTime(Number(localStorage.getItem("timedDoTest") ?? 0)) : `${Math.floor(timeCountDown / 60)}:${String(timeCountDown % 60).padStart(2, "0")}`}
+                  {completeQuiz
+                    ? convertTime(
+                        Number(JSON.parse(localStorage.getItem("timedDoTest") || "{}") ?? 0))
+                    : `${Math.floor(timeCountDown / 60)}:${String(timeCountDown % 60).padStart(2, "0")}`}
                 </span>
               )}
             </div>
