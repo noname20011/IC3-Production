@@ -15,6 +15,7 @@ import PopUp from "../components/core/popups/PopUp";
 import PartCard from "../components/PartCard";
 import { MOCK_LEVELS } from "../data/mockData";
 import { toast } from "../hooks/use-toast";
+import { useCustomContext } from "@/hooks/use-context";
 
 interface FormData {
   studentId: string | number;
@@ -47,6 +48,7 @@ export default function PartsPage() {
   const [isSelectOpenClass, setIsSelectOpenClass] = useState(false);
   const [isSelectOpenStudent, setIsSelectOpenStudent] = useState(false);
   const navigate = useNavigate();
+  const { setCompleteQuiz } = useCustomContext();
 
   // Call API
   const { data: schools, isLoading } = useFetchData<any>(["schools"], () =>
@@ -87,9 +89,10 @@ export default function PartsPage() {
       schoolName: formData.schoolName
     };
 
+    setCompleteQuiz(false);
     localStorage.setItem("student", JSON.stringify(studentInfo));
     const timeDoTest = MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration;
-    localStorage.setItem("timeDoTest", JSON.stringify({totalTime: timeDoTest, timeSuspend: timeDoTest, timeRemaining: timeDoTest}));
+    localStorage.setItem("timeDoTest", JSON.stringify({totalTime: timeDoTest, timeSuspend: 0, timeRemaining: timeDoTest}));
     navigate(
       `/quiz/${levelId}/${choosePart}?time=${MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration}`,
     );

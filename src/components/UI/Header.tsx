@@ -3,8 +3,10 @@ import { LayoutDashboard, LayoutList } from "lucide-react";
 import { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useCustomContext } from "../../hooks/use-context";
+import { useHandleBackReload } from "@/hooks/useHandleBackReload";
 
 interface HeaderProps {
+  timeDoTest: number
   onBack: () => void;
   locationPath: string;
 }
@@ -22,6 +24,7 @@ const Header = (props: HeaderProps) => {
   const [searchParams] = useSearchParams();
   const timeParam = Number(searchParams.get("time")) || 0;
 
+  // useHandleBackReload();
   useEffect(() => {
     if (completeQuiz) return;
     // 1. Đọc dữ liệu từ localStorage
@@ -86,7 +89,7 @@ const Header = (props: HeaderProps) => {
     }
 
     return () => clearInterval(id);
-  }, [setTimeCountDown, setTimeDoTest, completeQuiz, timeParam]);
+  }, [timeParam, completeQuiz]);
 
   return (
     <>
