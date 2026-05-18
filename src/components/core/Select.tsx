@@ -74,7 +74,7 @@ const Select = <T extends SelectItem>({
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute z-50 mt-2 max-h-[200px] w-full rounded-xl border border-white/10 bg-background shadow-2xl"
+              className="absolute z-50 mt-2 max-h-60 w-full rounded-xl border border-white/10 bg-background shadow-2xl"
             >
               <div
                 className={`scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent overflow-y-auto ${heightOption}`}
