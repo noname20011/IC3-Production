@@ -81,7 +81,7 @@ const Select = <T extends SelectItem>({
               >
                 {isLoading ? (
                   <Loading />
-                ) : (
+                ) : data.length === 0 ? <div className="py-4 pl-4 text-sm">Không có dữ liệu </div> : (
                   <>
                     {data.map((item, index) => (
                       <button
