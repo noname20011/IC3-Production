@@ -21,7 +21,7 @@ export const MOCK_LEVELS: QuizLevel[] = [
         levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
         description: "Phần ôn tập sổ sung số 2",
         duration: 2000,
-        questionCount: 24,
+        questionCount: 23,
       },
       {
         id: "d051e1f8-2410-4c53-8650-438afbcdd894",
