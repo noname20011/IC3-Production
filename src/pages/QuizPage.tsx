@@ -59,9 +59,11 @@ export default function Quiz() {
   const { partId } = useParams();
   const navigate = useNavigate();
 
-  const questions: QuestionTypeEntity[] = partId === "29d957d9-76ac-439d-a6ec-59f4f57d0be0" ? JSON.parse(sessionStorage.getItem("test") || "[]") : questionsData.find(
+  const questions: QuestionTypeEntity[] = JSON.parse(sessionStorage.getItem("uiQuestions") || "[]") || questionsData.find(
     (q) => q.partId === partId,
   )?.questions;
+
+  const questionsRaw: QuestionTypeEntity[] = JSON.parse(sessionStorage.getItem("rawTest") || "[]");
   
   const q = questions[current];
   const answered = Object.keys(answers).length;
@@ -99,7 +101,7 @@ export default function Quiz() {
     setAnswers((prev) => ({ ...prev, [id]: val }));
   };
 
-  const { timeCountDown, timeDoTest } = useCustomContext();
+  const { timeCountDown } = useCustomContext();
   
   useEffect(() => {
     const id = setTimeout(() => {
@@ -125,7 +127,7 @@ export default function Quiz() {
   if (submitted && reviewing) {
     return (
       <TestReviewScreen
-        questions={questions}
+        questions={questionsRaw}
         answers={answers}
         flagged={flagged}
         onClose={() => setReviewing(false)}

@@ -51,10 +51,6 @@ export const shuffleQuestionAnswers = (question: any): any => {
   }
 };
 
-export const buildTest = (questions: any[], count: number) => {
-  const raw = pickRandom(questions, count);
-
-  const ui = raw.map(shuffleQuestionAnswers);
-
-  return { raw, ui };
+export const pickRandomQuestions = (questions: any[], count: number) => {
+  return shuffleArray(questions).slice(0, count).map(shuffleQuestionAnswers);
 };
