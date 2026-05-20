@@ -1,11 +1,11 @@
 import { QuestionTypeEntity } from "@/types/questions";
-import { pickRandom } from "@/utils/shuffleArray";
+import { buildTest } from "@/utils/shuffleArray";
 import {
   ArrowRight,
   BookOpen,
   Clock,
   FileText,
-  LoaderPinwheel
+  LoaderPinwheel,
 } from "lucide-react";
 import { motion } from "motion/react";
 import { QuizPart } from "../../types";
@@ -33,11 +33,18 @@ export default function PartCard(props: PartCardProps) {
       onClick={() => {
         setShowPopup();
 
-        if(part.name.includes("Level 1")) {
-          const allQuestions: any[] = questionsData.map(item => item.questions).flat();
-          const randomQuestions = pickRandom<QuestionTypeEntity>(allQuestions, 45);
-          sessionStorage.setItem("test", JSON.stringify(randomQuestions));
-        }
+        const isLevel1 = part.name.includes("Level 1");
+
+        const allQuestions: any[] = isLevel1
+          ? questionsData.map(item => item.questions).flat()
+          : (questionsData.find((q) => q.partId === part.id)?.questions ?? []);
+
+        const count = isLevel1 ? 45 : allQuestions.length;
+
+        const { raw, ui } = buildTest(allQuestions, count);
+
+        sessionStorage.setItem("rawTest", JSON.stringify(raw));
+        sessionStorage.setItem("uiQuestions", JSON.stringify(ui));
         setChoosePart(part.id);
       }}
       className="glass-card p-8 group relative overflow-hidden h-full flex flex-col justify-between hover:border-primary/40 group"
@@ -62,7 +69,9 @@ export default function PartCard(props: PartCardProps) {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2 text-slate-400 text-sm">
             <Clock size={16} className="text-devotion-gold/60" />
-            <span>{part.duration && Math.floor(part.duration / 60) || 45} phút</span>
+            <span>
+              {(part.duration && Math.floor(part.duration / 60)) || 45} phút
+            </span>
           </div>
           <div className="flex items-center gap-2 text-slate-400 text-sm">
             <BookOpen size={16} className="text-devotion-gold/60" />

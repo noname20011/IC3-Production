@@ -293,9 +293,9 @@ export default function Leaderboard() {
                     >
                       {index + 1}
                     </div>
-                    <div className="flex-1 min-w-72">
+                    <div className="flex-1 min-w-40 md:min-w-72">
                       <div className="flex items-center gap-2">
-                        <p className="font-medium text-foreground text-sm truncate">
+                        <p className="font-medium text-foreground text-sm md:truncate">
                           {entry.studentName}
                         </p>
                         {entry.class_name && (
@@ -338,7 +338,7 @@ export default function Leaderboard() {
         animate={{ opacity: 1, x: 0 }}
         whileHover={{ scale: 1.1, rotate: 12 }}
         whileTap={{ scale: 0.9 }}
-        className="pointer-events-auto group fixed bottom-[30%] right-4 md:right-10 flex items-center mb-2"
+        className="pointer-events-auto group fixed bottom-[30%] z-[500] right-4 md:right-10 flex items-center mb-2"
       >
         <div className="mr-3 px-4 py-2 bg-primary text-surface font-black text-[10px] uppercase tracking-widest rounded-xl group-hover:opacity-0 opacity-100 transition-opacity duration-300 shadow-xl">
           Nhấn vào đây!
