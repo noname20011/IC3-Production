@@ -19,7 +19,7 @@ const podiumConfig = {
     zIndex: "z-10",
     laurelWreathLink: "/assets/laurel_wreath/laurel_wreath1.svg",
     laurelWreathDimension: "w-[120px] md:w-[240px]",
-    position: "top-1/2 -translate-y-[95%] left-1/2 -translate-x-1/2"
+    position: "top-1/2 -translate-y-[90%] left-1/2 -translate-x-1/2"
   },
   2: {
     gradient:
