@@ -16,10 +16,6 @@ export default function HotSpotType(props: HotspotProps) {
 
   const handleClick = (e: React.MouseEvent<HTMLImageElement>) => {
     // Nếu đã chọn đủ 3 điểm thì không cho chọn thêm (hoặc cho phép đổi điểm cũ)
-    console.log(value?.length, q.totalRequiredHotSpot);
-    
-    console.log((value?.length ?? 0) >= q.totalRequiredHotSpot);
-    
 
     if ((value?.length ?? 0) >= q.totalRequiredHotSpot) return;
 

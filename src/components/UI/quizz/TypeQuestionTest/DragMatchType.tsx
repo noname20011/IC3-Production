@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MatchEntity } from "../../../../types/questions";
 import { MatchAnswer } from "../../../../types/answer";
-import { DndContext, DragEndEvent, DragStartEvent } from "@dnd-kit/core";
+import { DndContext, DragEndEvent, DragStartEvent, useSensors, MouseSensor, TouchSensor, useSensor, PointerSensor } from "@dnd-kit/core";
 import {
   restrictToFirstScrollableAncestor,
 } from "@dnd-kit/modifiers";
@@ -75,8 +75,20 @@ export default function DragMatch(props: DragMatchProps) {
   const handleDragStart = ({ active }: DragStartEvent) =>
     setDragging(active.id as string);
   
+  // Set up sort for mobile
+    const sensors = useSensors(
+      useSensor(MouseSensor),
+      useSensor(TouchSensor, {
+        activationConstraint: {
+          delay: 150,
+          tolerance: 5,
+        },
+      }),
+      useSensor(PointerSensor)
+    );
+
   return (
-    <DndContext modifiers={[restrictToFirstScrollableAncestor]} onDragEnd={handleDragEnd} onDragStart={handleDragStart}>
+    <DndContext sensors={sensors} modifiers={[restrictToFirstScrollableAncestor]} onDragEnd={handleDragEnd} onDragStart={handleDragStart}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 overflow-x-hidden overflow-y-hidden">
         {/* LEFT */}
         <div className="bg-[#1a1510] border border-[#2e2418] rounded-2xl p-4 col-span-1">
