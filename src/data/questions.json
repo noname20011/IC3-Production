@@ -10683,5 +10683,3602 @@
         ]
       }
     ]
+  },
+  {
+    "_comment": "LV2_OT3",
+    "levelId": "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+    "partId": "6eeb6bb5-5795-4246-bfef-65e20fed1acc",
+    "questions": [
+      {
+        "id": 181,
+        "type": "truefalse",
+        "text": "Một người bạn vừa tham gia mạng xã hội. Bài đăng đầu tiên của cô ấy là một bức ảnh cũ và đáng xấu hổ của bạn. Cô ấy đã không hỏi ý kiến của bạn trước. Bạn cần phải trả lời theo các chuẩn mực đạo đức thích hợp trong môi trường kỹ thuật số. Với mỗi câu phát biểu, hãy chọn Có nếu có thể là một phản hồi của bạn với bài đăng là phù hợp hoặc Không nếu không phải",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "XÓA NGAY ĐI!",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Mình sẽ đăng bức ảnh đáng xấu hổ của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Làm ơn đừng đăng hình của mình khi chưa hỏi ý kiến",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 182,
+        "type": "multiple",
+        "text": "Hai phát biểu nào là đúng về nguyên tắc nghi thức email? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đoạn văn ngắn tốt hơn đoạn văn dài",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hầu hết các chữ ký phải có họ và tên",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Vì người nhận có thể thấy tập tin đính kèm, nên không cần thông báo cho người nhận về tập tin đính kèm",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Câu phải dài ít nhất một câu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 183,
+        "type": "match",
+        "text": "Nối từng kiểu mua hàng trong ứng dụng với mô tả tương ứng. Để trả lời, hãy di chuyển các mục cột bên phải sang cột bên trái sao cho phù hợp",
+        "pairs": [
+          {
+            "left": { "value": "Không tự động gia hạn" },
+            "right": {
+              "value": "Thuê phim trực tuyến thông qua dịch vụ phát trực tuyến"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Vật tư không tiêu hao" },
+            "right": {
+              "value": "Mở khóa một tính năng đặc biệt trên trò chơi điện tử"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Vật tư tiêu hao" },
+            "right": {
+              "value": "Mua đá quý hoặc tiền xu cho trò chơi trên thiết bị di động"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Tự động gia hạn" },
+            "right": { "value": "Đăng ký dịch vụ phát video trực tuyến" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 184,
+        "type": "truefalse",
+        "text": "Một học sinh cấp hai tham gia cộng đồng mạng xã hội gồm những người có cùng sở thích với mình. Với mỗi câu phát biểu, hãy chọn Đúng nếu đây là cách phù hợp để tương tác với cộng đồng trực tuyến hoặc Sai nếu không phù hợp",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Hy vọng các thành viên khác trong cộng đồng coi thông tin cậu ấy chia sẻ là riêng tư",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Giới thiệu bản thân với các thành viên cộng đồng và cung cấp địa chỉ email cá nhân của cậu ấy",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Trả lời bình luận trên chuỗi câu nói rằng mình không đồng ý, sử dụng giọng điệu tôn trọng",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Chia sẻ bình luận từ cộng đồng với một nhóm khác mà không nói rõ ai đã đưa ra bình luận đó",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 185,
+        "type": "multiple",
+        "text": "Những nghi thức nào được coi là đúng cho một cuộc họp trực tuyến? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tắt tiếng micro khi cần thiết",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Làm việc trên các dự án khác",
+            "isCorrect": false
+          },
+          { "id": 3, "value": "Trang phục phù hợp", "isCorrect": true },
+          {
+            "id": 4,
+            "value": "Kiểm tra email miễn là nó ở ngoài máy ảnh",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 186,
+        "type": "single",
+        "text": "Bạn đang nộp đơn xin việc trong lĩnh vực nghề nghiệp đã chọn. Nhà tuyển dụng tiềm năng sẽ truy cập hồ sơ công việc trực tuyến của bạn. Bạn cần làm gì để hỗ trợ hồ sơ công việc trực tuyến của mình?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Cập nhật hồ sơ thường xuyên để giới thiệu các kỹ năng của bạn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cung cấp thông tin về lịch sử tiền lương và kỳ vọng của bạn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hạn chế quyền truy cập vào hồ sơ để duy trì quyền riêng tư",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Cung cấp thông tin về các hoạt động cá nhân để minh chứng cho sự cân bằng của mình",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 187,
+        "type": "single",
+        "text": "Bạn quay lại cảnh một người bạn đang thực hiện một điệu nhảy ngớ ngẩn trong bữa tiệc. Bạn muốn chia sẻ video này với những người bạn chung. Bạn cần xác định cách thức chia sẻ video theo đúng các chuẩn mực đạo đức trong môi trường số. Bạn nên làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Gửi trực tiếp video cho người bạn nhảy nhót kia và bảo họ chia sẻ video đó với những người khác",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Chỉ gửi video cho những người đã tham dự bữa tiệc và yêu cầu họ không chia sẻ video đó với bất kỳ ai khác",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chia sẻ video lên mạng xã hội, cài đặt bảo mật cho phép bạn bè của bạn xem video đó",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chia sẻ video lên mạng xã hội và đặt ở chế độ công khai",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 188,
+        "type": "single",
+        "text": "Bạn đang tham gia một diễn đàn trực tuyến để trả lời một người cho rằng đồng phục mới của một đội nên có màu đỏ. Bạn nghĩ rằng chúng nên có màu xanh lam. Phản ứng nào được coi là phản ứng tốt nhất?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tôi nghĩ đồng phục mới nên có màu xanh lam, nhưng tôi hiểu ý của bạn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn cần một chuyên gia thời trang",
+            "isCorrect": false
+          },
+          { "id": 3, "value": "Bạn chỉ nên theo dõi đội", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Màu xanh lam tốt hơn màu đỏ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 189,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết hai tùy chọn nào sau đây là nhà cung cấp phát nhạc trực tuyến? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Vevo", "isCorrect": true },
+          { "id": 2, "value": "Spotify", "isCorrect": true },
+          { "id": 3, "value": "Netflix", "isCorrect": false },
+          { "id": 4, "value": "Hulu", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 190,
+        "type": "single",
+        "text": "Bạn hãy cho biết, hình thức giao tiếp nào sau đây là phù hợp nhất với những tin nhắn dài và để gửi tập tin?",
+        "options": [
+          { "id": 1, "value": "Thư điện tử (Email)", "isCorrect": true },
+          { "id": 2, "value": "Tin nhắn tức thời (IM)", "isCorrect": false },
+          { "id": 3, "value": "Tin nhắn ngắn (SMS)", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Hội nghị truyền hình (Video Conferencing)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 191,
+        "type": "hotspot",
+        "text": "Bạn đang viết báo cáo về Chiến tranh năm 1812. Bạn tìm kiếm những bài báo về cuộc chiến tranh này trên mạng. Bạn cần lọc kết quả để chỉ hiển thị những bài báo được xuất bản trong năm vừa qua. Bạn có thể chọn nút nào để đạt được mục tiêu nói trên?",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781072725/LV2_OT3_q11_yqd2w5.png",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "answer",
+            "top": 26.85,
+            "left": 85.38,
+            "width": 12.18,
+            "height": 15.27
+          }
+        ]
+      },
+      {
+        "id": 192,
+        "type": "truefalse",
+        "text": "Công ty của bạn muốn cải tiến thiết kế của chiếc xe chạy bằng điện mà công ty sản xuất. Bạn cần khảo sát những khách hàng lẻ đã mua xe và cung cấp phản hồi hữu ích để giúp công ty đạt được mục tiêu nói trên. Với mỗi câu hỏi, hãy chọn Có nếu câu hỏi này mang đến phản hồi hữu ích hoặc Không nếu không",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn có thích phương tiện này không?",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Điều gì có thể cải thiện phương tiện này?",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Các tính năng quan trọng nhất của xe là gì?",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bạn có muốn giới thiệu phương tiện đi lại này cho một người bạn không?",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 193,
+        "type": "hotspot",
+        "text": "Bạn đang chuẩn bị một bản trình chiếu kỹ thuật số để kiếm tiền cho Câu lạc bộ của mình. Bạn tìm kiếm một bài hát trên mạng để phối lại và thêm vào bài thuyết trình của mình. Tùy chọn nào sau đây là giấy phép Creative Commons cho phép bạn phối lại bài hát cho bản trình bày của mình?",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781073147/LV2_OT3_q13_udhdzo.png",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "answer",
+            "top": 49.87,
+            "left": 50.47,
+            "width": 49.41,
+            "height": 49.62
+          }
+        ]
+      },
+      {
+        "id": 194,
+        "type": "match",
+        "text": "Sắp xếp các thuật ngữ bên phải phù hợp theo định nghĩa tương ứng bên trái",
+        "pairs": [
+          {
+            "left": { "value": "Trademark" },
+            "right": {
+              "value": "Độc quyền sử dụng một tác phẩm cụ thể có liên quan đến hàng hóa hoặc dịch vụ trong thương mại"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Patent" },
+            "right": {
+              "value": "Độc quyền tạo, sử dụng hoặc bán một sáng chế cụ thể"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Copyright" },
+            "right": { "value": "Độc quyền đối với các tác phẩm gốc" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 195,
+        "type": "multiple",
+        "text": "Hai tùy chọn nào sau đây giải thích hệ thống lưu trữ dữ liệu trung tâm? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hệ thống quản lý tài liệu và thư viện, chẳng hạn như SharePoint",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cơ sở dữ liệu theo dõi tồn kho, đơn đặt hàng của khách hàng và giao hàng",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Chia sẻ ổ cứng trên máy tính của bạn với các nhân viên khác",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thiết bị lưu trữ được đặt bên trong máy tính",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 196,
+        "type": "multiple",
+        "text": "Hai tùy chọn nào sau đây giải thích hệ thống lưu trữ dữ liệu trung tâm? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Cơ sở dữ liệu theo dõi hàng tồn kho, đơn đặt hàng của khách hàng và giao hàng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hệ thống quản lý tài liệu và thư viện, chẳng hạn như SharePoint",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Thiết bị lưu trữ được đặt bên trong máy tính",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chia sẻ ổ cứng trên máy tính của bạn với các nhân viên khác",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 197,
+        "type": "multiple",
+        "text": "Bạn cần xác định xem một bài báo trình bày thông tin thực tế hay thành kiến. Đâu là hai dấu hiệu cho thấy bài báo trình bày quan điểm thành kiến? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tác giả nói rằng các tác giả của một bài báo đối lập có tư tưởng cực đoan, do đó không thể hiểu chủ đề",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tác giả hỗ trợ những ý tưởng trong bài viết bằng cách trình bày những câu chuyện thú vị thay vì những con số thống kê",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tác giả đưa vào các biện luận để phản bác quan điểm đối lập",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bài báo được đăng trên một tờ báo nhỏ, không phải là một tạp chí học thuật nổi tiếng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 198,
+        "type": "truefalse",
+        "text": "Bạn cần nghiên cứu tác động của việc học trực tuyến và đánh giá mức độ phù hợp của kết quả tìm kiếm. Với mỗi câu phát biểu, hãy chọn Có nếu kết quả tìm kiếm phù hợp với chủ đề của bạn hoặc Không nếu không phù hợp.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bài báo về lợi ích của giáo dục",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Trang web bán tài nguyên giáo dục",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Biểu đồ so sánh điểm kiểm tra của học sinh trong hệ thống giáo dục trực tuyến và trực tiếp",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bài báo trên tạp chí giáo dục về kinh nghiệm giảng dạy trực tuyến của giáo viên",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 199,
+        "type": "truefalse",
+        "text": "Bạn đang chuẩn bị viết bài nghiên cứu. Bạn tìm thấy một nghiên cứu khoa học liên quan tới chủ đề của mình. Bạn cần phải xác định xem liệu nghiên cứu đó có đáng tin hay không. Với mỗi câu phát biểu, hãy chọn Có nếu bạn phải xem xét yếu tố đó để đánh giá độ tin cậy của nghiên cứu hoặc Không nếu bạn không cần.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Mức độ phổ biến của nghiên cứu",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tổ chức tài trợ cho nghiên cứu",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đơn vị công bố kết quả nghiên cứu",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 200,
+        "type": "truefalse",
+        "text": "Bạn đang tiến hành nghiên cứu bằng cách sử dụng công cụ tìm kiếm. Đối với mỗi phát biểu về việc sử dụng 'từ khóa', hãy chọn Đúng nếu nó hiển thị kết quả hợp lí hoặc Sai nếu nó không hiển thị.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "mustang, camero, -convertible: Các cụm từ tìm kiếm chính này sẽ trả về tất cả xe mustang và camero không phải là loại mui trần (convertible)",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ngựa OR bò OR lợn OR cừu: Các cụm từ tìm kiếm chính này sẽ trả về kết quả có chứa cả ngựa, bò, lợn hoặc chỉ có cừu",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "'richest people in America': Các cụm từ tìm kiếm quan trọng này sẽ chỉ trả về kết quả có chứa cụm từ chính xác đó",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 201,
+        "type": "single",
+        "text": "Người dùng muốn tìm kiếm cụm từ 'Yankee Candle', nhưng không có cụm từ tìm kiếm trả về các kết quả phù hợp riêng lẻ với các từ Yankee hoặc Candle. Loại dấu câu hoặc ký hiệu nào nên được sử dụng xung quanh cụm từ khi tìm kiếm?",
+        "options": [
+          { "id": 1, "value": "Dấu ngoặc kép", "isCorrect": true },
+          { "id": 2, "value": "Dấu ngoặc đơn", "isCorrect": false },
+          { "id": 3, "value": "Dấu ngoặc nhọn", "isCorrect": false },
+          { "id": 4, "value": "Dấu ngoặc vuông", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 202,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết ba tài nguyên công cộng (Community Resource) cho phép người dùng tra cứu các tài nguyên trực tuyến? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Thư viện", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Các phòng ban giao thông vận tải",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Trường học", "isCorrect": true },
+          { "id": 4, "value": "Bệnh viện", "isCorrect": false },
+          { "id": 5, "value": "Tòa án", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 203,
+        "type": "single",
+        "text": "Bạn hãy cho biết, phát biểu sau đây là Đúng hay Sai: 'Nhiều tài nguyên công cộng (Community Resource) có thể được truy cập trực tuyến'.",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 204,
+        "type": "multiple",
+        "text": "Một cô gái xây dựng trang web đầu tiên. Cô gái phải suy nghĩ về thiết kế và chức năng. Vì vậy, cô ấy đang tìm kiếm phản hồi để cung cấp thông tin và cải thiện việc học của mình. Hai ví dụ nào về cách người dùng có thể tìm kiếm phản hồi hiệu quả để cung cấp thông tin và cải thiện việc học của họ? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nhờ người có chuyên môn xem xét trang web và đưa ra phản hồi",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Gửi một cuộc khảo sát mời người dùng đưa ra phản hồi về trang web",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đọc một cuốn sách hay về thiết kế trang web",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chạy quảng cáo trên trang web và theo dõi số lượng nhấp chuột được thu thập",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 205,
+        "type": "truefalse",
+        "text": "Bạn cần đánh giá xem nội dung của bài viết trực tuyến có chứa thành kiến hay không. Với mỗi khía cạnh của bài viết, hãy chọn Có nếu bạn cần kiểm tra yếu tố đó để đánh giá tính thành kiến của bài viết hoặc Không nếu không cần.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Nguồn tài trợ bài viết",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ngày xuất bản bài viết",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Trình độ giáo dục của tác giả",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Có mối liên hệ của tác giả với các tổ chức chính trị",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 206,
+        "type": "single",
+        "text": "Mục đích chính của việc lập phiên bản tập tin là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để cho phép người dùng khôi phục các bản sao trước đó của tập tin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Để xác định ngày tập tin được tạo",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Để xác định xem tập tin là bản nháp hay là bản phát hành tạm thời (Chưa phải bản cuối)",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để cho phép nhiều người dùng cộng tác trên cùng nội dung tập tin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 207,
+        "type": "hotspot",
+        "text": "Bạn viết một bài luận. Một người bạn cùng lớp nhận xét bài luận này và gợi ý sửa chữa như hình. Bạn cần thực hiện các sửa chữa vĩnh viễn trong tài liệu của mình. Bạn nên sử dụng nút nào? Để trả lời, hãy chọn nút phù hợp trong phần trả lời.",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781074114/LV2_OT3_q27_cjkgay.png",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "answer",
+            "top": 4.73,
+            "left": 72.8,
+            "width": 4.17,
+            "height": 16.29
+          }
+        ]
+      },
+      {
+        "id": 208,
+        "type": "multiple",
+        "text": "Tùy chọn nào sau đây là đúng về mã hóa? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nội dung của một tập tin được mã hóa chỉ có thể được đọc bởi người có khóa mã hóa",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tài liệu được mã hóa yêu cầu mật khẩu hoặc khóa kỹ thuật số trước khi có thể mở được",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tập tin được mã hóa là tập tin không thể truyền qua internet",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tài liệu được mã hóa là các tập tin được đính kèm với chứng chỉ kỹ thuật số",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 209,
+        "type": "multiple",
+        "text": "Bạn của bạn nhờ bạn xem lại bài trình bày PowerPoint mà người đó đã tạo cho lớp chuyên Sử của họ. Bạn thấy bố cục bài trình bày lộn xộn và vô tổ chức. Đâu là hai nguyên tắc thống nhất về hình ảnh mà bạn nên khuyên bạn của mình tuân thủ? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tuân theo các nguyên tắc thiết kế về sự liên kết và lặp lại",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nhất quán trên tất cả các yếu tố trình bày chẳng hạn như phông chữ và màu sắc",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Áp dụng cùng một bố cục trên mọi trang chiều",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng một phông chữ và màu sắc khác nhau ở mỗi bài",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 210,
+        "type": "match",
+        "text": "Nối từng hành động với phím tắt để thực hiện hành động tương ứng trong tài liệu. Hãy di chuyển các phím tắt bên phải với từng hành động bên trái tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Hoàn tác" },
+            "right": { "value": "Ctrl+Z (Cmd+Z)" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Dán nội dung của bảng tạm" },
+            "right": { "value": "Ctrl+V (Cmd+V)" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "In" },
+            "right": { "value": "Ctrl+P (Cmd+P)" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cắt nội dung vào bảng tạm" },
+            "right": { "value": "Ctrl+X (Cmd+X)" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 211,
+        "type": "single",
+        "text": "Bạn hãy quan sát hình ảnh bên dưới và cho biết, tùy chọn nào sau đây dùng để sửdụng tính năng Co-Authoring trên tập tin hiện tại?",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781075889/LV2_OT3_q31_q5ith0.png",
+        "options": [
+          { "id": 1, "value": "Share", "isCorrect": true },
+          { "id": 2, "value": "Thẻ Review", "isCorrect": false },
+          { "id": 3, "value": "Editing", "isCorrect": false },
+          { "id": 4, "value": "Thẻ File", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 212,
+        "type": "multiple",
+        "text": "Bạn tạo một tài liệu dài có nhiều phần nội dung. Bạn chèn tiêu đề vào phần đầu của mỗi phần nội dung. Tùy chọn nào sau đây là lý do mà bạn nên định dạng style? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để áp dụng định dạng nhất quán cho từng cấp của văn bản tiêu đề",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Để bạn có thể tự động tạo mục lục cho tài liệu",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Để bạn có thể đưa thông tin giống nhau (như số trang) vào mọi trang",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để kích hoạt các quyền duy nhất cho từng phần",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 213,
+        "type": "single",
+        "text": "Bạn hãy cho biết, tính năng nào được sử dụng để tự động hoá các quy trình trong Microsoft Word?",
+        "options": [
+          { "id": 1, "value": "Macro", "isCorrect": true },
+          { "id": 2, "value": "Module", "isCorrect": false },
+          { "id": 3, "value": "Playbook", "isCorrect": false },
+          { "id": 4, "value": "Script", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 214,
+        "type": "single",
+        "text": "Quản lí của bạn yêu cầu bạn bảo vệ tất cả các tập tin của mình bằng mật khẩu và lưu trữ những tập tin bạn không thể bảo vệ trên ổ đĩa mạng. Bạn phải di chuyển tập tin nào vào ổ đĩa mạng?",
+        "options": [
+          { "id": 1, "value": "MyFile.txt", "isCorrect": true },
+          { "id": 2, "value": "MyFile.pdf", "isCorrect": false },
+          { "id": 3, "value": "MyFile.docx", "isCorrect": false },
+          { "id": 4, "value": "MyFile.ppt", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 215,
+        "type": "match",
+        "text": "Nồi từng phần tử cửa sổ làm việc với định nghĩa tương ứng. Hãy di chuyển nội dung cột bên phải với các thuật ngữ ở cột bên trái tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Thanh trạng thái (Status Bar)" },
+            "right": {
+              "value": "Khu vực hiển thị thông tin về trang tính, nội dung trang tính và chương trình"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Tab trang tính (Sheet Tab)" },
+            "right": {
+              "value": "Khu vực xác định và cho phép bạn chuyển đổi giữa các trang tính trong tập tin"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cột (Column)" },
+            "right": { "value": "Chuỗi ô dọc, được gắn nhãn bằng chữ cái" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Thanh công thức (Formula Bar)" },
+            "right": { "value": "Khu vực để bạn nhập dữ liệu và phương trình" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 216,
+        "type": "multiple",
+        "text": "Bạn cần thay hình 1 thành hình 2 bằng cách: \n Xóa hình tròn ở bên trái của ảnh. \n Chuyển ảnh từ có màu thành đơn sắc. \n Bạn nên sử dụng hai công cụ chỉnh sửa ảnh nào? (Chọn 2)",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781076456/LV2_OT3_q36_fjhpek.png",
+        "options": [
+          { "id": 1, "value": "Cắt xén (Crop)", "isCorrect": true },
+          { "id": 2, "value": "Lọc (Filter)", "isCorrect": true },
+          { "id": 3, "value": "Cắt tỉa (Trim)", "isCorrect": false },
+          { "id": 4, "value": "Phơi sáng (Exposure)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 217,
+        "type": "match",
+        "text": "Sindi quay video cho một dự án của trường học. Cô ấy chỉ muốn sử dụng một số phần của video. Cô ấy quyết định chỉnh sửa video. Nối từng kỹ thuật chỉnh sửa video cơ bản với định nghĩa tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Phân tách (Split)" },
+            "right": { "value": "Cắt clip thành hai phần" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Ghép (Splice)" },
+            "right": { "value": "Nối hai clip" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cắt tỉa (Trim)" },
+            "right": { "value": "Xóa phần đầu hoặc phần cuối" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cắt xén (Crop)" },
+            "right": { "value": "Ẩn các phần của khung hình" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 218,
+        "type": "truefalse",
+        "text": "Bạn đang sử dụng chương trình phần mềm mới để tạo bài trình chiếu. Bạn cần sửdụng một chức năng không quen thuộc. Với mỗi tài nguyên, hãy chọn Có nếu bạn có thể sử dụng nó để tìm kiếm sự hỗ trợ hoặc Không nếu không thể.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tính năng trợ giúp (Help) trong chương trình",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hướng dẫn cài đặt phần mềm",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Diễn đàn trực tuyến dành riêng cho phần mềm",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Trang LinkedIn dành cho công ty phần mềm",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 219,
+        "type": "truefalse",
+        "text": "Xác định các tùy chọn bảo vệ tập tin bằng mật khẩu. Đối với mỗi câu lệnh, hãy chọn Đúng nếu nó là một tùy chọn hoặc Sai nếu nó không phải là một tùy chọn.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Trong Microsoft Excel, bạn có các lựa chọn để bảo vệ bằng mật khẩu chỉ một số phần của sổ làm việc hoặc toàn bộ sổ làm việc",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Trong Adobe, bạn có thể bảo vệ bằng mật khẩu khi mở tài liệu .pdf",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trong Windows 10, ở các phiên bản mới hơn bạn có thể bảo vệ các tập tin và thư mục riêng lẻ bằng mật khẩu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 220,
+        "type": "truefalse",
+        "text": "Với mỗi phát biểu về macro trong một trang tính Excel, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn có thể tạo ra macro bằng cách viết lệnh trong trình soạn thảo lệnh",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Macro là chuỗi sự kiện có thể được phát lại, giúp thực hiện các tác vụ lặp lại",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn có thể tạo một macro bằng cách ghi lại một loạt lệnh, nhấn phím và bấm chuột",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Mỗi macro được lưu trữ thành một tập tin văn bản",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 221,
+        "type": "single",
+        "text": "Trong PowerPoint, tùy chọn nào được sử dụng để thêm hiệu ứng khi bản trình chiếu chuyển từ trang chiếu này sang trang chiếu tiếp theo?",
+        "options": [
+          { "id": 1, "value": "Transition", "isCorrect": true },
+          { "id": 2, "value": "Animation", "isCorrect": false },
+          { "id": 3, "value": "Effect", "isCorrect": false },
+          { "id": 4, "value": "Slide Show", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 222,
+        "type": "single",
+        "text": "Bạn hãy cho biết, khi tài liệu Word được bảo vệ bằng mật khẩu, thì điều gì sau đây được áp dụng cho tập tin đó?",
+        "options": [
+          { "id": 1, "value": "Tài liệu bị mã hoá", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Tài liệu được đặt thuộc tính đọc ghi (Read - Write)",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tài liệu được đặt thuộc tính chỉ đọc (Read - Only)",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Tài liệu được nén lại", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 223,
+        "type": "single",
+        "text": "Một nhà phân tích dữ liệu đang chuẩn bị một tập tin Excel và đã nhập một tháng vào một ô. Nhà phân tích có thể sử dụng tính năng nào để thêm tháng mà không cần nhập chúng?",
+        "options": [
+          { "id": 1, "value": "AutoFill", "isCorrect": true },
+          { "id": 2, "value": "AutoCorrect", "isCorrect": false },
+          { "id": 3, "value": "AutoGenerate", "isCorrect": false },
+          { "id": 4, "value": "AutoComplete", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 224,
+        "type": "single",
+        "text": "Một công ty muốn đảm bảo rằng mỗi bài trình chiếu được sử dụng có cùng phông chữ, màu sắc và căn chỉnh văn bản. Em hãy cho biết, tùy chọn nào sau đây công ty nên lựa chọn xây dựng?",
+        "options": [
+          { "id": 1, "value": "Template", "isCorrect": true },
+          { "id": 2, "value": "Master file", "isCorrect": false },
+          { "id": 3, "value": "Storyboard", "isCorrect": false },
+          { "id": 4, "value": "Boilerplate", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 225,
+        "type": "single",
+        "text": "Một giám đốc tiếp thị đang chuẩn bị một bài thuyết trình và muốn một quả bóng nảy lên xuống trên một Slide. Em hãy cho biết, giám đốc tiếp thị nên thêm gì vào quả bóng?",
+        "options": [
+          { "id": 1, "value": "Animation", "isCorrect": true },
+          { "id": 2, "value": "Custom effect", "isCorrect": false },
+          { "id": 3, "value": "Timing", "isCorrect": false },
+          { "id": 4, "value": "Transition", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+    "_comment": "LV2_OT4",
+    "levelId": "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+    "partId": "0157b7b8-56a2-4f46-bf28-e855bfb36728",
+    "questions": [
+      {
+        "id": 226,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết hai tính năng nào trong Microsoft Word cho phép xem xét các thay đổi và cung cấp phản hồi cho những thay đổi đó? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Theo dõi thay đổi ( Track Changes)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Nhận xét ( Comments)", "isCorrect": true },
+          { "id": 3, "value": "Giúp đỡ (Help)", "isCorrect": false },
+          { "id": 4, "value": "Phản hồi (Feedback)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 227,
+        "type": "single",
+        "text": "Bạn hãy cho biết, loại giao tiếp nào là phù hợp nhất để giao tiếp khi cách nhiều múi giờ?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Không đồng bộ (Asynchronous)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Đồng thời (Simultaneous)", "isCorrect": false },
+          { "id": 3, "value": "Đồng bộ (Synchronous)", "isCorrect": false },
+          { "id": 4, "value": "Thời gian thực (Real-time)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 228,
+        "type": "single",
+        "text": "Thời gian tối đa được coi là thời gian cần thiết để trả lời email trong một môi trường chuyên nghiệp là bao nhiêu?",
+        "options": [
+          { "id": 1, "value": "24 giờ", "isCorrect": true },
+          { "id": 2, "value": "48 giờ", "isCorrect": false },
+          { "id": 3, "value": "30 phút", "isCorrect": false },
+          { "id": 4, "value": "15 phút", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 229,
+        "type": "single",
+        "text": "Bạn hãy cho biết ứng dụng nào có thể tổ chức cả cuộc họp âm thanh và video?",
+        "options": [
+          { "id": 1, "value": "Microsoft Team", "isCorrect": true },
+          { "id": 2, "value": "Yammer", "isCorrect": false },
+          { "id": 3, "value": "Dropbox", "isCorrect": false },
+          { "id": 4, "value": "Box", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 230,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết, hai điều sau đây là quan trọng nhất cần tuân theo khi chuẩn bị trình bày tại hội nghị truyền hình? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Có một chương trình các hoạt động theo thứ tự cho hội nghị",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Kiểm tra micro và loa", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Dự đoán các câu hỏi có thể có của khán giả ",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tìm một vị trí để thuyết trình tại hội nghị sao cho chuyên nghiệp, có thể ở bên ngoài nhà của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 231,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về trình duyệt web, hãy chọn Có nếu bạn có thể thực hiện tác vụ hoặc chọn Không nếu bạn không thể",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tuỳ chỉnh các nút, menu hoặc thanh công cụ của trình duyệt",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Thay đổi trang chủ của trình duyệt web",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Thêm các phần bổ trợ và phần mở rộng vào trình duyệt để có thêm chức năng",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 232,
+        "type": "multiple",
+        "text": "Hai nguyên tắc thiết kế chung cho phần cứng máy tính là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Kích thước và không gian để tiếp cận và sử dụng: Thiết kế cung cấp không gian để tiếp cận với thao tác và sử dụng, không phân biệt kích thước, tư thế hoặc khả năng di chuyển của người dùng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng công bằng: Thiết kế hữu ích và có thể bán được cho nhiều người có các khả năng thể chất/tinh thần khác nhau",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Dễ làm sạch: Thiết kệ hạn chế tối đa việc sử dụng các gam màu nhạt để tránh hiện tượng bám bẩn và ố vàng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Liên kết với internet vạn vật: Thiết kế triển khai chức năng trực tuyến bất cứ khi nào có thể để cải thiện trải nghiệm người dùng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 233,
+        "type": "multiple",
+        "text": "Bạn nên tắt tính năng nào trên thiết bị Windows để ngăn phương tiện di động tự động khởi động khi được kết nối với thiết bị? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "AutoPlay", "isCorrect": true },
+          { "id": 2, "value": "AutoRun", "isCorrect": true },
+          { "id": 3, "value": "AutoStart", "isCorrect": false },
+          { "id": 4, "value": "AutoConnect", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 234,
+        "type": "single",
+        "text": "Bạn hãy cho biết tuỳ chọn nào sau đây là thích hợp cho phát biểu:”Hầu hết các CPU được tạo thành từ nhiều_________cho phép một CPU xử lý nhiều luồng đồng thời”.",
+        "options": [
+          { "id": 1, "value": "Lõi (Cores)", "isCorrect": true },
+          { "id": 2, "value": "Làn (Lanes)", "isCorrect": false },
+          { "id": 3, "value": "Đơn vị (Units)", "isCorrect": false },
+          { "id": 4, "value": "Bộ xử lý (Processors)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 235,
+        "type": "truefalse",
+        "text": "Bạn gặp sự cố khi in tài liệu từ máy tính của mình. Với mỗi câu phát biểu, hãy chọn Đúng nếu đó là phương pháp xác nhận kết nối thành công với máy in hoặc Sai nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Với máy in được kết nối trực tiếp, hãy thay thế cáp kết nối bằng cáp CAT6",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Kiểm tra trạng thái kết nối máy in trong cửa sổ cái đặt máy in & máy quét (Printers & Scanners)",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đối với máy in được kết nối ethernet, hãy đảm bảo rằng cáp ethernet được kết nối trực tiếp với máy tính thay vì thông qua bộ chuyển đổi hoặc bộ định tuyến",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 236,
+        "type": "single",
+        "text": "Bạn hãy cho biết, loại cáp ethernet nào có tốc độ 10Gbs và bang thông 600MHz?",
+        "options": [
+          { "id": 1, "value": "CAT7", "isCorrect": true },
+          { "id": 2, "value": "CAT6", "isCorrect": false },
+          { "id": 3, "value": "CAT5", "isCorrect": false },
+          { "id": 4, "value": "CAT8", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 237,
+        "type": "multiple",
+        "text": "Hai mục nào thường tạo nên thông tin xác thực trang web? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Địa chỉ email", "isCorrect": true },
+          { "id": 2, "value": "Mật khẩu", "isCorrect": true },
+          { "id": 3, "value": "Số điện thoại", "isCorrect": true },
+          { "id": 4, "value": "Số định danh cá nhân (PIN)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 238,
+        "type": "single",
+        "text": "Loại ứng dụng nào phù hợp nhất để theo dõi doanh số bán hàng và tạo tổng số từ những lần bán hàng đó?",
+        "options": [
+          { "id": 1, "value": "Spreadsheet", "isCorrect": true },
+          { "id": 2, "value": "Presentation", "isCorrect": false },
+          { "id": 3, "value": "Document", "isCorrect": false },
+          { "id": 4, "value": "Table", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 239,
+        "type": "match",
+        "text": "Ghép từng thuật ngữ trong bài trình bày với định nghĩa tương ứng. Để trả lời, hãy kéo từng thuật ngữ từ cột bên trái sang định nghĩa tương ứng ở cột bên phải.",
+        "pairs": [
+          {
+            "left": { "value": "Bản cái (Master)" },
+            "right": { "value": "Trang trình bày kiểm soát thiết kế của bạn" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Chuyển tiếp (Transition)" },
+            "right": {
+              "value": "Hiệu ứng đặc biệt được sử dụng để chuyển tiếp trang trình bày"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Hoạt hình (Animation)" },
+            "right": {
+              "value": "Hiệu ứng hình ảnh có chức năng di chuyển ảnh ra và vào các trang trình bày"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Mẫu (Template)" },
+            "right": { "value": "Tập tin chứa các kiểu tạo sẵn" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 240,
+        "type": "single",
+        "text": "Tính năng theo dõi thay đổi (Track Changes) trong Microsoft Word là một ví dụ về kiểu chỉnh sửa nào?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Không đồng bộ (Asynchronous)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Đồng thời (Simultaneous)", "isCorrect": false },
+          { "id": 3, "value": "Đồng bộ (Synchronous)", "isCorrect": false },
+          { "id": 4, "value": "So le ( Staggered)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 241,
+        "type": "single",
+        "text": "Định dạng tập tin nào hỗ trợ độ trong suốt trong logo?",
+        "options": [
+          { "id": 1, "value": "PNG", "isCorrect": true },
+          { "id": 2, "value": "HE", "isCorrect": false },
+          { "id": 3, "value": "JPG", "isCorrect": false },
+          { "id": 4, "value": "PDF", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 242,
+        "type": "single",
+        "text": "Tùy chọn chỉnh sửa video nào làm giảm thời gian tổng thể của video?",
+        "options": [
+          { "id": 1, "value": "Trim", "isCorrect": true },
+          { "id": 2, "value": "Split", "isCorrect": false },
+          { "id": 3, "value": "Zoom", "isCorrect": false },
+          { "id": 4, "value": "Crop", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 243,
+        "type": "multiple",
+        "text": "Bạn tạo và điền vào tài liệu một trang, sau đó thêm một trang trống vào tài liệu đó. Bạn cần sao chép tất cả nội dung của trang đầu tiên lên trang thứ hai. Bạn nên sửdụng ba phím tắt nào? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Ctrl+A (Cmd+A)", "isCorrect": true },
+          { "id": 2, "value": "Ctrl+C (Cmd+C)", "isCorrect": true },
+          { "id": 3, "value": "Ctrl+V (Cmd+V)", "isCorrect": true },
+          { "id": 4, "value": "Ctrl+N (Cmd+N)", "isCorrect": false },
+          { "id": 5, "value": "Ctrl+P (Cmd+P)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 244,
+        "type": "single",
+        "text": "Thẻ nào trong PowerPoint được sử dụng khi một người muốn xem tất cả các transition và animation trong bài trình chiếu?",
+        "options": [
+          { "id": 1, "value": "SlideShow", "isCorrect": true },
+          { "id": 2, "value": "Design", "isCorrect": false },
+          { "id": 3, "value": "Home", "isCorrect": false },
+          { "id": 4, "value": "Transitions", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 245,
+        "type": "multiple",
+        "text": "Phát biểu nào là đúng về nối video khi chỉnh sửa video? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Một đoạn video được chèn vào",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Các clip khác được di chuyển và không bị ghi đè",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Các clip khác được di chuyển và ghi đè",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "- Một đoạn video bị cắt", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 246,
+        "type": "single",
+        "text": "Giấy phép Creative Commons nào cho phép sử dụng tác phẩm gốc nhưng không được sửa đổi mà không có sự cho phép của chủ sở hữu?",
+        "options": [
+          { "id": 1, "value": "NoDerivatives", "isCorrect": true },
+          { "id": 2, "value": "ShareAlike", "isCorrect": false },
+          { "id": 3, "value": "Attribution", "isCorrect": false },
+          { "id": 4, "value": "NonCommercial", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 247,
+        "type": "single",
+        "text": "Người dùng mở tài liệu word và nhận thấy rằng một số thay đổi đã được thực hiện và những thay đổi đó sẽ hiển thị bằng màu đỏ. Tính năng nào có thể đã được kích hoạt?",
+        "options": [
+          { "id": 1, "value": "Track Changes", "isCorrect": true },
+          { "id": 2, "value": "Review", "isCorrect": false },
+          { "id": 3, "value": "Balloons", "isCorrect": false },
+          { "id": 4, "value": "Comments", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 248,
+        "type": "single",
+        "text": "Nếu mật khẩu được sử dụng để bảo vệ tài liệu Microsoft Word bị mất, khóa giải mã có thể khôi phục mật khẩu.",
+        "options": [
+          { "id": 1, "value": "Sai", "isCorrect": true },
+          { "id": 2, "value": "Đúng", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 249,
+        "type": "multiple",
+        "text": "Phát biểu nào là đúng về hiệu ứng transition trong PowerPoint? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Transition có thể chứa âm thanh",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Thời gian của transition có thể được kiểm soát",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Transition diễn ra trong khi phát một trang trình chiếu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Một loại transition được phép cho mỗi bài trình chiếu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 250,
+        "type": "reorder",
+        "text": "Bạn hãy sắp xếp các bước sử dụng tính năng help trong Word để nhận trợ giúp về cách sử dụng Styles.",
+        "options": [
+          { "id": 1, "value": "Nhấp chọn help", "orderIndex": 2 },
+          { "id": 2, "value": "Nhấp chọn vào thẻ help", "orderIndex": 1 },
+          { "id": 3, "value": "Gỗ: styles", "orderIndex": 3 },
+          { "id": 4, "value": "Nhấn phím enter", "orderIndex": 4 }
+        ]
+      },
+      {
+        "id": 251,
+        "type": "single",
+        "text": "Bạn hãy cho biết cần phải thực hiện điều nào sau đây trước khi một tài liệu có thể đồng tác giả (Co-author) bởi nhiều người dùng?",
+        "options": [
+          { "id": 1, "value": "Nó phải được chia sẻ", "isCorrect": true },
+          { "id": 2, "value": "Nó phải được theo dõi", "isCorrect": false },
+          { "id": 3, "value": "Nó phải được xem xét", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Nó phải được xuất bản trực tuyến",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 252,
+        "type": "single",
+        "text": "Bạn hãy cho biết, phát biểu sau đây là Đúng hay Sai: 'Dropbox là một trong nhiều công cụ cộng tác.'",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 253,
+        "type": "single",
+        "text": "Bạn có thể sử dụng tất cả các công cụ sau cho mục đích gì? ♥Google Docs ♥Google Meet ♥Microsoft Teams ♥Dropbox",
+        "options": [
+          { "id": 1, "value": "Cộng tác", "isCorrect": true },
+          { "id": 2, "value": "Lưu trữ tập tin", "isCorrect": false },
+          { "id": 3, "value": "Tạo nội dung", "isCorrect": false },
+          { "id": 4, "value": "Trò chuyện bằng video", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 254,
+        "type": "single",
+        "text": "Bạn đang rà soát bản báo cáo do một người bạn cùng lớp viết bằng phương thức điện tử. Bạn nên sử dụng phương pháp nào trong tài liệu để đưa ra phản hồi mang tính xây dựng cho bạn học của mình?",
+        "options": [
+          { "id": 1, "value": "Chú thích (Commenrts)", "isCorrect": true },
+          { "id": 2, "value": "Hộp văn bản (Text boxes)", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Chú thích cuối trang (Footnotes)",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Trích dẫn (Citations)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 255,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết công cụ nào sau đây là công cụ cộng tác? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Google Docs", "isCorrect": true },
+          { "id": 2, "value": "OneDrive", "isCorrect": true },
+          { "id": 3, "value": "Box", "isCorrect": true },
+          { "id": 4, "value": "Bridge", "isCorrect": false },
+          { "id": 5, "value": "Creative Cloud", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 256,
+        "type": "multiple",
+        "text": "Phát biểu nào là đúng về tổ chức hội thảo trên web (Webinar)? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Người thuyết trình phải cảm thấy thoải mái với phần mềm được sử dụng cho bài thuyết trình",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Micro và loa phải luôn được kiểm tra",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Khán giả hoàn toàn có quyền tự do đặt câu hỏi",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bản trình chiếu nên có các slide chi tiết",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 257,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết hai lợi ích khi cộng tác kỹ thuật số là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nhiều người dùng có thể làm việc trên cùng một tập tin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Mất ít thời gian di chuyển đến các cuộc họp",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Người dùng có thể tìm hiểu các công cụ cộng tác khác nhau",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Người dùng có thể làm việc riêng trên các phần của tập tin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 258,
+        "type": "single",
+        "text": "Bạn hãy cho biết kiểu chỉnh sửa nào không được thực hiện trong thời gian thực giữa hai người?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Không đồng bộ (Asynchronous) ️",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Đồng thời (Simultaneous)", "isCorrect": false },
+          { "id": 3, "value": "So le (Staggered)", "isCorrect": false },
+          { "id": 4, "value": "Đồng bộ (Synchronous)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 259,
+        "type": "multiple",
+        "text": "Bạn đang cộng tác với sáu người khác trong một dự án. Mỗi người đều làm việc tại một văn phòng đặt tại một quốc gia khác nhau. Hai ở châu Á, một ở châu Phi, hai ở Mỹ Latinh và một ở bờ biển phía đông Hoa Kỳ. Hai công cụ cộng tác nào sau đây sẽ hiệu quả nhất để gửi thông tin qua lại cho những đồng nghiệp này? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Text Messaging ️", "isCorrect": true },
+          { "id": 2, "value": "Email", "isCorrect": true },
+          { "id": 3, "value": "Video Conference", "isCorrect": false },
+          { "id": 4, "value": "Phone Call", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 260,
+        "type": "single",
+        "text": "Khi đặt câu hỏi trong hội thảo trên web (Webinar), các cá nhân không cần xác định họ là ai vì tên của họ rất có thể xuất hiện trên màn hình hội thảo.",
+        "options": [
+          { "id": 1, "value": "Sai", "isCorrect": true },
+          { "id": 2, "value": "Đúng", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 261,
+        "type": "multiple",
+        "text": "Ứng dụng nào là ví dụ về nền tảng cộng tác? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Slack", "isCorrect": true },
+          { "id": 2, "value": "Zoom", "isCorrect": true },
+          { "id": 3, "value": "GoTo Meeting", "isCorrect": false },
+          { "id": 4, "value": "Office 365", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 262,
+        "type": "match",
+        "text": "Nối các công cụ cộng tác kỹ thuật số thích hợp với mô tả tương ứng.",
+        "pairs": [
+          {
+            "left": { "value": "Bản trắng trực tuyến" },
+            "right": {
+              "value": "Cộng tác viên có thể đồng thời động não, xem xét và chỉnh sửa thông tin trực quan bằng cách viết, vẽ và chèn hình ảnh"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Chia sẻ tập tin trên nền tảng đám mây " },
+            "right": {
+              "value": "Cộng tác viên có thể chỉnh sửa tập tin cùng một lúc và tự động lưu các thay đổi"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Hội thảo trực tuyến" },
+            "right": {
+              "value": "Cộng tác viên tham gia vào các hoạt động học tập và chia sẻ ngay lập tức các phần ứng dụng, diễn giải và áp dụng các ý tưởng đã trình bày"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 263,
+        "type": "multiple",
+        "text": "Bạn dự định tham dự hội thảo trực tuyến về các quy tắc an toàn cần thiết cho sinh viên khi sử dụng phòng thí nghiệm khoa học của trường. Bạn sẽ tham gia hội thảo trực tuyến bằng máy tính xách tay của mình. Bạn cần thể hiện sự tôn trọng và lịch sự với người thuyết trình và những người tham gia khác trong hội thảo trực tuyến. Đâu là ba hành động bạn cần thực hiện để đạt được mục tiêu này? (Chọn 3)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Luôn bật camera để người thuyết trình biết ai đang tham dự",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tắt mic, trừ khi người thuyết trình yêu cầu bạn phát biểu",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đăng nhập sớm để đảm bảo ứng dụng hội thảo trực tuyến hoạt động tốt",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Bày tỏ ý kiến phản biện về nội dung trong khu vực trò chuyện công khai",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Chuẩn bị sẵn điện thoại di động để nhắn tin với những người tham gia khác",
+            "isCorrect": false
+          },
+          {
+            "id": 6,
+            "value": "Mở các tab trình duyệt khác để có thể thực hiện hành động nhằm các mục đích khác",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 264,
+        "type": "match",
+        "text": "Bạn đang chuẩn bị tài liệu đề xuất dự án với đối tác ở một tỉnh thành khác trong nước, rất xa bạn. Khi bạn và đối tác thêm nội dung vào tài liệu, cả hai cần phải cộng tác để sửa đổi đề xuất này. Cần thực hiện các hành động theo trình tự nào? bạn hãy sắp xếp các hành động theo đúng thứ tự.",
+        "pairs": [
+          {
+            "left": { "value": "Bước 1" },
+            "right": { "value": "Tạo tài liệu mới" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 2" },
+            "right": { "value": "Tải tài liệu lên bộ nhớ đám mây " },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 3" },
+            "right": { "value": "Chia sẻ liên kết đến tài liệu" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 4" },
+            "right": {
+              "value": "Thêm chú thích và theo dõi các thay đổi trong tài liệu"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 5" },
+            "right": {
+              "value": "Xem xét và chấp nhận hoặc từ chối chú thích và thay đổi"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 265,
+        "type": "multiple",
+        "text": "Bạn và bạn cùng lớp đang đọc các tài liệu kỹ thuật số được chia sẻ của nhau. Tài liệu bạn đang đọc được viết bài bản, nhưng bạn nhận thấy một lỗi sai so với thực tế. Bạn cần lịch sự chỉ ra lỗi sai cho tác giả bằng một chú thích trong tài liệu. Bạn nên thực hiện hành động nào? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Giữ thái độ tích cực khi đưa ra nhận xét",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Cung cấp thông tin chính xác trong chú thích của bạn, nếu có",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Viết phần sửa chữa bằng chữ in hoa để đảm bảo rằng tác giả sẽ nhìn thấy",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chỉ ra lỗi mà không cần giải thích ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 266,
+        "type": "multiple",
+        "text": "Bạn hãy cho biết điều nào sau đây là đúng về kỹ thuật Co-Authoring? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tính năng Co-Authors phải được cấp quyền truy cập vào tài liệu mà họ sẽ làm việc",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tính năng Co-Authoring khả dụng với các tài liệu trong SharePoint",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tính năng Co-Authors trong một trang tính của Google là ẩn danh",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tính năng Co-Authoring khả dụng với các tài liệu được lưu trên ổ cứng cục bộ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 267,
+        "type": "single",
+        "text": "Bạn hãy cho biết kiểu chỉnh sửa nào sau đây cũng được biết đến như là hợp tác đồng tác giả (Co-Authoring)?",
+        "options": [
+          { "id": 1, "value": "Đồng bộ (Synchronous)", "isCorrect": true },
+          { "id": 2, "value": "So le (Staggered)", "isCorrect": false },
+          { "id": 3, "value": "Đồng thời (Simultaneous)", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Không đồng bộ (Asynchronous)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 268,
+        "type": "multiple",
+        "text": "Hai lợi ích của việc cộng tác làm việc là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thúc đẩy sự hiểu biết đầy đủ hơn về chủ đề",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Triển khai phong cách làm việc thống nhất cho tất cả các thành viên trong nhóm",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Không bị ảnh hưởng bởi việc một thành viên trong nhóm không làm được việc",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Phát triển các mối quan hệ nhân sinh giữa đồng nghiệp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 269,
+        "type": "multiple",
+        "text": "Các bước người ta có thể làm để chống lại cảm giác FOMO là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Dành nhiều thời gian hơn trên mạng xã hội",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Trên mạng xã hội, ẩn những người khoe khoang nhiều",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Gặp gỡ trực tiếp với mọi người",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Đọc thêm tin tức", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 270,
+        "type": "multiple",
+        "text": "Bạn cần bảo vệ sự riêng tư và bảo mật của mình một cách thích hợp. Bạn nên tắt Camera trên thiết bị trực tuyến của mình trong hai trường hợp nào? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Khi xem chuyến tham quan đại học ảo với hàng trăm người tham gia",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Khi trò chuyện với những người chơi khác trong phiên chơi trò chơi trực tuyến công khai",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Khi tham gia một buổi học của lớp đào tạo từ xa",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Khi trao đổi tin nhắn với người thân ở xa",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_comment": "LV2_OT5",
+    "levelId": "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+    "partId": "91834493-139f-46a9-80b2-d09e28cf8db6",
+    "questions": [
+      {
+        "id": 271,
+        "type": "single",
+        "text": "Nên đặt màn hình ở đâu để tránh mỏi mắt khi gõ phím?",
+        "options": [
+          { "id": 1, "value": " Cách nửa sải tay", "isCorrect": true },
+          { "id": 2, "value": " Cách xa hai sải tay", "isCorrect": false },
+          { "id": 3, "value": " Cách một sải tay", "isCorrect": false },
+          { "id": 4, "value": " Cách một bước chân", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 272,
+        "type": "multiple",
+        "text": "Những yếu tố nào được coi là tác động tiêu cực của FOMO? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Tài chính (Finances)", "isCorrect": false },
+          { "id": 2, "value": "Sự mất mát (Loss)", "isCorrect": false },
+          { "id": 3, "value": "Sự cô đơn (Loneliness)", "isCorrect": true },
+          { "id": 4, "value": "Trầm cảm (Depression)", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 273,
+        "type": "multiple",
+        "text": "Một người bị choáng ngợp bởi bắt nạt trên mạng có thể làm gì để chống lại tình hình? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Báo cáo lạm dụng cho những người có thẩm quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tìm kiếm sự trợ giúp từ một chuyên gia được đào tạo",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Phản ứng lại trên mạng", "isCorrect": false },
+          { "id": 4, "value": "Bỏ qua bắt nạt trên mạng", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 274,
+        "type": "single",
+        "text": "Quá trình giải mã (Encryption) sử dụng khóa cá nhân diễn ra dưới hình thức mã hóa nào?",
+        "options": [
+          { "id": 1, "value": "Asymmetric", "isCorrect": true },
+          { "id": 2, "value": "Symmetric", "isCorrect": false },
+          { "id": 3, "value": "Algorithmic", "isCorrect": false },
+          { "id": 4, "value": "Hashing", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 275,
+        "type": "multiple",
+        "text": "Những phát biểu nào là đúng về công thái học phù hợp khi sử dụng bàn phím? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Các ngón tay nên hơi cong", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Bàn chân phải phẳng trên sàn",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Mắt phải nhìn các ngón tay khi gõ phím",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Màn hình phải cách hai cánh tay",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 276,
+        "type": "single",
+        "text": "Người dùng cố gắng mã hóa một thư mục trong Windows, nhưng tính năng mã hóa không khả dụng. Lý do thiếu tính năng này là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Người dùng có phiên bản Windows 10 Home",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Ổ đĩa đã được mã hóa", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Thư mục có định dạng FAT32",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Thư mục có định dạng NTFS", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 277,
+        "type": "multiple",
+        "text": "Câu nào đúng về tính năng Restrict Editing trong Microsoft Word? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Định dạng có thể bị hạn chế đối với các kiểu cụ thể",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Việc chỉnh sửa có thể bị hạn chế đối với các khu vực cụ thể của tài liệu",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Các giới hạn áp dụng cho tất cả người dùng tài liệu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Toàn bộ tài liệu có thể được bảo vệ bằng mật khẩu",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 278,
+        "type": "match",
+        "text": "Trong trình duyệt Google Chrome, vô hiệu hóa quyền truy cập vào máy ảnh trên thiết bị hiện tại.",
+        "pairs": [
+          {
+            "left": { "value": "Bước 1" },
+            "right": {
+              "value": "Chọn tùy chỉnh và điều khiển dấu chấm lửng dọc của Google Chrome"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 2" },
+            "right": { "value": "Chọn Settings" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 3" },
+            "right": { "value": "Chọn Privacy and Security" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 4" },
+            "right": { "value": "Chọn Site Settings" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 5" },
+            "right": { "value": "Chọn Camera" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 6" },
+            "right": {
+              "value": "Chọn biểu tượng On/Off cho Ask before accessing"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 279,
+        "type": "single",
+        "text": "Kết quả cuối cùng của việc mã hóa văn bản là?",
+        "options": [
+          { "id": 1, "value": "Bản mã", "isCorrect": true },
+          { "id": 2, "value": "Xáo trộn", "isCorrect": false },
+          { "id": 3, "value": "Văn bản thô", "isCorrect": false },
+          { "id": 4, "value": "Băm văn bản", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 280,
+        "type": "single",
+        "text": "Người dùng gặp một người trực tuyến đang cố gắng thiết lập mối quan hệ. Điều gì có thể xảy ra với người dùng?",
+        "options": [
+          { "id": 1, "value": "Catfishing", "isCorrect": true },
+          { "id": 2, "value": "Phishing", "isCorrect": false },
+          { "id": 3, "value": "Social Engineering", "isCorrect": false },
+          { "id": 4, "value": "Baiting", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 281,
+        "type": "single",
+        "text": "Một người nên tìm kiếm lời khuyên trước khi tham gia vào một thử thách trên internet.",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 282,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về mã hóa tập tin, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Mã hóa tập tin làm giảm tốc độ truy cập tập tin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tất cả các tập tin trong bộ nhớ đám mây được mã hóa mặc định",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bạn chỉ có thể mở tập tin được mã hóa trên máy tính đã mã hóa tập tin đó",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 283,
+        "type": "single",
+        "text": "Cánh tay của một người nên đặt ở góc độ nào khi gõ bàn phím?",
+        "options": [
+          { "id": 1, "value": "90", "isCorrect": true },
+          { "id": 2, "value": "75", "isCorrect": false },
+          { "id": 3, "value": "60", "isCorrect": false },
+          { "id": 4, "value": "30", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 284,
+        "type": "single",
+        "text": "Cổ tay của một người nên được đặt như thế nào khi đánh máy để tránh hội chứng ống cổ tay?",
+        "options": [
+          { "id": 1, "value": "Đặt thẳng", "isCorrect": true },
+          { "id": 2, "value": "Đặt trên bàn", "isCorrect": false },
+          { "id": 3, "value": "Ở một góc 45 độ", "isCorrect": false },
+          { "id": 4, "value": "Đặt trên bàn phím", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 285,
+        "type": "multiple",
+        "text": "Bryce đang bị lo lắng và trầm cảm do hội chứng sợ bỏ lỡ (FOMO). Tùy chọn nào sau đây là triệu chứng hoặc ảnh hưởng của hội chứng FOMO. (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Mỗi khi thích thú một hoạt động nào đó, anh ấy phải ngay lập tức cập nhật trạng thái của mình lên mạng.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Anh ấy lo lắng khi thuyết trình trước lớp.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Anh ấy cần hiểu tất cả những trò đùa mà bạn bè của anh ấy đang trên mạng xã hội.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Anh ấy lo lắng rằng điểm số của mình sẽ bị ảnh hưởng nếu anh ấy không hoàn thành bài tập về nhà.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 286,
+        "type": "truefalse",
+        "text": "Công việc của bạn đòi hỏi bạn phải làm việc với máy tính nhiều giờ mỗi ngày. Bạn lo lắng rằng bạn sẽ bị mỏi mắt. Đối với mỗi hành động, hãy chọn Có nếu hành động đó gây mỏi mắt hoặc Không nếu không.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Thường xuyên chớp mắt",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Làm việc trong phòng tối",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Thường xuyên thay đổi tiêu điểm của bạn từ màn hình máy tính sang một thứ gì đó cách xa bạn ít nhất sáu mét",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đặt màn hình sao cho cách bạn một khoảng bằng cánh tay và phần trên cùng của màn hình ngang tầm mắt của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 287,
+        "type": "multiple",
+        "text": "Đâu là hai ảnh hưởng của hội chứng sợ bỏ lỡ (FOMO)? (Chọn 2)",
+        "options": [
+          { "id": 1, "value": "Suy giảm động lực", "isCorrect": false },
+          { "id": 2, "value": "Suy giảm lòng tự trọng", "isCorrect": true },
+          {
+            "id": 3,
+            "value": "Tăng cường sử dụng mạng xã hội",
+            "isCorrect": true
+          },
+          { "id": 4, "value": "Tăng tính khiêm tốn", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 288,
+        "type": "multiple",
+        "text": "Đâu là hai ví dụ về hội chứng sợ bỏ lỡ (FOMO)? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Bạn lo lắng khi phát hiện ra bạn bè của mình đang vui vẻ trên mạng xã hội mà không có bạn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Mua trước một bảng điều khiển trò chơi mới để đảm bảo rằng bạn không phải là người duy nhất không có khi sản phẩm được phát hành",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Gửi virus, phần mềm gián điệp hoặc chương trình xâm nhập cho ai đó để theo dõi họ",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đe dọa chia sẻ những bức ảnh đáng xấu hổ nhằm kiểm soát hoặc tống tiền ai đó",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 289,
+        "type": "truefalse",
+        "text": "Cơ quan của bạn cung cấp cho bạn một chiếc ghế có thể điều chỉnh độ cao. Bạn cần điều chỉnh ghế của mình để giúp ngăn ngừa chấn thương do căng thẳng thường xuyên (RSI). Hãy chọn Có nếu phát biểu đó giúp ngăn ngừa RSI hoặc Không nếu không.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Đầu gối của bạn cao hơn hông",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Bàn chân của bạn đặt phẳng trên sàn hoặc chỗ để chân",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Cánh tay của bạn tạo thành một góc 90 độ với khuỷu tay",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 290,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về tính bảo mật của webcam, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Mọi người nên che webcam của mình khi không sử dụng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tất cả các webcam đều có đèn ghi mà không thể tắt được thông qua phần mềm",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tắt webcam trong cài đặt máy tính của bạn sẽ bảo vệ bạn khỏi nguy cơ truy cập trái phép",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 291,
+        "type": "single",
+        "text": "Bạn hãy cho biết, nhận định sau đây là Đúng hay Sai: 'Tài khoản ngân hàng trực tuyến là một phần của nhận dạng kỹ thuật số'",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 292,
+        "type": "match",
+        "text": "Nối từng định nghĩa chuỗi tìm kiếm boolean với chuỗi tìm kiếm boolean tương ứng. Để trả lời, hãy di chuyển từng định nghĩa từ danh sách ở bên trái sang chuỗi tìm kiếm tương ứng ở bên phải.",
+        "pairs": [
+          {
+            "left": { "value": "(Cá OR Rùa) AND Thái Bình Dương" },
+            "right": {
+              "value": "Trả kết quả cho một trong hai từ nếu có từ còn lại"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Trâu NOT Bò rừng" },
+            "right": { "value": "Trả kết quả không bao gồm một từ" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Sư tử OR Hổ" },
+            "right": { "value": "Trả kết quả cho một trong hai từ" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 293,
+        "type": "multiple",
+        "text": "Khi sử dụng công cụ tìm kiếm và kết quả được tạo ra từ tìm kiếm, những danh mục nào có thể được sử dụng để lọc các tìm kiếm? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Locations", "isCorrect": false },
+          { "id": 2, "value": "News", "isCorrect": true },
+          { "id": 3, "value": "Images", "isCorrect": true },
+          { "id": 4, "value": "Tech", "isCorrect": false },
+          { "id": 5, "value": "Videos", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 294,
+        "type": "single",
+        "text": "Video cần được giảm kích thước để phù hợp với một không gian cụ thể. Nên làm gì với video để hoàn thành nhiệm vụ này?",
+        "options": [
+          { "id": 1, "value": "Crop", "isCorrect": true },
+          { "id": 2, "value": "Plit", "isCorrect": false },
+          { "id": 3, "value": "Trim", "isCorrect": false },
+          { "id": 4, "value": "Splice", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 295,
+        "type": "match",
+        "text": "Kéo từng tùy chọn chỉnh sửa hình ảnh bên phải phù hợp với mục đích sử dụng tương ứng bên trái.",
+        "pairs": [
+          {
+            "left": { "value": "Filter" },
+            "right": { "value": "Thay đổi độ mờ trên hình ảnh" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Crop" },
+            "right": { "value": "Giảm kích thước của hình ảnh" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Spot" },
+            "right": { "value": "Sửa lỗi trên hình ảnh" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 296,
+        "type": "single",
+        "text": "Trong Microsoft Word, tính năng feedback được tìm thấy trên thẻ (Tab) nào?",
+        "options": [
+          { "id": 1, "value": "Help", "isCorrect": true },
+          { "id": 2, "value": "Insert", "isCorrect": false },
+          { "id": 3, "value": "File", "isCorrect": false },
+          { "id": 4, "value": "Home", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 297,
+        "type": "multiple",
+        "text": "Phát biểu nào là đúng khi lập phiên bản và khôi phục tài liệu? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Các phiên bản trước của tập tin có thể được khôi phục",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tính năng so sánh có thể được sử dụng để so sánh hai phiên bản của cùng một tập tin.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Tính năng AutoRecover có thể thay thế cho việc lưu công việc.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tính năng AutoRecover luôn được đặt thành 10 phút trong thời gian dài.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 298,
+        "type": "single",
+        "text": "Bạn hãy cho biết, phát biểu sau đây là Đúng hay Sai: 'Macro được sử dụng để tự động hoá các quy trình trong Microsoft Word.'",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 299,
+        "type": "single",
+        "text": "Trong PowerPoint, loại trang chiếu nào lưu trữ bố cục, màu sắc và logo của trang trình chiếu được sử dụng trong bài trình chiếu?",
+        "options": [
+          { "id": 1, "value": "Master", "isCorrect": true },
+          { "id": 2, "value": "Storyboard", "isCorrect": false },
+          { "id": 3, "value": "Template", "isCorrect": false },
+          { "id": 4, "value": "Blueprint", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 300,
+        "type": "single",
+        "text": "Tính năng compare trong Microsoft Word có thể được sử dụng để so sánh nhiều phiên bản của cùng một tài liệu.",
+        "options": [
+          { "id": 1, "value": "Đúng", "isCorrect": true },
+          { "id": 2, "value": "Sai", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 301,
+        "type": "single",
+        "text": "Một người hàng xóm trong độ tuổi thiếu niên tạo tài khoản mạng xã hội, qua đó cô ấy đóng giả là một người đàn ông 40 tuổi. Hồ sơ tài khoản chứa ảnh của một người đàn ông mà cô tìm thấy trên mạng. Thông qua tài khoản này, cô kết nối với những người hàng xóm khác và với phụ huynh của học sinh tại trường của mình, sau đó bảo trợ cho một cuộc gây quỹ trực tuyến vì lợi ích của chính cô. Cô hàng xóm của bạn đang làm gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Lừa đảo công nghệ cao (Catfishing)",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tấn công mạng (Cyber Hacking)",
+            "isCorrect": false
+          },
+          { "id": 3, "value": "Trêu đùa (Trolling)", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Tấn công giả mạo (Phishing)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 302,
+        "type": "truefalse",
+        "text": "Với mỗi câu phát biểu về thanh toán kỹ thuật số, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Tiền mặt có thể được coi là một loại hình thanh toán kỹ thuật số",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Thẻ ghi nợ, thẻ tín dụng, thanh toán chuyển khoản qua ngân hàng và ví điện tử đều là các loại thanh toán kỹ thuật số",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Thanh toán kỹ thuật số diễn ra khi cả người thanh toán và người được thanh toán sử dụng các phương tiện điện tử để thực hiện và nhận thanh toán",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 303,
+        "type": "truefalse",
+        "text": "Một người mà bạn không biết kết bạn với bạn trên mạng xã hội và bắt đầu giao tiếp với bạn thông qua chức năng tin nhắn văn bản trên mạng xã hội. Với mỗi câu phát biểu, hãy chọn Có nếu đó là dấu hiệu cảnh báo lừa đảo công nghệ cao hoặc Không nếu không phải.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Người đó yêu cầu bạn gửi tiền",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Người đó không muốn trò chuyện qua video",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Người đó có nhiều người theo dõi trên mạng xã hội",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_comment": "LV2_BS1",
+    "levelId": "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+    "partId": "ef0938ac-dea0-4795-a2ca-3a84a883eeaa",
+    "questions": [
+      {
+        "id": 304,
+        "type": "single",
+        "text": "Hành động nào sau đây là cách tốt nhất để nhân viên đóng góp vào việc bảo đảm an toàn dữ liệu trong môi trường công ty? (Đảm bảo an toàn dữ liệu công ty)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Báo cáo các email có dấu hiệu nghi ngờ (Phishing) cho bộ phận CNTT.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tắt máy tính hoàn toàn vào mỗi đêm để tránh hacker truy cập.",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chia sẻ mật khẩu máy tính với đồng nghiệp tin cậy để hỗ trợ nhau.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chỉ sử dụng ổ cứng ngoài (USB) cá nhân để lưu trữ dữ liệu công ty.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 305,
+        "type": "multiple",
+        "text": "Giáo viên của bạn mời một người chuyên môn cao về thuyết trình trước lớp. Bạn phải cư xử như thế nào để phù hợp với môi trường điện tử? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Mở điện thoại tìm kiếm chủ để của buổi thuyết trình.",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Mở điện thoại chụp hình bài thuyết trình và chú ý giao tiếp bằng mắt với người giáo viên.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Mở điện thoại điều tra thông tin người giáo viên đó.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Mở điện thoại làm việc riêng gì đó.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 306,
+        "type": "single",
+        "text": "Tuỳ chọn nào sau đây là quá trình chuyển đổi dữ liệu sang dạng thức không thể nhận dạng yêu cầu sử dụng khóa để trả dữ liệu về dạng văn bản thuần? Những sản phẩm kỹ thuật số (như hình ảnh, video) được tạo ra hoàn toàn bởi trí tuệ nhân tạo (AI) thường ai là người sở hữu?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Không phải của ai cả, những sản phẩm AI tạo ra thuộc về miền công cộng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Người quản lý cơ sở dữ liệu của AI",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Người tạo ra sản phẩm AI thông qua viết code và thuật toán dựa trên AI",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thuộc sở hữu độc quyền của công ty cung cấp dịch vụ AI",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 307,
+        "type": "multiple",
+        "text": "Phương pháp sử dụng để đổi tên trang tính (Sheet) trong Excel? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Chọn và giữ (hoặc bấm chuột phải) vào Tab trang tính",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nhấp chuột phải hai lần vào Tab trang tính",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Dùng Tab Data trên Ribbon", "isCorrect": false },
+          {
+            "id": 4,
+            "value": "Thông qua tab Page Layout trên Ribbon",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 308,
+        "type": "truefalse",
+        "text": "Biểu hiện nào sau đây là chấn thương RST hãy chọn Đúng với mỗi phát biểu gây chấn thương, ngược lại chọn Sai?",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Đau",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ngứa",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tê bì",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Yếu cơ",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 309,
+        "type": "truefalse",
+        "text": "Đối với mỗi phát biểu đúng về sự khác nhau giữa CPU và GPU hãy chọn đúng, còn lại chọn Sai:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Có thể nâng cấp GPU máy tính bằng cách thay thế màn hình",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Một số CPU tích hợp GPU mà không cần card đồ họa",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Máy tính và trò chơi hiện nay có GPU mà không cần CPU",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Hiện nay GPU ngày còn xử lý nhiều tác vụ như học sâu hoặc trí tuệ nhân tao",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 310,
+        "type": "single",
+        "text": "Khi tìm kiếm thông tin trên các bộ máy tìm kiếm (Search Engines), yếu tố đóng vai trò là khái niệm then chốt, đại diện cho nội dung chính mà người dùng muốn truy vấn? (*)",
+        "options": [
+          { "id": 1, "value": "Từ khóa (Keywords)", "isCorrect": true },
+          { "id": 2, "value": "Toán tử (Operators)", "isCorrect": false },
+          { "id": 3, "value": "Phạm vi (Scope)", "isCorrect": false },
+          { "id": 4, "value": "Bối cảnh (Context)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 311,
+        "type": "single",
+        "text": "Phương pháp nào là hiệu quả nhất để theo dõi chi tiết các lần chỉnh sửa, xóa hoặc thêm nội dung của từng thành viên?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng tính năng Track Changes",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng Highlight để đánh dấu các phần quan trọng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Giữ một bản sao riêng mỗi ngày để thực hiện so sánh",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng tính năng Find and Replace",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 312,
+        "type": "multiple",
+        "text": "Giáo viên bạn mời một người diễn giải về thuyết trình trước lớp. Những hành động sau thể hiện sử tôn trọng và lắng nghe người diễn giải? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng điện thoại để chụp hình các trang chiếu, mang về xem lại",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng điện thoại, máy tính bảng, laptop để ghi chú, đồng thời giữ giao tiếp bằng mắt",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng điện thoại, máy tính bảng, laptop để làm việc riêng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng điện thoại, máy tính bảng, laptop để tìm hiểu sở thích, thói quen của diễn giải",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 313,
+        "type": "truefalse",
+        "text": "Bạn đang thực hiện một dự án nghiên cứu tại trường về chủ đề Trí tuệ nhân tạo (AI), hãy chọn Có đối với các phát biểu có thể tìm kiếm tài nguyên sự trợ giúp hoặc Không nếu không thể (*)",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Giáo viên hoặc bạn cùng lớp",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tìm kiếm trên diễn đàn cộng đồng",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Hỏi bạn cùng lớp",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Tìm kiếm trên internet",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 314,
+        "type": "single",
+        "text": "Việc thường xuyên xóa bộ nhớ đệm (Clear Cache) cho các ứng dụng hoặc trình duyệt mang lại lợi ích gì? (Mục đích của việc xóa bộ nhớ đệm ứng dụng)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Giải phóng không gian lưu trữ và chuẩn bị bộ nhớ cho các bản cập nhật phần mềm",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Giúp ứng dụng tự động nâng cấp lên phiên bản trả phí",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Thay đổi địa chỉ IP của máy tính để tăng tính bảo mật",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tăng tốc độ đường truyền Internet của nhà mạng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 315,
+        "type": "single",
+        "text": "Alex đang xem xét nuôi rắn làm thú cưng, khi tìm kiếm thông tin trên mạng và có các kết quả và hình ảnh, đâu là kết quả khác biệt so với các kết quả khác?",
+        "options": [
+          {
+            "id": 1,
+            "value": "11 loài rắn có màu sắc đẹp nhất trên thế giới",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Rắn có phải là thú cưng không?",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Rắn cần được nuôi bởi những người có kinh nghiệm",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Rắn và trăn có nhiều con rất dễ thương có thể nuôi",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 316,
+        "type": "single",
+        "text": "Mục đích chính của việc sử dụng tính năng Heading (Style) khi định dạng một tài liệu văn bản dài là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để tạo mục lục tự động (Table of Contents) dựa trên các đề mục có sẵn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Để thay đổi lề của trang giấy giúp văn bản chứa được nhiều nội dung hơn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Để chèn các hình ảnh đồ họa có kích thước lớn vào giữa nội dung văn bản",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để kiểm tra lỗi chính tả và ngữ pháp tự động cho toàn bộ văn bản",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Tự động đánh số trang và duy trì các thông tin nhận diện đồng nhất ở mọi trang",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 317,
+        "type": "match",
+        "text": "Bạn là nhân viên và cần liên lạc với quản lý của mình vào buổi tối để giải quyết một số vấn đề. Ghép nối phương thức giao tiếp phù hợp nhất với từng tình huống tương ứng",
+        "pairs": [
+          {
+            "left": {
+              "value": "Chờ cho đến giờ nghỉ trưa ngày hôm sau để gặp mặt hoặc trò chuyện riêng tư"
+            },
+            "right": {
+              "value": "Bạn muốn hỏi ý kiến hoặc xin lời khuyên của người quản lý về một vấn đề cá nhân/riêng tư"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": {
+              "value": "Gọi điện thoại hoặc nhắn tin trực tiếp cho quản lý"
+            },
+            "right": {
+              "value": "Bạn có một công việc cực kỳ khẩn cấp cần báo cáo ngay cho quản lý và cần phản hồi tức thì"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": {
+              "value": "Soạn sẵn báo cáo và đặt lịch gửi (Schedule send) hoặc đặt thông báo nhắc nhở vào 9 giờ sáng hôm sau để gửi đi"
+            },
+            "right": {
+              "value": "Bạn cần gửi báo cáo công việc định kỳ cho quản lý, nhưng công việc này không quan 3 trọng và không gấp"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 318,
+        "type": "match",
+        "text": "Ghép nối trong các tình huống dưới đây, đâu là cách lựa chọn kênh giao tiếp phù hợp nhất",
+        "pairs": [
+          {
+            "left": { "value": "Nhắn tin cho công ty" },
+            "right": {
+              "value": "Để gửi các thông báo hoặc báo cáo quan trọng cho sếp"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Đăng thông tin lên nhật ký trực tuyến" },
+            "right": {
+              "value": "Để chia sẻ những hình ảnh và hoạt động hằng ngày của bản thân"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Nhắn tin cho bạn bè" },
+            "right": {
+              "value": "Để nhắn những tin nhắn bình thường, thân mật"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Đăng thông tin lên nhóm" },
+            "right": {
+              "value": "Để cùng mọi người thảo luận về một chủ đề chung trong nhóm"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 319,
+        "type": "match",
+        "text": "Bạn nhận kết quả điểm 0 cho bài kiểm tra trực tuyến. Bạn gửi email cho giáo viên để tìm hiểu lý do, đồng thời gửi một bản sao công khai cho phụ huynh để họ nắm được tình hình và để giáo viên có thể phản hồi cho tất cả người gửi. *Lưu ý có thể bỏ trống đối với những trường không có thông tin đề cập trên câu hỏi",
+        "pairs": [
+          {
+            "left": { "value": "From:" },
+            "right": { "value": "me@gmail.com" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "To:" },
+            "right": { "value": "teacher@gmail.com" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cc:" },
+            "right": { "value": "parent@gmail.com" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bcc:" },
+            "right": { "value": "*blank" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Đoạn văn gửi mail hoặc Subject (*):" },
+            "right": { "value": "Tại sao thầy/cô cho tôi điểm 0" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 320,
+        "type": "match",
+        "text": "Nối các định nghĩa với công dụng tương ứng của từng thuật ngữ. Để trả lời, hãy di chuyển từng mô tả tương ứng ở bên phải sang bên trái sao cho phù hợp.",
+        "pairs": [
+          {
+            "left": { "value": "Quyền Chỉ đọc (Read-Only)" },
+            "right": { "value": "Chỉ xem tài liệu nhưng không chỉnh sửa" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Đặt mật khẩu cho tài liệu" },
+            "right": {
+              "value": "Có thể xem tài liệu với một số người có thẩm quyền"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Quyền Đọc-Ghi (Read-Write)" },
+            "right": { "value": "Người có thể xem tài liệu và thêm sửa" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Mã hóa tài liệu (Encryption)" },
+            "right": {
+              "value": "Phương thức bảo mật tài liệu khỏi bị đánh cắp"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 321,
+        "type": "match",
+        "text": "Hãy ghép nối các thuật ngữ ở cột bên phải với mô tả tương ứng ở cột bên trái sao cho phù hợp với các rủi ro về thông tin trong môi trường AI. (*) *Lưu ý: Đề thi có thể diễn giải từ ngữ khác nhau nhưng vẫn giữ nguyên nghĩa bên dưới Ví dụ: Tính không chính xác = Không phù hợp với ngữ cảnh",
+        "pairs": [
+          {
+            "left": { "value": "Tính không chính xác (Inaccuracy)" },
+            "right": {
+              "value": "AI cung cấp các thông tin sai lệch, thiếu căn cứ hoặc tự 'thêu dệt' các sự kiện do không được cung cấp đầy đủ bối cảnh thực tế hoặc dữ liệu huấn luyện đã lỗi thời"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Tính thiên vị (Bias)" },
+            "right": {
+              "value": "Thông tin phản ánh các quan điểm một chiều, định kiến xã hội hoặc có xu hướng nghiêng về một tư tưởng chính trị cụ thế do dữ liệu đầu vào không khách quan"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Deepfake" },
+            "right": {
+              "value": "Nội dung (hình ảnh, âm thanh hoặc video) được AI giả mạo trông giống như thật, thường được dùng để thay đổi danh tính hoặc phát ngôn của một cá nhân mà không có sự cho phép"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Tính lừa dối (Deceptive/Misleading)" },
+            "right": {
+              "value": "Việc sử dụng các nội dung do AI tạo ra để cố tình gây nhầm lẫn, dẫn dụ người dùng tin vào các thông tin giả nhằm mục đích trục lợi hoặc tấn công mạng"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 322,
+        "type": "single",
+        "text": "Phát biểu đúng về chia sẻ trực tuyến ? *",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thêm chú thích để làm rõ bối cảnh",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Gắn thẻ từng người có trong ảnh để họ biết hình ảnh được chia sẻ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Ghi đầy đủ họ và tên người trong ảnh để rõ nguồn gốc",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chia sẻ ảnh bạn bè và gia đình trực tuyến công khai",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 323,
+        "type": "single",
+        "text": "Tên của dịch vụ có thể Lưu trữ dữ liệu / Chia sẻ dữ liệu *",
+        "options": [
+          {
+            "id": 1,
+            "value": "Lưu trữ đám mây (Cloud Storage)",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Máy ảo ( Virtual Machine)", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Điện toán đám mây (Cloud Computing)",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Máy chủ (Server)", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 324,
+        "type": "match",
+        "text": "Ghép nối định nghĩa định dạng tập tin đa phương tiện",
+        "pairs": [
+          {
+            "left": { "value": "MP4" },
+            "right": {
+              "value": "Tập tin video được nén sử dụng trên các thiết bị lưu trữ ít dung lượng"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "MP3" },
+            "right": {
+              "value": "Tập tin âm thanh nén được sử dụng trên điện thoại di động và máy tính bảng"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "WMA" },
+            "right": {
+              "value": "Tập tin âm thanh có thể nén hoặc không nén được sử dụng trong âm thanh CD"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 325,
+        "type": "single",
+        "text": "Chức năng của macro?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Giúp tự động hoá các thao tác, cho phép người dùng tập trung hơn vào nội dung quan trọng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tạo điều kiện chuẩn hoá quy trình làm việc, đảm bảo tính nhất quán trong xử lý dữ liệu phức tạp",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hỗ trợ giảm thời gian thao tác, giúp thực hiện nhanh các bước phức tạp đã được định sẵn",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Cho phép ghi lại chuỗi hành động, giúp tái sử dụng chúng nhiều lần trên các tài liệu khác nhau",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 326,
+        "type": "single",
+        "text": "Khi bạn truy cập một trang web và thấy hình ảnh bị lỗi hoặc bố cục trang không hiển thị đúng như mong muốn, thao tác nào sau đây nên được thực hiện đầu tiên? (Khắc phục lỗi hiển thị trang Web)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Xóa bộ nhớ đệm (Cache) và Cookie của trình duyệt",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Gỡ cài đặt và cài đặt lại trình duyệt web",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tắt các ứng dụng đang chạy ngầm trên máy tính",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Truy cập vào Cài đặt BIOS để cấu hình lại phần cứng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 327,
+        "type": "multiple",
+        "text": "",
+        "options": [
+          { "id": 1, "value": "D", "isCorrect": true },
+          { "id": 2, "value": "K", "isCorrect": true },
+          { "id": 3, "value": "B", "isCorrect": false },
+          { "id": 4, "value": "Q", "isCorrect": false },
+          { "id": 5, "value": "X", "isCorrect": false },
+          { "id": 6, "value": "Y", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 328,
+        "type": "single",
+        "text": "Alex đang xem xét nuôi rắn làm thú cưng, khi tìm kiếm thông tin trên mạng và có các kết quả và hình ảnh, đâu là kết quả khác biệt so với các kết quả khác?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Rắn là một loại động vật nguy hiểm không nên nuôi làm thú cưng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Rắn có phải là thú cưng không ?",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Rắn và trăn có nhiều con rất dễ thương có thể nuôi",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Rắn cần được nuôi bởi những người có kinh nghiệm",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 329,
+        "type": "single",
+        "text": "Hãy chọn phát biểu đúng khi sử dụng các ứng dụng biểu mẫu?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đối với Microsoft Form, người ngoài tổ chức đều có thể nhập nội dung do người tạo thiết lập",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Các biểu mẫu PDF yêu cầu cài đặt Adobe Reader",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Biểu mẫu Microsoft Form yêu cầu cung cấp giấy phép sử dụng Office 365",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Google Form yêu cầu phải có tài khoản đăng nhập",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 330,
+        "type": "single",
+        "text": "Đặc điểm nào là chính xác nhất về bản chất của dịch vụ lưu trữ đám mây? (*)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Lưu trữ dữ liệu trực tuyến và cho phép truy cập từ mọi thiết bị",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Gửi tệp tin qua thư điện tử (Email)",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Lưu trữ trên máy chủ mạng nội bộ (LAN)",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Lưu trữ trên ổ đĩa cục bộ (Local Storage)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 331,
+        "type": "hotspot",
+        "text": "Chọn đúng về bảo vệ tập tin trên window / Trong cửa sổ Thuộc tính nâng cao (Advanced Attributes) của một tập tin trên Windows, bạn nên chọn những tùy chọn nào để bảo mật và quản lý dữ liệu hiệu quả hơn?",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781083246/LV2_BS_q28_kaxh45.jpg",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "headset",
+            "top": 76.04,
+            "left": 4.0,
+            "width": 7.32,
+            "height": 9.85
+          }
+        ]
+      },
+      {
+        "id": 332,
+        "type": "multiple",
+        "text": "Bạn thấy một thử thách trên Internet (Internet Challenges). Tại sao thanh thiếu niên nên thận trọng và tránh tham gia vào các thử thách trực tuyến mang tính rủi ro? (Chọn 2) (*)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thanh thiếu niên đang trong giai đoạn phát triển và có thể chưa đủ khả năng nhận thức để lường trước các hậu quả nghiêm trọng khi tham gia",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Các thử thách này có vẻ ngoài đơn giản nhưng có thể dẫn đến chấn thương thể chất hoặc bệnh tật (Physical injury or illness)",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Do sự thay đổi về tâm sinh lý, thanh thiếu niên dễ bị thu hút bởi sự tán thưởng từ các lượt thích (likes) và lượt theo dõi (followers) trên mạng xã hội",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tham gia các thử thách này sẽ giúp thanh thiếu niên nhanh chóng trở thành các chuyên gia sáng tạo nội dung số chuyên nghiệp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 333,
+        "type": "hotspot",
+        "text": "Bạn cần cài đặt thứ 4 hàng tuần đi ăn với đồng nghiệp thì cần chỉnh cài đặt như thế nào trong lịch sau (nhấp chọn vị trí cần điều chỉnh)",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781083492/LV2_BS_q30_m6jki4.png",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "headset",
+            "top": 35.42,
+            "left": 54.38,
+            "width": 42.08,
+            "height": 19.58
+          }
+        ]
+      },
+      {
+        "id": 334,
+        "type": "truefalse",
+        "text": "Những phát biểu sau nói về sự khác nhau giữa CPU và GPU. Với mỗi phát biểu, hãy chọn Đúng hay Sai",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "CPU có nhiều lõi hơn GPU nên xử lý song song tốt hơn.",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Máy tính có CPU tich hợp GPU có thể chạy được những phần mềm đồ hoạ.",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Các máy tính có GPU hiện đại có thể xử lý được những tác vụ nặng như máy học, các thuật toán trí tuệ nhân tạo.",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Trên máy tính xách tay, có thể thay thế GPU bằng cách thay thế màn hình máy tính.",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 335,
+        "type": "multiple",
+        "text": "Thanh thiếu niên biết được một trò chơi mạo hiểm trên không gian mạng. Đâu là hai lí do mà thanh thiếu niên nên tránh không nên tham gia trò chơi mạo hiểm này? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Bộ não thanh thiếu niên chưa phát triển hoàn chỉnh, nên các bạn khó suy nghĩ thấu đáo về những hành động ảnh hưởng mình trong tương lai",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ngay cả khi những thử thách tưởng chừng như vô hại như 'xăm hình cháy nắng' hay 'thử thách ăn bột quế khô' cũng tồn tại những thử thách nguy hiểm cần chăm sóc y tế",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Trong giai đoạn phát triển, não bộ của thanh thiếu niên bị ảnh hưởng đến Hormone khiến các bạn tìm kiếm phần thưởng 'thích', hay người theo dõi trên mạng xã hội.",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bạn bè của họ mong muốn họ tham gia thử thách",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 336,
+        "type": "hotspot",
+        "text": "Dựa vào hình ảnh dưới đây, bạn cần điều chỉnh thanh trượt nào để thay đổi tốc độ di chuyển của con trỏ chuột? (*)",
+        "imageUrl": "https://res.cloudinary.com/user-itinerary-media/image/upload/v1781083771/LV2_BS_q33_sent8d.jpg",
+        "totalRequiredHotSpot": 1,
+        "hotSpots": [
+          {
+            "label": "answer",
+            "top": 13.07,
+            "left": 41.31,
+            "width": 54.69,
+            "height": 14.51
+          }
+        ]
+      },
+      {
+        "id": 337,
+        "type": "single",
+        "text": "Bạn cần gửi nhiều hình ảnh cho đồng nghiệp qua email, nhưng dung lượng tập tin vượt quá giới hạn cho phép. Bạn nên làm gì để giải quyết vấn đề? (*)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Nén thư mục hình ảnh thành tập tin nén",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Xóa bớt một nửa số lượng hình ảnh để giảm dung lượng. (*)",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chụp ảnh màn hình các tấm hình đó và dán trực tiếp vào nội dung email. (*)",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chia nhỏ các hình ảnh và gửi thành nhiều email khác nhau. (*)",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 338,
+        "type": "multiple",
+        "text": "Ưu điểm của nén tập tin là gì? (Chọn 2) * Lưu ý đề thi có thể chỉ chọn 1",
+        "options": [
+          { "id": 1, "value": "Dễ dàng truyền dữ liệu", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Tiết kiệm không gian lưu trữ - Tăng tốc độ truyền tải dữ liệu - Tiết kiệm băng thông - Đóng gói và tổ chức dữ liệu - Bảo mật",
+            "isCorrect": true
+          },
+          { "id": 3, "value": "Dễ truy cập tập tin", "isCorrect": false },
+          { "id": 4, "value": "Tăng kích thước tập tin", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 339,
+        "type": "single",
+        "text": "Mục đích chính của việc sử dụng tính năng Header (Đầu trang) và Footer (Chân trang) khi định dạng một tài liệu văn bản dài là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tự động đánh số trang và duy trì các thông tin nhận diện đồng nhất ở mọi trang",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Để chèn các hình ảnh đồ họa có kích thước lớn vào giữa nội dung văn bản",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Để thay đổi lề của trang giấy giúp văn bản chứa được nhiều nội dung hơn",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để tạo mục lục tự động (Table of Contents) dựa trên các đề mục có sẵn",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Để kiểm tra lỗi chính tả và ngữ pháp tự động cho toàn bộ văn bản",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 340,
+        "type": "single",
+        "text": "Phương pháp nào giúp cho bài thuyết trình sinh động?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Áp dụng hiệu ứng chuyển trang phù hợp với mục đích bài thuyết trình",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Không áp dụng hiệu ứng hoạt hình và hiệu ứng chuyển trạng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Áp dụng hiệu ứng hoạt hình và hiệu ứng chuyển trang trên tất cả bài trình chiếu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Áp dụng hiệu ứng hoạt hình chỉ cho văn bản mà không áp dụng cho hình ảnh",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 341,
+        "type": "single",
+        "text": "Khi soạn email, đâu là cách soạn nội dung văn bản rõ ràng?",
+        "options": [
+          { "id": 1, "value": "Viết tiêu đề rõ ràng", "isCorrect": true },
+          {
+            "id": 2,
+            "value": "Sử dụng ngôn ngữ không trang trọng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Thay thế từ bằng biểu tượng cảm xúc",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng tất cả các từ in hoa để nhấn mạnh",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 342,
+        "type": "multiple",
+        "text": "Những phím nào sau đây thuộc 'hàng phím chính' trên bàn phím? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "K", "isCorrect": true },
+          { "id": 2, "value": "A", "isCorrect": true },
+          { "id": 3, "value": "D", "isCorrect": true },
+          { "id": 4, "value": "Q", "isCorrect": false },
+          { "id": 5, "value": "B", "isCorrect": false },
+          { "id": 6, "value": "X", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 343,
+        "type": "multiple",
+        "text": "Bạn nên phản hồi email như thế nào là thích hợp? (Chọn 2) *Lưu ý đề thi có thể chỉ chọn 1",
+        "options": [
+          {
+            "id": 1,
+            "value": "Giành thời gian để chuẩn bị kĩ trả lời",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Phản hồi trong vòng 24 giờ - Sử dụng ngôn ngữ lịch sự và chuyên nghiệp - Ngắn gọn và súc tích - Kiểm tra lại tệp đính kèm và danh sách người nhận",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Phản hồi nhanh lại cho tất cả mọi người",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Phản hồi ngay nếu bạn đang bận",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 344,
+        "type": "single",
+        "text": "Nếu bạn thiết lập một máy in cụ thể làm máy in mặc định (Default Printer) trên hệ thống, điều gì sẽ xảy ra?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Khi bạn in, máy tính sẽ tự động chọn máy in này để in ra",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tất cả các thiết bị đang kết nối Internet sẽ tự động kết nối với máy in này",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Chỉ có thể sử dụng duy nhất máy in này và không thể chọn bất kỳ máy in nào khác có trong mạng. (*)",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Các máy in cùng mạng Internet đều có thể in ra từ máy in mà bạn chọn làm máy in mặc định",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 345,
+        "type": "truefalse",
+        "text": "Phân loại tùy chọn sau đây là Hàng hoá và Dịch vụ:",
+        "optionsOfTrueFalseType": ["Dịch vụ", "Hàng hóa"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Đăng ký phần mềm",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ổ đĩa cứng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Máy tính xách tay",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "iCloud",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 346,
+        "type": "single",
+        "text": "Vì sao không cắm thiết bị lạ không rõ nguồn gốc vào máy tính cá nhân là quan trọng?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thiết bị có thể chứa phần mềm độc hại",
+            "isCorrect": true
+          },
+          { "id": 2, "value": "Nội dung không phù hợp", "isCorrect": false },
+          {
+            "id": 3,
+            "value": "Thiết bị không tương thích với máy tính",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Làm chậm tốc độ của máy tính",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 347,
+        "type": "single",
+        "text": "Công ty của bạn quyết định ứng dụng Trí tuệ nhân tạo (AI) để sáng tạo nội dung mới mẻ và riêng biệt nhằm tăng lợi thế cạnh tranh với đối thủ TechTrends. Điều nào dưới đây là cách sử dụng Al hợp lý để tạo ra sự khác biệt và nổi bật?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng Al để tạo nội dung sâu sắc, hỗ trợ và nâng cao chất lượng sáng tạo của con người",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tạo ra các nội dung dựa trên thiên kiến (bias) nhằm định hướng dư luận",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Phân tích các bài viết của đối thủ và thực hiện sao chép nội dung",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Thay thế hoàn toàn vai trò sáng tạo và tư duy của con người",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 348,
+        "type": "single",
+        "text": "Khi nào hành vi đăng ảnh của người khác lên mạng xã hội là phù hợp?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Khi nó được cho phép và đăng công khai",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn có thể đăng những bức ảnh bạn đã chụp lên mạng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Có thể đăng thoải mái lên mạng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Khi nó được đăng bởi người khác",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 349,
+        "type": "match",
+        "text": "Tính tích cực và tiêu cực của AI. Nối các cột bên trái phù hợp với bên phải.",
+        "pairs": [
+          {
+            "left": { "value": "Các vấn đề đạo đức" },
+            "right": {
+              "value": "Tái tạo thiên kiến tồn tại trong dữ liệu mà nó phân tích"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Cá nhân hoá nội dung" },
+            "right": {
+              "value": "Tạo nội dung cụ thể, cải thiện mức độ tương tác của người dùng"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Tự động hoá các tác vụ lặp đi lặp lại" },
+            "right": {
+              "value": "Giúp người dùng máy tính có thời gian tập trung vào hoạt động chiến lược quan trọng"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 350,
+        "type": "multiple",
+        "text": "Phương tiện nào chuyên cung cấp dịch vụ truyền phát trực tuyến (streaming) âm thanh và radio kỹ thuật số? (*) (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "SiriusXM", "isCorrect": true },
+          { "id": 2, "value": "Spotify", "isCorrect": true },
+          { "id": 3, "value": "Pandora", "isCorrect": true },
+          { "id": 4, "value": "Hulu", "isCorrect": false },
+          { "id": 5, "value": "Vevo", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 351,
+        "type": "single",
+        "text": "Dịch vụ có thể Lưu trữ,xử lý tính toán và chia sẻ dữ liệu là gì?*",
+        "options": [
+          {
+            "id": 1,
+            "value": "Điện toán đám mây (Cloud Computing)",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Lưu trữ đám mây (Cloud Storage)",
+            "isCorrect": false
+          },
+          { "id": 3, "value": "Máy ảo ( Virtual Machine)", "isCorrect": false },
+          { "id": 4, "value": "Máy chủ (Server)", "isCorrect": false }
+        ]
+      }
+    ]
   }
 ]
