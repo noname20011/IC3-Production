@@ -1,5 +1,5 @@
 import { LeaderBoard } from "@/pages/LeaderboardPage";
-import { QuizLevel, School } from "../../types";
+import { QuizLevel } from "../../types";
 
 export const MOCK_LEVELS: QuizLevel[] = [
   {
@@ -47,27 +47,177 @@ export const MOCK_LEVELS: QuizLevel[] = [
         duration: 2700,
         questionCount: 58,
       },
+      {
+        id: "a310bdf7-c7e5-422e-af0a-caba62888f83",
+        name: "GM1",
+        levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
+        description: "Kiến thức nền tảng số 1",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "fa21d802-ccfa-4390-84fa-4f75f00649f5",
+        name: "GM2",
+        levelId: "1a3890c5-96dd-4c81-a337-7dc38e82558a",
+        description: "Kiến thức nền tảng số 2",
+        duration: 2700,
+        questionCount: 45,
+      },
     ],
   },
+
   {
-    id: "l2",
+    id: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
     name: "Level 2",
     description: "Intermediate challenges and complex scenarios.",
     parts: [
-      // { id: 4, name: "Phần 1", levelId: "l2", description: "Phần thi cơ bản số 1", duration: 45, questionCount: 0 },
-      // { id: 5, name: "Phần 2", levelId: "l2", description: "Phần thi cơ bản số 2", duration: 45, questionCount: 0 },
-      // { id: 6, name: "GM", levelId: "l2", description: "Phần thi GM cấp độ 1", duration: 60, questionCount: 0 },
+      {
+        id: "abc730d2-33f7-4b24-bac6-61fbfb60fcf1",
+        name: "GM1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Basic knowledge 1",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "9588dc2e-c8a0-44d0-bcaa-39d460045700",
+        name: "GM2",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Basic knowledge 2",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "d725f6ed-6b5e-4b66-a404-9dd040ee5a7d",
+        name: "OT1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 1",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "59af9780-c462-4ad9-b9ba-5f98bbc19ca5",
+        name: "OT2",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 2",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "6eeb6bb5-5795-4246-bfef-65e20fed1acc",
+        name: "OT3",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 3",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "0157b7b8-56a2-4f46-bf28-e855bfb36728",
+        name: "OT4",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 4",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "91834493-139f-46a9-80b2-d09e28cf8db6",
+        name: "OT5",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 5",
+        duration: 2100,
+        questionCount: 33,
+      },
+      {
+        id: "ef0938ac-dea0-4795-a2ca-3a84a883eeaa",
+        name: "Bổ Sung 1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Supplementary comprehensive review 1",
+        duration: 2700,
+        questionCount: 45,
+      }
     ],
   },
+
   {
-    id: "l3",
+    id: "dda4402a-4cc0-4b3b-94b1-22a06e3b3242",
     name: "Level 3",
     description: "Advanced mastery and expert level analysis.",
     parts: [
-      // { id: 7, name: "Part 1", levelId: "l3" },
-      // { id: 8, name: "Part 2", levelId: "l3" },
+      {
+        id: "db82cd06-ca13-4034-a9fd-7a11c90a9658",
+        name: "GM1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Basic knowledge 1",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "34b9104b-5d51-4802-848c-1217f4528163",
+        name: "GM2",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Basic knowledge 2",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "79f7008b-ccdd-499b-a53a-cdf9849e607e",
+        name: "OT1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 1",
+        duration: 2400,
+        questionCount: 40,
+      },
+      {
+        id: "9cf71ac1-7a43-40be-9981-e3fb9c209f9d",
+        name: "OT2",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 2",
+        duration: 2400,
+        questionCount: 40,
+      },
+      {
+        id: "3f792fe3-33d4-4f6d-8797-db4ad22e25bf",
+        name: "OT3",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 3",
+        duration: 2400,
+        questionCount: 40,
+      },
+      {
+        id: "09b573c3-ccb5-4e79-84d7-6ad13d0076d2",
+        name: "OT4",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 4",
+        duration: 2400,
+        questionCount: 40,
+      },
+      {
+        id: "413093a5-e449-46bb-a1b4-13cc8ca41fff",
+        name: "OT5",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Comprehensive review 5",
+        duration: 1680,
+        questionCount: 28,
+      },
+      {
+        id: "f1ee95be-8009-429b-ab99-77c4f4312b1a",
+        name: "Bổ Sung 1",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Supplementary comprehensive review 1",
+        duration: 1200,
+        questionCount: 17,
+      },
+      {
+        id: "f3c62f6c-5c37-43eb-b3a9-3de6badc3bac",
+        name: "Bổ Sung 2",
+        levelId: "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+        description: "Supplementary comprehensive review 2",
+        duration: 2700,
+        questionCount: 45,
+      }
     ],
   },
+  
   {
     id: "practice",
     name: "Practice Test",
@@ -77,30 +227,38 @@ export const MOCK_LEVELS: QuizLevel[] = [
         id: "29d957d9-76ac-439d-a6ec-59f4f57d0be0",
         name: "Random Test Level 1",
         levelId: "practice",
-        description: "45 câu ngẫu nhiên của Level 1",
+        description: "Random 45 questions from Level 1 Test",
         duration: 2700,
         questionCount: 45,
       },
-      // { id: 10, name: "Mock B", levelId: "practice" },
+      {
+        id: "df7d5e14-80c5-40b8-88ea-0153985085ec",
+        name: "Random Test Level 2",
+        levelId: "practice",
+        description: "Random 45 questions from Level 2 Test",
+        duration: 2700,
+        questionCount: 45,
+      },
+      {
+        id: "bbc142bf-8bd6-49d7-a0ec-acf8b8814341",
+        name: "Random Test Level 3",
+        levelId: "practice",
+        description: "Random 45 questions from Level 3 Test",
+        duration: 2700,
+        questionCount: 45,
+      }
     ],
   },
-];
-
-export const MOCK_SCHOOLS: School[] = [
-  { id: "s1", name: "THCS Huỳnh Văn Nghệ", location: "New York" },
-  { id: "s2", name: "THCS Yên Thế", location: "Los Angeles" },
-  { id: "s3", name: "THCS Nguyễn Trãi", location: "Chicago" },
-  { id: "s4", name: "THCS Trần Đại Nghĩa", location: "Boston" },
 ];
 
 export const MOCK_LEADERBOARD: LeaderBoard[] = [
   {
     id: "u1",
-    studentName: "Tôn Nữ Tú Anh",
+    studentName: "Huỳnh Linh Đan",
     score: 450,
     time_spent: 80,
-    school_name: "THCS Huỳnh Văn Nghệ",
-    class_name: "6A4",
+    school_name: "THCS Trần Đại Nghĩa",
+    class_name: "6A10",
     rank: 1,
   },
   {
@@ -117,8 +275,8 @@ export const MOCK_LEADERBOARD: LeaderBoard[] = [
     studentName: "Hồ Quang Tùng",
     score: 450,
     time_spent: 82,
-    school_name: "THCS Huỳnh Văn Nghệ",
-    class_name: "8A2",
+    school_name: "THCS Nguyễn Du",
+    class_name: "8A1",
     rank: 3,
   },
 ];

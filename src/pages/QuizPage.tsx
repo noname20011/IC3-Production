@@ -233,6 +233,7 @@ export default function Quiz() {
             {/* Question body */}
             {q.type.toLowerCase() === "single" && (
               <SingleType
+                key={q.id}
                 question={q as SingleChoiceEntity}
                 value={(answers as Record<number, number>)[q.id]}
                 onChange={(v) => setAnswer(q.id, v)}
@@ -240,6 +241,7 @@ export default function Quiz() {
             )}
             {q.type.toLowerCase() === "multiple" && (
               <MultipleType
+                key={q.id}
                 q={q as MultipleChoiceEntity}
                 value={answers[q.id] as MultipleAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
@@ -247,6 +249,7 @@ export default function Quiz() {
             )}
             {q.type.toLowerCase() === "truefalse" && (
               <TrueFalseType
+                key={q.id}
                 q={q as TrueFalseEntity}
                 value={
                   (answers as Record<number, Record<number, "true" | "false">>)[
@@ -258,6 +261,7 @@ export default function Quiz() {
             )}
             {q.type.toLowerCase() === "reorder" && (
               <ReorderType
+                key={q.id}
                 q={q as SortEntity}
                 value={answers[q.id] as ReorderAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
@@ -265,6 +269,7 @@ export default function Quiz() {
             )}
             {q.type.toLowerCase() === "match" && (
               <DragMatchType
+                key={q.id}
                 q={q as MatchEntity}
                 value={answers[q.id] as MatchAnswer}
                 onChange={(v) => setAnswer(q.id, v)}
@@ -272,6 +277,7 @@ export default function Quiz() {
             )}
             {q.type.toLowerCase() === "hotspot" && (
               <HotSpotType
+                key={q.id}
                 q={q as HotSpotEntity}
                 value={
                   (answers as Record<number, HotspotAnswer | null>)[

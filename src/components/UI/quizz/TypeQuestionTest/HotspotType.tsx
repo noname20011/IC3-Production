@@ -116,7 +116,7 @@ export default function HotSpotType(props: HotspotProps) {
               zIndex: draggingPointId === point.id ? 10 : 1,
             }}
           >
-            <UserClick color={`${draggingPointId === point.id ? "#ff9900" : "#c8a46e"}`}/>
+            <UserClick color={`${draggingPointId === point.id ? "#c8a46e" : "#ff9900"}`}/>
           </div>
         ))}
       </div>

@@ -33,7 +33,7 @@ export default function PartCard(props: PartCardProps) {
       onClick={() => {
         setShowPopup();
 
-        const isLevel1 = part.name.includes("Level 1");
+        const isLevel1 = part.name.includes("Test Level");
 
         const allQuestions: any[] = isLevel1
           ? questionsData.map(item => item.questions).flat()

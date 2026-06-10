@@ -80,6 +80,11 @@ export default function PartsPage() {
       return;
     }
 
+    if (formData.schoolName === "" || formData.className === "" || formData.studentName === "") {
+      toast({ description: "Please fill in all fields", variant: "error" });
+      return;
+    }
+
     localStorage.clear();
     const studentInfo = {
       studentId: formData.studentId,
