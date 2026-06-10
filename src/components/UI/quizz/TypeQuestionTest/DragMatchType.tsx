@@ -105,7 +105,7 @@ export default function DragMatch(props: DragMatchProps) {
               )
               .map((item, index) => (
                 <DragItem
-                  key={index}
+                  key={item.value}
                   answer={item}
                   usedRight={getDraggedItem(index)}
                   dragging={dragging}
@@ -123,7 +123,7 @@ export default function DragMatch(props: DragMatchProps) {
             {pairs.map((pair, index) => {
               return (
                 <DropZoneItem
-                  key={Object.keys(pair)[0]}
+                  key={index}
                   pair={pair}
                   getLeft={getLeft}
                   getRight={getRight}

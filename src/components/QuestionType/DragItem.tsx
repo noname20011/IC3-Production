@@ -28,6 +28,7 @@ const DragItem = (props: SortPropItem) => {
             : "bg-[#2a2418] before:bg-[#2a2418] before:border-[#3a3020] border-[#3a3020] text-[#c8a88a] cursor-grab hover:border-[#c8a46e]/30 hover:bg-[#2e2818] hover:before:bg-[#2e2818] hover:before:border-[#c8a46e]/30"
       }`}
       style={{
+        touchAction: "none",
         transform: transform
           ? `translate(${transform.x}px, ${transform.y}px)`
           : undefined,

@@ -1,7 +1,6 @@
-import { Options } from "../../types/questions";
 import { useDroppable } from "@dnd-kit/core";
+import { Options } from "../../types/questions";
 import DragItem from "./DragItem";
-import { MatchAnswer } from "../../types/answer";
 
 
 
@@ -17,6 +16,7 @@ interface DropPropItem {
 const DropZoneItem = (props: DropPropItem) => {
   const { pair, getLeft, getRight, getImageUrl, usedRight, dragging } = props;
   const [left, right] = Object.entries(pair)[0];
+  
   const { setNodeRef, isOver } = useDroppable({
     id: left!
   });
