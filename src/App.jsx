@@ -40,8 +40,9 @@ export default function App() {
 
           {/* side bar */}
           {!locationPath.startsWith("/quiz") && !locationPath.startsWith("/admin")  && <NavigationBar /> }
-          {/* {!locationPath.startsWith("/admin/login") && locationPath.startsWith("/admin") && <AdminSidebar/>} */}
-          {locationPath.startsWith("/admin/login") && <AdminSidebar/>}
+          {!locationPath.startsWith("/admin/login") && locationPath.startsWith("/admin") && <AdminSidebar/>}
+          {/* {locationPath.startsWith("/admin/login") && <AdminSidebar/>} */}
+          
         </LoadingProvider>
         <Toaster/>
         {!locationPath.startsWith("/admin") && <Footer/>}
