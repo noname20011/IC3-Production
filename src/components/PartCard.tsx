@@ -33,13 +33,14 @@ export default function PartCard(props: PartCardProps) {
       onClick={() => {
         setShowPopup();
 
-        const isLevel1 = part.name.includes("Test Level");
+        const isTestLevel = part.name.includes("Test Level");
 
-        const allQuestions: any[] = isLevel1
-          ? questionsData.map(item => item.questions).flat()
-          : (questionsData.find((q) => q.partId === part.id)?.questions ?? []);
+        const dataAllQuestionByLevel = part.name.includes("Test Level 1") ? questionsData.filter(q => q._comment.includes("LV1")) : part.name.includes("Test Level 2") ? questionsData.filter(q => q._comment.includes("LV2")) : questionsData.filter(q => q._comment.includes("LV3"))
+        const allQuestions: any[] = isTestLevel 
+          ? dataAllQuestionByLevel.map(item => item.questions).flat()
+          : (dataAllQuestionByLevel.find((q) => q.partId === part.id)?.questions ?? []);
 
-        const count = isLevel1 ? 45 : allQuestions.length;
+        const count = isTestLevel ? 45 : allQuestions.length;
 
         const { raw, ui } = buildTest(allQuestions, count);
 
