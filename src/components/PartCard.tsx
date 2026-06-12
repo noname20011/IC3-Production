@@ -1,4 +1,3 @@
-import { QuestionTypeEntity } from "@/types/questions";
 import { buildTest } from "@/utils/shuffleArray";
 import {
   ArrowRight,
@@ -10,7 +9,7 @@ import {
 import { motion } from "motion/react";
 import { QuizPart } from "../../types";
 import questionsData from "../data/questions.json";
-import { Button } from "./core/buttons/MainButton";
+import { Button } from "./core/buttons/Button";
 
 interface PartCardProps {
   part: QuizPart;
@@ -38,7 +37,7 @@ export default function PartCard(props: PartCardProps) {
         const dataAllQuestionByLevel = part.name.includes("Test Level 1") ? questionsData.filter(q => q._comment.includes("LV1")) : part.name.includes("Test Level 2") ? questionsData.filter(q => q._comment.includes("LV2")) : questionsData.filter(q => q._comment.includes("LV3"))
         const allQuestions: any[] = isTestLevel 
           ? dataAllQuestionByLevel.map(item => item.questions).flat()
-          : (dataAllQuestionByLevel.find((q) => q.partId === part.id)?.questions ?? []);
+          : (questionsData.find((q) => q.partId === part.id)?.questions ?? []);
 
         const count = isTestLevel ? 45 : allQuestions.length;
 
@@ -79,7 +78,7 @@ export default function PartCard(props: PartCardProps) {
             <span>{part.questionCount || 0} câu</span>
           </div>
         </div>
-        <Button className="group-hover:bg-devotion-gold/90 bg-transparent border text-white">
+        <Button className="group-hover:bg-devotion-gold/90 bg-transparent border text-white inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover-elevate active-elevate-2 border-primary-border min-h-9 px-4 py-2">
           Vào thi
           <ArrowRight size={20} />
         </Button>

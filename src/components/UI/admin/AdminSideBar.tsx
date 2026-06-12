@@ -9,7 +9,9 @@ import {
   BarChart3,
   BookOpen,
   HelpCircle,
+  LayoutDashboard,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 type AdminScreen = string;
 
@@ -49,68 +51,15 @@ export default function AdminSidebar({
   // treat "questionmgr" as sub-page of "datamgmt" for highlight
   const effectiveActive = active === "questionmgr" ? "datamgmt" : active;
 
+  const navigate = useNavigate();
+
   return (
-    <aside className="hidden md:flex flex-col w-64 xl:w-72 shrink-0 h-screen fixed top-0 border-r border-[#2a231a] bg-[#0f0d0a]">
+    <aside className="hidden md:flex flex-col w-64 xl:w-72 shrink-0 h-screen fixed top-0 left-0 border-r border-[#2a231a] bg-[#0f0d0a] glass-card rounded-none">
       {/* Logo */}
-      <div className="px-6 pt-8 pb-6">
+      <div className="px-6 pt-8 pb-6 cursor-pointer" onClick={() => navigate("/admin")}>
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 flex items-center justify-center">
-            <svg viewBox="0 0 36 36" fill="none" className="w-8 h-8">
-              <line
-                x1="18"
-                y1="2"
-                x2="18"
-                y2="34"
-                stroke="#FBBF24"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-              />
-              <line
-                x1="2"
-                y1="18"
-                x2="34"
-                y2="18"
-                stroke="#FBBF24"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-              />
-              <line
-                x1="5.5"
-                y1="5.5"
-                x2="30.5"
-                y2="30.5"
-                stroke="#FBBF24"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <line
-                x1="30.5"
-                y1="5.5"
-                x2="5.5"
-                y2="30.5"
-                stroke="#FBBF24"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <line
-                x1="18"
-                y1="2"
-                x2="15"
-                y2="7"
-                stroke="#FBBF24"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <line
-                x1="18"
-                y1="2"
-                x2="21"
-                y2="7"
-                stroke="#FBBF24"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-            </svg>
+          <div className="w-10 h-10 glass-card flex items-center justify-center text-devotion-gold">
+            <LayoutDashboard size={24} />
           </div>
           <div>
             <p className="text-[15px] font-bold text-white leading-none">

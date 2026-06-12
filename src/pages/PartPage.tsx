@@ -16,6 +16,7 @@ import PartCard from "../components/PartCard";
 import { MOCK_LEVELS } from "../data/mockData";
 import { toast } from "../hooks/use-toast";
 import { useCustomContext } from "@/hooks/use-context";
+import { Button } from "@/components/core/buttons/Button";
 
 interface FormData {
   studentId: string | number;
@@ -232,9 +233,9 @@ export default function PartsPage() {
               setShowPassword={setShowPassword}
             />
 
-            <button className="w-full lg:py-4 py-3 bg-devotion-gold text-devotion-bg rounded-2xl font-bold lg:mt-8 mt-4  hover:bg-amber-400 transition-colors">
+            <Button className="w-full lg:py-4 py-3 bg-devotion-gold text-devotion-bg rounded-2xl font-bold lg:mt-8 mt-4  hover:bg-amber-400 transition-colors">
               Bắt đầu làm bài
-            </button>
+            </Button>
           </form>
         </PopUp>
       )}

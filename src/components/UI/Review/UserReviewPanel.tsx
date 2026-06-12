@@ -1,4 +1,4 @@
-import { Button } from "@/components/core/buttons/MainButton";
+import { Button } from "@/components/core/buttons/Button";
 import { useData } from "./TestViewScreen";
 import { useNavigate, useParams } from "react-router-dom";
 import { convertTime } from "@/utils/convertTime";

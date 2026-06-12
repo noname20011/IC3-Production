@@ -1,4 +1,4 @@
-import { Button } from "@/components/core/buttons/MainButton";
+import { Button } from "@/components/core/buttons/Button";
 import { AlertCircle, AlignLeft, Flag } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
