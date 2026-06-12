@@ -17241,12 +17241,12 @@
             "label": "answer2",
             "top": 43.74,
             "left": 13.28,
-            "width": 15.20,
+            "width": 15.2,
             "height": 13.76
           },
           {
             "label": "answer3",
-            "top": 57.70,
+            "top": 57.7,
             "left": 44.14,
             "width": 24.45,
             "height": 13.35
@@ -20640,6 +20640,857 @@
             "value": "Tải xuống các phiên bản cũ của bài tập",
             "isCorrect": false
           }
+        ]
+      },
+      {
+        "id": 286,
+        "type": "single",
+        "text": "Trong Microsoft Excel, bạn có một danh sách 5.000 dòng ghi lại lịch sử bán hàng. Bạn cần tính tổng doanh thu cho từng loại mặt hàng một cách nhanh nhất. Công cụ nào là tối ưu?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng tính năng PivotTable",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng hàm SUM cho từng dòng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Sử dụng tính năng Sort (Sắp xếp) rồi cộng thủ công",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng tính năng Find and Replace",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 287,
+        "type": "multiple",
+        "text": "Người dùng có thể tìm thấy tính năng phổ biến trong phần mềm Adobe? (Chọn 3)",
+        "options": [
+          { "id": 1, "value": "Menu Bar", "isCorrect": true },
+          { "id": 2, "value": "ToolBox", "isCorrect": true },
+          { "id": 3, "value": "Options Bar", "isCorrect": true },
+          { "id": 4, "value": "Task Ribbon", "isCorrect": false },
+          { "id": 5, "value": "Dialog Box", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 288,
+        "type": "single",
+        "text": "Đâu là hành động được xem là hiểu biết các nguyên tắc sở hữu trí tuệ khi tái sử dụng tác phẩm của người khác?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thêm thông tin của tác giả sau khi đã xác nhận sử dụng hợp lí",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Đảm bảo chỉnh sửa một chút và trình bày tác phẩm đó như của riêng mình",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Thêm thông tin trích dẫn ở phần tài liệu tham khảo thay vì trích dẫn trực tiếp văn bản",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chỉ sử dụng một phần nhỏ và giả định nó thuộc phạm vi sử dụng hợp lí",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 289,
+        "type": "multiple",
+        "text": "Hai hành động nào giúp bảo vệ tài sản sở hữu trí tuệ của cá nhân và doanh nghiệp? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Tạo các danh mục quyền truy cập (list access control) để quản lý người được phép sử dụng",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Thêm tên của bạn vào siêu dữ liệu (meta data) vào mỗi tập tin kỹ thuật số với tư cách chủ sở hữu bản quyền",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Công khai các sản phẩm trí tuệ trên mạng xã hội",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tạo giấy phép Creative Commons cho tác phẩm để có thể chia sẻ tác phẩm và bảo vệ quyền tác giả",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 290,
+        "type": "match",
+        "text": "Ghép nối định nghĩa các thành phần của Email với từng hành động tương ứng.Lưu ý: Câu hỏi mang tính chất tham khảo. Các câu từ sẽ thay đổi ở phần tính năng Email - Học sinh cần đọc kỹ và nắm bắt các khái niệm của thành phần Email",
+        "pairs": [
+          {
+            "left": { "value": "Gửi bản sao dữ liệu thô" },
+            "right": {
+              "value": "Gửi một văn bản/báo cáo có sẵn cho một phòng ban mới hoàn toàn để họ tiếp nhận lại thông tin và tệp đính kèm cũ"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bản sao ẩn" },
+            "right": {
+              "value": "Phát tán thông báo đến toàn thể nhân viên hoặc khách hàng nhưng che giấu danh sách người nhận để tránh lộ thông tin nội bộ"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bản sao" },
+            "right": {
+              "value": "Gửi thêm một bản sao thư cho các bộ phận liên quan cùng theo dõi, phối hợp công việc nhưng không cần họ xử lý chính"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Trả lời người gửi" },
+            "right": {
+              "value": "Trả lời riêng tư cho người lập phiếu yêu cầu để giải trình một vấn đề cá nhân mà không làm ảnh hưởng đến người khác"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Trả lời tất cả" },
+            "right": {
+              "value": "Phản hồi một nội dung chung cho tất cả các thành viên trong ban dự án để mọi người cùng nắm được tiến độ cập nhật"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 291,
+        "type": "match",
+        "text": "Bạn và nhóm làm trang web cho địa phương, bạn nhận làm phát ngôn cho nhóm, nhưng bạn chưa có thông tin đầy đủ. Bạn tạo một cuộc họp trực tuyến để trao đổi với khách hàng, bạn có quyền tắt và bật tính năng của cuộc họp trực tuyến. Bạn nên làm điều gì dưới đây cho phù hợp?",
+        "pairs": [
+          {
+            "left": { "value": "Bước 1" },
+            "right": { "value": "Xác định yêu cầu" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 2" },
+            "right": { "value": "Tạo ý tưởng" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 3" },
+            "right": { "value": "Phát triển bản mẫu" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 4" },
+            "right": { "value": "Tinh chỉnh bản mẫu" },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Bước 5" },
+            "right": { "value": "Tinh chỉnh bản mẫu" },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 292,
+        "type": "single",
+        "text": "Lợi ích của việc tuân thủ quy trình thiết kế tuần hoàn để tạo sản phẩm kĩ thuật số là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Giúp kiểm tra và cải tiến liên tục để có kết quả tốt nhất",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Giúp làm việc độc lập mà không cần quan tâm tới công việc của các thành viên khác",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Giúp tuân thủ quy trình làm việc nghiêm ngặt và có thời hạn kết thúc rõ ràng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Giúp cung cấp sản phẩm cuối cùng nhanh nhất có thể với ít thay đổi",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 293,
+        "type": "single",
+        "text": "Ứng dụng đám mây có tác dụng gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Thể hiện lịch sử chỉnh sửa trên tập tin đã lưu trên đám mây",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hạn chế người dùng chia sẽ tập tin ra ngoài nhóm nội bộ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Giúp người dùng làm việc ngoại tuyến mà không cần kết nối Internet",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tự động xóa dữ liệu sau mỗi lần đăng nhập",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 294,
+        "type": "single",
+        "text": "Việc xóa bớt dữ liệu không cần thiết trên bộ nhớ lưu trữ đám mây nhằm mục đích gì? (Hoặc 'Công dụng của việc xóa bộ nhớ đệm của trình duyệt là gì?')",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để giải phóng dung lượng và tạo không gian lưu trữ mới cho các tập tin tạm thời. 'Có khoảng trống (dung lượng trống) để lưu trữ dữ liệu khác.'",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Truy xuất dữ liệu nhanh hơn",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tránh đồng bộ hóa các tệp tin lỗi thời",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Giảm chi phí thuê dung lượng hàng tháng",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Đế xóa lịch sử đăng nhập tài khoản ngân hàng",
+            "isCorrect": false
+          },
+          {
+            "id": 6,
+            "value": "Để giải phóng dung lượng và tăng tốc độ duyệt web",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 295,
+        "type": "single",
+        "text": "Giáo viên yêu cầu học sinh lưu trữ bài tập trên nền tảng đám mây của lớp. Nền tảng đám mây này đã bật tính năng quản lý phiên bản. Lợi ích của nền tảng đám mây là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Truy cập các phiên bản cũ của bài tập",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tăng tốc độ đồng bộ hóa dữ liệu giữa máy tính cá nhân và máy chủ",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tải xuống các phiên bản cũ của bài tập",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Nén tập tin để tiết kiệm dung lượng lưu trữ trên ổ đĩa",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 296,
+        "type": "multiple",
+        "text": "Công dụng của việc yêu cầu mật khẩu ngân hàng của Isaac liên kết với điện thoại bên cạnh mật khẩu là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Để lưu lại thông tin đăng nhập trong Cookie của trình duyệt web",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Để xác thực đa yếu tố, đảm bảo an toàn hơn cho tài khoản",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Để tăng tốc độ truy cập vào tài khoản ngân hàng",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Để cho phép nhiều người cùng đăng nhập vào tài khoản ngân hàng",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 297,
+        "type": "multiple",
+        "text": "Các công cụ và công nghệ kỹ thuật số chúng ta sử dụng hàng ngày đang tác động đến môi trường, cả tích cực và tiêu cực. Câu nào sau đây đúng về rác thải điện từ? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Rác thải điện tử là chất thải phát triển nhanh nhất trên toàn thế giới",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Chất thải điện tử chứa các hóa chất độc hại có thể thấm vào lòng đất",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Chất thải điện tử thường có thể phân hủy sinh học",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chất thải điện tử là trách nhiệm của chính phủ quốc gia",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Rác thải điện từ đề cập đến các thiết bị điện tử đã qua sử dụng không phải là tái chế",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 298,
+        "type": "truefalse",
+        "text": "Bạn tìm kiếm trên internet. Khi sử dụng hãy chọn Có nếu tìm kiếm bằng toán tử 'Boolean' giúp tìm kiếm thông tin chính xác, chọn Không nếu không sử dụng toán tử 'Boolean' giúp tìm kiếm thông tin chính xác.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Thông tin các loại táo",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Thông tin về nguồn gốc của táo / Công nghiệp trồng táo",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Công thức làm bánh táo hoặc bánh ngọt",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Táo Macintosh chứ không phải là máy tính Macintosh",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 299,
+        "type": "truefalse",
+        "text": "Với mỗi phát biểu về nguồn tin đáng tin cậy. Đối với mỗi phát biểu, hãy chọn Đúng hoặc Sai.",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Các trang web thường đáng tin cậy hơn khi có trích dẫn nội dung",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Bạn biết nguồn tin đáng tin cậy khi địa chỉ cuối trang Web kết thúc bằng .org",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Kiểm tra nhiều nguồn tham khảo là một cách tốt để xác định độ chính xác của một trang Web",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "value": "Công cụ tìm kiếm phân biệt các trang Web tốt và xấu. Kết quả đầu tiên thường đáng tin cậy nhất",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 300,
+        "type": "single",
+        "text": "Bạn đang tìm kiếm dữ kiện và thông tin để sử dụng cho một dự án nghiên cứu nhưng kết quả tìm kiếm câu trả lời không như mong đợi. Bạn nên thực hiện hành động nào?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Diễn đạt lại từ khóa tìm kiếm cụ thể hơn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Xóa bộ nhớ đệm của trình duyệt rồi tìm kiếm lại",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Tải lại trang và tìm kiếm lại",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Bỏ bớt các từ trong từ khóa tìm kiếm",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_comment": "LV3_BS2",
+    "levelId": "5acedaad-1ab8-4efc-b2f3-339e5d81bfda",
+    "partId": "f3c62f6c-5c37-43eb-b3a9-3de6badc3bac",
+    "questions": [
+      {
+        "id": 301,
+        "type": "match",
+        "text": "Nối mỗi quy trình của video được mô tả bên trái với hành động bên phải?",
+        "pairs": [
+          {
+            "left": { "value": "Quay video" },
+            "right": {
+              "value": "Điều chỉnh độ phân giải và tỉ lệ khung hình của cảnh quay"
+            },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Phân phát video" },
+            "right": { "value": "Đăng tải video lên Youtube " },
+            "isCorrect": true
+          },
+          {
+            "left": { "value": "Hoàn thiện video" },
+            "right": {
+              "value": "Chỉnh sửa màu sắc, độ tương phản và độ sáng của video"
+            },
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 302,
+        "type": "multiple",
+        "text": "Có ba cách chính để thao túng nội dung Video, bao gồm: Thiếu ngữ cảnh (omitting the context), Chỉnh sửa đánh lừa (deceptive editing) và Chuyển đổi độc hại (malicious transformation). Phương pháp chỉnh sửa video nào sau đây thường được sử dụng để thao túng nội dung video nhằm mục đích đánh lừa người xem? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hiển thị một đoạn clip ngắn của một video dài hơn",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nối nhiều video clip lại với nhau để tạo thành một video",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Thêm cảnh quay ở cuối video để ghi công tác giả",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Điều chỉnh độ sáng và độ bão hòa của video",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Tăng âm lượng của âm thanh có trong video",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 303,
+        "type": "truefalse",
+        "text": "Bạn lướt trên mạng và thấy một video nghi ngờ được tạo hoặc chỉnh sửa bằng AI. Với mỗi phát biểu dưới đây, hãy chọn 'Có' nếu đó là cách giúp đánh giá độ đáng tin cậy của video, hoặc chọn 'Không' nếu không phải.",
+        "optionsOfTrueFalseType": ["Có", "Không"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Giả sử vì video đó có tuyên bố mà người nói không thể nói ra nên đó đáng tin cậy",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Tìm kiếm trực tuyến một số trích dẫn trong video để xem các tổ chức tin tức uy tin có đăng tải hay không",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Xem bình luận của những người khác có cáo buộc về hành vi gây hại hoặc các vấn đề khác",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Xem xét động cơ của người sáng tạo và chia sẻ video",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 304,
+        "type": "multiple",
+        "text": "Câu chuyện về đề cương ôn tập cho bài kiểm tra tại trường đại học xuất hiện trên trang tin tức mạng xã hội của bạn. Câu chuyện chứa thông tin sau: Một nghiên cứu gần đây được thực hiện trên 10 sinh viên cho thấy rằng sinh viên đã cải thiện 25% điểm thi của mình khi sử dụng tài liệu hướng dẫn ôn tập này. Một giáo sư đại học nổi tiếng tham gia nghiên cứu đã phát biểu rằng: 'Nếu sinh viên không sử dụng tài liệu hướng dẫn ôn tập này, họ có thể không đạt được điểm số cần có để được nhận vào trường cao đẳng hoặc đại học'. Bạn xác định hai sai lầm logic phổ biến trong nội dung và nhận ra rằng câu chuyện có thể không chính xác hoặc thiên vị. Hai ngụy biện logic nào mà câu chuyện chứa đựng? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Ngụy biện – Khái Quát Vội Vàng (Hasty Generlization) - rút ra kết luận về dân số dựa trên một mẫu nhỏ",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Nguy biện song đề sai (False Dilemma), hạn chế các lựa chọn có thể có để tránh việc cân nhắc một lựa chọn khác",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Cá trích đỏ (Red herring) - trình bày một chủ đề không liên quan để chuyển hướng sự chủ ý khỏi vấn đề ban đầu",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Nguỵ biện vin vào truyền thống (Appeal to Tradition), bỏ qua những vấn đề trong quá khứ và cho rằng mọi thứ đã xảy ra trong quá khứ đề tốt đẹp hơn hiện tại",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 305,
+        "type": "single",
+        "text": "Bạn nhận thấy một video tin tức có dấu hiệu bị cắt ghép hoặc chỉnh sửa sai lệch. Bạn nên thực hiện quy trình nào để xác minh sự thật? (Kiểm chứng video nghi ngờ đã chỉnh sửa)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Sử dụng công cụ kiểm chứng độc lập hoặc tìm kiếm từ khóa trên các nguồn tin uy tín",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Xem số lượng lượt thích (Like) và lượt chia sẻ để đánh giá độ tin cậy",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Viết bình luận cáo buộc video là tin giả ngay lập tức",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tải video về máy để phân tích các điểm ảnh (pixel) thủ công",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 306,
+        "type": "truefalse",
+        "text": "Đâu là thông tin chia sẻ quá mức (Oversharing) chọn có và ngược lại:",
+        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "statements": [
+          {
+            "id": 1,
+            "value": "Bạn chụp hình bạn và gia đình đăng lên",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "value": "Bạn chụp hình trực tiếp buổi đi chơi",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Bạn tag tên một người bạn mà chưa xin phép",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 307,
+        "type": "single",
+        "text": "Chìa khoá cho việc nâng cao khả năng chấp nhận ý kiến của bạn trong làm việc nhóm là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Lắng nghe và điều chỉnh ý kiến của bạn cho phù hợp",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tránh xung đột trong nhóm bằng cách chấp nhận các ý kiến",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hoàn thành công việc của bạn nhanh hơn những người khác",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chỉ tập trung làm tốt phần việc của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 308,
+        "type": "single",
+        "text": "Bạn được giao làm trưởng nhóm cho một dự án tìm hiểu về công nghệ mới, nhưng bạn đang cảm thấy lúng túng vì không biết phải bắt đầu triển khai dự án như thế nào. Để khởi động dự án một cách hiệu quả và tận dụng trí tuệ tập thể, nhóm của bạn nên thực hiện bước nào đầu tiên?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Yêu cầu các thành viên đưa ra ý kiến bắt đầu dự án mới thông qua buổi thảo luận chung",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Yêu cầu một người giỏi nhất tự làm tất cả để các thành viên khác sao chép",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Bắt đầu làm việc độc lập ngay lập tức để tiết kiệm thời gian",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chờ đợi chỉ dẫn chi tiết từ cấp trên mới bắt đầu thực hiện",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 309,
+        "type": "multiple",
+        "text": "Kế hoạch thực hiện của nhóm được xác định rõ ràng giúp giảm thiểu các vấn đề và cho phép nhóm nhanh chóng xác định các vấn đề khi chúng phát sinh. Điều nào sau đây KHÔNG phải là kỹ thuật được sử dụng để giảm thiểu các vấn đề của nhóm? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Yêu cầu nhóm lưu trữ công việc của họ trên thiết bị cục bộ của họ cho đến khi hoàn thành",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Hạn chế các cuộc họp nhóm để tránh ảnh hướng đến lịch trình",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Đảm bảo nhóm biết vai trò cả nhân của họ phụ thuộc lẫn nhau",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Đặt mục tiêu rõ ràng và các cột mốc được xác định rõ",
+            "isCorrect": false
+          },
+          {
+            "id": 5,
+            "value": "Bao gồm các phương thức truyền thông không đồng bộ và đồng bộ",
+            "isCorrect": false
+          },
+          {
+            "id": 6,
+            "value": "Để ngăn chặn việc trình duyệt tự động tắt khi đang sử dụng",
+            "isCorrect": false
+          },
+          {
+            "id": 7,
+            "value": "Sử dụng các công cụ và công nghệ khuyến khích sự hợp tác và giao tiếp",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 310,
+        "type": "single",
+        "text": "Một nhóm làm việc nhận được yêu cầu hoàn thành dự án sớm hơn dự kiến. Phương án nào thể hiện kỹ năng cộng tác hiệu quả nhất? (Quản lý dự án khi khách hàng cần gấp)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Chia sẻ trách nhiệm và phân bổ lại công việc cho mọi người dựa trên thế mạnh của từng thành viên",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Ưu tiên giao toàn bộ việc quan trọng nhất cho người giỏi nhất nhóm",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Yêu cầu mọi người làm việc độc lập và không cần họp nhóm để tiết kiệm thời gian",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Chỉ tập trung làm những phần dễ để kịp nộp sản phẩm đúng hạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 311,
+        "type": "multiple",
+        "text": "Thầy yêu cầu học sinh lưu bài tập vào thư mục cụ thể trên đám mây trường học đã thiết lập lưu trữ quản lý phiên bản. Điều này có nghĩa là gì? (Chọn 2)",
+        "options": [
+          {
+            "id": 1,
+            "value": "Học sinh có thể tải lại các phiên bản cũ của bài từ đám mây",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Truy cập các phiên bản của tập tin trên đám mây tại bất kỳ trình duyệt nào",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "value": "Học sinh có thể tải lên và xóa bài khỏi đám mây",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Học sinh có thể đăng nhập từ nhiều hệ điều hành",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 312,
+        "type": "single",
+        "text": "Jackson đang làm việc trong cửa hàng vi tính, có khách hàng gọi đến và hỏi về chiếc máy tính xách tay bị lỗi. Chiếc máy tính xách tay này là đời cũ, và có nhiều phiên bản mới, cập nhật mới hơn tại cửa hàng. Jackson nên phản hồi với khách như thể nào?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Hỏi rõ khách hàng máy tính xách tay bị lỗi gì",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Khuyến khích khách hàng mua máy đời mới",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Báo với khách là máy đời cũ giờ không sữa được nữa",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Kêu khách đến cửa hàng ngay để hoàn tiền",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 313,
+        "type": "single",
+        "text": "Bạn đang chuẩn bài thuyết trình kỹ thuật số, làm thế nào để đảm bảo bài thuyết trình có thể xem được trên nhiều thiết bị khác nhau?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Đảm bảo kích thước tập tin hình ảnh và video được tối ưu hóa để thời gian tải nhanh và phát lại mượt mà",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Sử dụng nhiều hiệu ứng chuyển tiếp và hoạt cảnh để thu hút người xem",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Thêm càng nhiều văn bản càng tốt vào mỗi trang chiếu để đảm bảo tổng số trang được thấp nhất",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Sử dụng kiểu chữ đẹp mắt và có tính trang trí để thu hút sự chủ ý của người xem",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 314,
+        "type": "single",
+        "text": "Chìa khóa mang tính đóng góp, xây dựng trong dự án kỹ thuật số là gì?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Cung cấp nhận xét để giúp cải thiện công việc của nhóm",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Tránh xung đột bằng cách đồng ý với tất cả các ý tưởng",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Hoàn thành nhiệm vụ của bạn nhanh hơn các thành viên trong nhóm",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "value": "Tập trung vào nhiệm vụ của bạn",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 315,
+        "type": "single",
+        "text": "Bạn đang tìm kiếm trên Internet một trang web của nhà cung cấp mà bạn đã truy cập vào tháng trước và trang web dường như mất nhiều thời gian để hiển thị. Bạn có thể làm gì để giúp khắc phục sự cố này?",
+        "options": [
+          {
+            "id": 1,
+            "value": "Xóa bộ nhớ cache của trình duyệt",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "value": "Xóa lịch sử cho tháng trước",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "value": "Xóa tất cả cookie trong tháng trước",
+            "isCorrect": false
+          },
+          { "id": 4, "value": "Sử dụng trình duyệt khác", "isCorrect": false }
         ]
       }
     ]
