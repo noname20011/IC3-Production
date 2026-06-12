@@ -1,22 +1,33 @@
-import * as React from "react"
+import React from "react";
 
-import { cn } from "../../libs/utils"
+interface InputProps {
+  label: string;
+  placeholder?: string;
+  value: string;
+  icon: React.ReactNode;
+  onChange: (item: string) => void;
+}
 
-const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
-  ({ className, type, ...props }, ref) => {
-    return (
-      <input
-        type={type}
-        className={cn(
-          "flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
-          className
-        )}
-        ref={ref}
-        {...props}
-      />
-    )
-  }
-)
-Input.displayName = "Input"
+const Input = (props: InputProps) => {
+  const { label, placeholder, value, onChange, icon } = props;
+  return (
+    <div className="space-y-2">
+      <label className="text-[10px] uppercase tracking-widest font-bold text-slate-500 ml-1">
+        {label}
+      </label>
+      <div className="relative">
+        {icon || null}
+        <input
+          type={"text"}
+          placeholder={placeholder}
+          required
+          value={value}
+          className="w-full bg-white/5 border border-white/10 rounded-2xl xl:py-3 py-2 pl-12 pr-4 focus:outline-none focus:border-devotion-gold/50 transition-colors"
+          onChange={(e) => onChange(e.target.value)}
+        />
+      </div>
+    </div>
+  );
+};
 
-export { Input }
+export default Input;

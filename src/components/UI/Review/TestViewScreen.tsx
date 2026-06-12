@@ -1,4 +1,4 @@
-import { Button } from "@/components/core/buttons/MainButton";
+import { Button } from "@/components/core/buttons/Button";
 import { checkCollision } from "@/components/UI/quizz/ReviewQuestionBody";
 import { toast } from "@/hooks/use-toast";
 import { useHandleMutation } from "@/hooks/useBaseQuery";
