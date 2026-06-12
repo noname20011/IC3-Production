@@ -5,7 +5,6 @@ import { useCustomContext } from "../../hooks/use-context";
 
 export default function NavigationBar() {
   const location = useLocation();
-  const { setIsLoading } = useCustomContext();
 
   const navItems = [
     { path: "/", icon: HomeIcon, label: "Home" },
@@ -24,7 +23,6 @@ export default function NavigationBar() {
             <Link
               key={item.path}
               to={item.path}
-              onClick={() => setIsLoading(false)}
               className={cn(
                 "flex flex-col items-center gap-1 transition-all duration-300",
                 isActive
