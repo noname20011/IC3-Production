@@ -9710,7 +9710,7 @@
           {
             "id": 3,
             "value": "Địa điểm luôn phải ở trong một tòa nhà chuyên nghiệp",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 4,
@@ -10039,7 +10039,7 @@
         "id": 150,
         "type": "truefalse",
         "text": "Các nhà cung cấp thương mại điện tử bán nhiều hàng hóa và dịch vụ khác nhau trên mạng. Phân loại từng mục là Hàng hóa hay Dịch vụ.",
-        "optionsOfTrueFalseType": ["Đúng", "Sai"],
+        "optionsOfTrueFalseType": ["Hàng hóa", "Dịch vụ"],
         "statements": [
           {
             "id": 1,
@@ -10619,12 +10619,12 @@
           {
             "id": 2,
             "value": "Đọc đánh giá trực tuyến về ứng dụng",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 3,
             "value": "Hướng dẫn người khác sử dụng tính năng đó",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
             "id": 4,
@@ -11855,7 +11855,7 @@
         "options": [
           { "id": 1, "value": "Địa chỉ email", "isCorrect": true },
           { "id": 2, "value": "Mật khẩu", "isCorrect": true },
-          { "id": 3, "value": "Số điện thoại", "isCorrect": true },
+          { "id": 3, "value": "Số điện thoại", "isCorrect": false },
           { "id": 4, "value": "Số định danh cá nhân (PIN)", "isCorrect": false }
         ]
       },
@@ -11941,7 +11941,7 @@
       {
         "id": 243,
         "type": "multiple",
-        "text": "Bạn tạo và điền vào tài liệu một trang, sau đó thêm một trang trống vào tài liệu đó. Bạn cần sao chép tất cả nội dung của trang đầu tiên lên trang thứ hai. Bạn nên sửdụng ba phím tắt nào? (Chọn 3)",
+        "text": "Bạn tạo và điền vào tài liệu một trang, sau đó thêm một trang trống vào tài liệu đó. Bạn cần sao chép tất cả nội dung của trang đầu tiên lên trang thứ hai. Bạn nên sử dụng ba phím tắt nào? (Chọn 3)",
         "options": [
           { "id": 1, "value": "Ctrl+A (Cmd+A)", "isCorrect": true },
           { "id": 2, "value": "Ctrl+C (Cmd+C)", "isCorrect": true },
@@ -11981,7 +11981,7 @@
             "value": "Các clip khác được di chuyển và ghi đè",
             "isCorrect": false
           },
-          { "id": 4, "value": "- Một đoạn video bị cắt", "isCorrect": false }
+          { "id": 4, "value": "Một đoạn video bị cắt", "isCorrect": false }
         ]
       },
       {
@@ -12210,9 +12210,9 @@
         "text": "Ứng dụng nào là ví dụ về nền tảng cộng tác? (Chọn 2)",
         "options": [
           { "id": 1, "value": "Slack", "isCorrect": true },
-          { "id": 2, "value": "Zoom", "isCorrect": true },
+          { "id": 2, "value": "Zoom", "isCorrect": false },
           { "id": 3, "value": "GoTo Meeting", "isCorrect": false },
-          { "id": 4, "value": "Office 365", "isCorrect": false }
+          { "id": 4, "value": "Office 365", "isCorrect": true }
         ]
       },
       {

@@ -94,7 +94,7 @@ const Header = (props: HeaderProps) => {
   return (
     <>
       {/* ── Sticky header ── */}
-      <header className="sticky top-0 z-[100] bg-[#13100d]/95 backdrop-blur-md border-b border-[#2a231a]">
+      <header className="sticky top-0 z-[100] bg-devotion-neon/95 backdrop-blur-md border-b border-[#2a231a]">
         {/* Top row */}
         <div className="flex items-center justify-between px-6 lg:px-8 py-3.5">
           {/* <div className="flex items-center gap-3">

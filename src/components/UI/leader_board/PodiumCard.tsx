@@ -12,7 +12,7 @@ interface PodiumCardProps {
 const podiumConfig = {
   1: {
     gradient:
-      "bg-[linear-gradient(to_bottom,#171412_0%,#694E3A_25%,#A07838_50%,#CA9835_75%,#EBB12E_100%)]",
+      "bg-[linear-gradient(to_bottom,#0B0D14_0%,#694E3A_25%,#A07838_50%,#CA9835_75%,#EBB12E_100%)]",
     textColor: "#FCD34D",
     height: "h-[400px]",
     avatarGradient: "linear-gradient(135deg, #f59e0b, #b45309)",
@@ -23,7 +23,7 @@ const podiumConfig = {
   },
   2: {
     gradient:
-      "bg-[linear-gradient(to_bottom,#171412_0%,#181554_25%,#233D7F_50%,#3064A0_75%,#40A2CC_100%)]",
+      "bg-[linear-gradient(to_bottom,#0B0D14_0%,#181554_25%,#233D7F_50%,#3064A0_75%,#40A2CC_100%)]",
     textColor: "#CBD5E1",
     height: "h-[360px]",
     avatarGradient: "linear-gradient(135deg, #64748b, #334155)",
@@ -34,7 +34,7 @@ const podiumConfig = {
   },
   3: {
     gradient:
-      "bg-[linear-gradient(to_bottom,#171412_0%,#3e234b_25%,#8B413A_50%,#C5613A_100%)]",
+      "bg-[linear-gradient(to_bottom,#0B0D14_0%,#3e234b_25%,#8B413A_50%,#C5613A_100%)]",
     textColor: "#FB923C",
     height: "h-[280px]",
     avatarGradient: "linear-gradient(135deg, #FF7070, #7c2d12)",
@@ -62,16 +62,15 @@ export default function PodiumCard({ entry, rank, delay = 0 }: PodiumCardProps) 
           <div className={`absolute inset-0 rounded-[28px] ${cfg.gradient}`} />
 
           {/* Top opacity fade */}
-          <div className="absolute inset-0 border-white/25 rounded-[28px] bg-gradient-to-b from-black/75 via-black/25 to-transparent" />
+          <div className="absolute inset-0 rounded-[28px] bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
 
           {/* Thicker border */}
-          <div className="absolute inset-0 rounded-[28px] border-2 border-white/50 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]" />
+          <div className="absolute inset-0 rounded-[28px] border-2 border-white/70 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]" />
 
           {/* Hide border top softly */}
-          <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-[#171412] via-[#171412]/20 to-transparent z-10" />
+          <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-[#0B0D14]/60 via-[#0B0D14]/20 to-transparent z-10" />
 
-          <div className="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-background/60 via-[#171412]/10 to-transparent z-10" />
-
+          <div className="absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-[#0B0D14] via-[#0B0D14]/10 to-transparent z-10" />
 
           {/* Inner glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[260px] h-[180px] bg-white/10 blur-3xl rounded-full" />
