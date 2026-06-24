@@ -212,7 +212,7 @@ export default function Quiz() {
               </p>
               {q.type.toLowerCase()!== 'hotspot' && q.imageUrl && <div className="flex items-end gap-4">
                   <img src={q.imageUrl} alt="Question" className="mt-4 rounded-lg max-h-28 object-contain w-auto" loading="lazy"/>
-                <Button className="inline-block text-[#fafafa] bg-devotion-gold text-sm"
+                <Button className="inline-block text-[#fafafa] bg-devotion-gold text-sm px-2 py-1 rounded-md"
                   onClick={() => setZoomOutImage(true)}
                 >
                   Zoom out image

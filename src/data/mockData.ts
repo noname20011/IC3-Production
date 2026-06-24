@@ -280,3 +280,111 @@ export const MOCK_LEADERBOARD: LeaderBoard[] = [
     rank: 3,
   },
 ];
+
+export const levels = [
+  { id: 1, name: "Level 1", tag: "Beginner", color: "#4ade80", parts: 4, description: "Foundation of Faith" },
+  { id: 2, name: "Level 2", tag: "Intermediate", color: "#fb923c", parts: 5, description: "Growing in Scripture" },
+  { id: 3, name: "Level 3", tag: "Advanced", color: "#c084fc", parts: 6, description: "Deep Dive into Theology" },
+  { id: 4, name: "Practice Exam", tag: "Practice", color: "#c8a46e", parts: 3, description: "Full Simulation Mode" },
+];
+
+export const partsByLevel: Record<number, Part[]> = {
+  1: [
+    { id: 101, levelId: 1, name: "Part 1", topic: "Genesis & Creation", questions: 20, duration: 30, difficulty: "Easy" },
+    { id: 102, levelId: 1, name: "Part 2", topic: "Exodus & Law", questions: 25, duration: 35, difficulty: "Easy" },
+    { id: 103, levelId: 1, name: "Part 3", topic: "Psalms & Worship", questions: 20, duration: 30, difficulty: "Easy" },
+    { id: 104, levelId: 1, name: "GM", topic: "General Mastery", questions: 30, duration: 45, difficulty: "Medium" },
+  ],
+  2: [
+    { id: 201, levelId: 2, name: "Part 1", topic: "Matthew & Mark", questions: 30, duration: 45, difficulty: "Medium" },
+    { id: 202, levelId: 2, name: "Part 2", topic: "Luke & John", questions: 30, duration: 45, difficulty: "Medium" },
+    { id: 203, levelId: 2, name: "Part 3", topic: "Acts & Romans", questions: 25, duration: 40, difficulty: "Medium" },
+    { id: 204, levelId: 2, name: "Part 4", topic: "Epistles", questions: 25, duration: 40, difficulty: "Medium" },
+    { id: 205, levelId: 2, name: "GM", topic: "General Mastery", questions: 40, duration: 60, difficulty: "Hard" },
+  ],
+  3: [
+    { id: 301, levelId: 3, name: "Part 1", topic: "Prophets & Prophecy", questions: 35, duration: 50, difficulty: "Hard" },
+    { id: 302, levelId: 3, name: "Part 2", topic: "Revelation", questions: 30, duration: 45, difficulty: "Hard" },
+    { id: 303, levelId: 3, name: "Part 3", topic: "Theology & Doctrine", questions: 40, duration: 60, difficulty: "Hard" },
+    { id: 304, levelId: 3, name: "Part 4", topic: "Church History", questions: 35, duration: 50, difficulty: "Hard" },
+    { id: 305, levelId: 3, name: "Part 5", topic: "Hermeneutics", questions: 30, duration: 45, difficulty: "Expert" },
+    { id: 306, levelId: 3, name: "GM", topic: "Grand Mastery", questions: 50, duration: 75, difficulty: "Expert" },
+  ],
+  4: [
+    { id: 401, levelId: 4, name: "Mock Exam A", topic: "Full Bible Survey", questions: 60, duration: 90, difficulty: "Mixed" },
+    { id: 402, levelId: 4, name: "Mock Exam B", topic: "NT Focus", questions: 60, duration: 90, difficulty: "Mixed" },
+    { id: 403, levelId: 4, name: "Mock Exam C", topic: "OT Focus", questions: 60, duration: 90, difficulty: "Mixed" },
+  ],
+};
+
+export interface Part {
+  id: number;
+  levelId: number;
+  name: string;
+  topic: string;
+  questions: number;
+  duration: number;
+  difficulty: string;
+}
+
+export const schools: School[] = [
+  { id: 1, name: "Grace Academy", city: "Nashville", students: 340, active: true },
+  { id: 2, name: "Faith Christian School", city: "Atlanta", students: 210, active: true },
+  { id: 3, name: "Trinity Prep", city: "Dallas", students: 180, active: true },
+  { id: 4, name: "Emmanuel High School", city: "Houston", students: 290, active: false },
+  { id: 5, name: "Calvary Christian Academy", city: "Orlando", students: 155, active: true },
+  { id: 6, name: "Bethel Community School", city: "Denver", students: 120, active: true },
+  { id: 7, name: "Hope Lutheran School", city: "Minneapolis", students: 200, active: false },
+  { id: 8, name: "Cornerstone Academy", city: "Charlotte", students: 175, active: true },
+];
+
+export interface School {
+  id: number;
+  name: string;
+  city: string;
+  students: number;
+  active: boolean;
+}
+
+export const passwords: ExamPassword[] = [
+  { id: 1, code: "GR4CE-2024", school: "Grace Academy", level: "Level 1", part: "Part 2", expires: "2024-04-15", uses: 12, maxUses: 50, created: "2024-04-01" },
+  { id: 2, code: "FAITH-XM01", school: "Faith Christian School", level: "Level 2", part: "Part 1", expires: "2024-05-01", uses: 30, maxUses: 30, created: "2024-03-20" },
+  { id: 3, code: "TRIN-ADV3", school: "Trinity Prep", level: "Level 3", part: "Part 3", expires: "2024-06-30", uses: 5, maxUses: 40, created: "2024-04-05" },
+  { id: 4, code: "CALV-PRC1", school: "Calvary Christian Academy", level: "Practice Exam", part: "Mock Exam A", expires: "2024-04-20", uses: 22, maxUses: 60, created: "2024-03-25" },
+  { id: 5, code: "BETH-2024", school: "Bethel Community School", level: "Level 1", part: "GM", expires: "2024-04-30", uses: 8, maxUses: 25, created: "2024-04-02" },
+  { id: 6, code: "CORN-L2P4", school: "Cornerstone Academy", level: "Level 2", part: "Part 4", expires: "2024-05-15", uses: 0, maxUses: 35, created: "2024-04-08" },
+];
+
+export interface ExamPassword {
+  id: number;
+  code: string;
+  school: string;
+  level: string;
+  part: string;
+  expires: string;
+  uses: number;
+  maxUses: number;
+  created: string;
+}
+
+export const leaderboardData = [
+  { rank: 1, name: "Sophia Chen", school: "Grace Academy", level: "Level 3", part: "Part 2", score: 98, time: "38:12", date: "2024-04-08" },
+  { rank: 2, name: "Marcus Williams", school: "Faith Christian School", level: "Level 3", part: "Part 2", score: 95, time: "41:05", date: "2024-04-08" },
+  { rank: 3, name: "Emma Rodriguez", school: "Trinity Prep", level: "Level 3", part: "Part 2", score: 93, time: "39:44", date: "2024-04-07" },
+  { rank: 4, name: "Noah Johnson", school: "Calvary Christian Academy", level: "Level 3", part: "Part 2", score: 91, time: "43:20", date: "2024-04-07" },
+  { rank: 5, name: "Aiden Park", school: "Grace Academy", level: "Level 3", part: "Part 2", score: 90, time: "44:02", date: "2024-04-06" },
+  { rank: 6, name: "Isabella Martinez", school: "Bethel Community School", level: "Level 3", part: "Part 2", score: 88, time: "40:15", date: "2024-04-06" },
+  { rank: 7, name: "Ethan Davis", school: "Cornerstone Academy", level: "Level 3", part: "Part 2", score: 87, time: "45:30", date: "2024-04-05" },
+  { rank: 8, name: "Olivia Thompson", school: "Faith Christian School", level: "Level 3", part: "Part 2", score: 85, time: "42:18", date: "2024-04-05" },
+  { rank: 9, name: "Liam Anderson", school: "Trinity Prep", level: "Level 3", part: "Part 2", score: 84, time: "46:00", date: "2024-04-04" },
+  { rank: 10, name: "Ava Wilson", school: "Grace Academy", level: "Level 3", part: "Part 2", score: 83, time: "43:50", date: "2024-04-04" },
+];
+
+export const questionsData = [
+  { id: 1, text: "Who wrote the book of Genesis?", type: "single", level: "Level 1", part: "Part 1", points: 10 },
+  { id: 2, text: "Which of the following are fruits of the Spirit?", type: "multiple", level: "Level 1", part: "Part 2", points: 15 },
+  { id: 3, text: "The Ten Commandments were given on Mount Sinai.", type: "truefalse", level: "Level 1", part: "Part 2", points: 10 },
+  { id: 4, text: "Arrange the Beatitudes in correct order.", type: "reorder", level: "Level 2", part: "Part 1", points: 20 },
+  { id: 5, text: "Match each parable to its chapter.", type: "match", level: "Level 2", part: "Part 2", points: 20 },
+  { id: 6, text: "Identify the location of Jerusalem on the map.", type: "hotspot", level: "Level 3", part: "Part 1", points: 15 },
+];

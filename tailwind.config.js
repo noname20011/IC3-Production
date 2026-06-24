@@ -16,6 +16,7 @@ module.exports = {
           surface: "rgba(255, 255, 255, 0.05)",
           gold: "#EAB308",
           purple: "#A855F7",
+          neon: "#0B0D14"
         },
 
         background: "hsl(var(--background))",
