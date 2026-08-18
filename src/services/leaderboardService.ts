@@ -13,7 +13,10 @@ export class LeaderboardService<T> extends BaseService<T> {
   getLeaderboardByClassAndPart(classId: string, partId: string | number) {
     return axiosClient.get(`${this.endpoint}/by-class/${classId}/part/${partId}`);
   }
-  
+
+  getLeaderboardBySchool(schoolId: string) {
+    return axiosClient.get(`${this.endpoint}/top-1/by-school/${schoolId}`);
+  }
 }
 
 const leaderboardService = new LeaderboardService<any>("/leaderboard");

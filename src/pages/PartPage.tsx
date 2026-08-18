@@ -9,7 +9,7 @@ import {
   User
 } from "lucide-react";
 import { motion } from "motion/react";
-import { SubmitEvent, useState } from "react";
+import { SubmitEvent, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import PopUp from "../components/core/popups/PopUp";
 import PartCard from "../components/PartCard";
@@ -17,6 +17,7 @@ import { MOCK_LEVELS } from "../data/mockData";
 import { toast } from "../hooks/use-toast";
 import { useCustomContext } from "@/hooks/use-context";
 import { Button } from "@/components/core/buttons/Button";
+import leaderboardService from "@/services/leaderboardService";
 
 interface FormData {
   studentId: string | number;
@@ -28,7 +29,12 @@ interface FormData {
   password: string;
 }
 
-export default function PartsPage() {
+interface PartPageProps {
+  takeRanksBySchool: (schoolId: string) => void;
+}
+
+export default function PartsPage(props: PartPageProps) {
+  const { takeRanksBySchool } = props;
   const { levelId } = useParams();
   const level = MOCK_LEVELS.find((l) => l.id === levelId);
 
@@ -74,6 +80,18 @@ export default function PartsPage() {
     },
   );
 
+  const { data, isLoading: isLoadingLeaderboard } = useFetchData(
+    ["leaderboard-each-part", formData.schoolId],
+    () => leaderboardService.getLeaderboardBySchool(formData.schoolId.toString()),
+    { enabled: !!formData.schoolId } // Condition
+  );
+
+  useEffect(() => {
+      if (data?.data) {
+        sessionStorage.setItem("rank-top-1", JSON.stringify(data.data))
+      }
+    }, [data]); 
+
   const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (formData.password !== "OT626") {
@@ -95,6 +113,8 @@ export default function PartsPage() {
       schoolName: formData.schoolName
     };
 
+    takeRanksBySchool(formData.schoolId.toString());
+
     setCompleteQuiz(false);
     localStorage.setItem("student", JSON.stringify(studentInfo));
     const timeDoTest = MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration;
@@ -102,6 +122,7 @@ export default function PartsPage() {
     navigate(
       `/quiz/${levelId}/${choosePart}?time=${MOCK_LEVELS.find((l) => l.id === levelId)?.parts.find((p) => p.id === choosePart)?.duration}`,
     );
+
   };
 
   if (!level) return <div>Level not found</div>;
@@ -177,6 +198,7 @@ export default function PartsPage() {
                   schoolId: school.id,
                   schoolName: school.name,
                 });
+                takeRanksBySchool(school.id.toString());
               }}
             />
 

@@ -6,7 +6,6 @@ import { useCustomContext } from "../../hooks/use-context";
 import { useHandleBackReload } from "@/hooks/useHandleBackReload";
 
 interface HeaderProps {
-  timeDoTest: number
   onBack: () => void;
   locationPath: string;
 }

@@ -7,6 +7,7 @@ import { useFetchData } from "@/hooks/useBaseQuery";
 import { useStompSubscription } from "@/hooks/useStompSubscription";
 import { levelService, partService } from "@/services";
 import leaderboardService from "@/services/leaderboardService";
+import { LeaderBoard } from "@/types/leaderboard";
 import { convertTime } from "@/utils/convertTime";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -20,18 +21,6 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-
-export interface LeaderBoard {
-  id: string;
-  class_name: string;
-  level_name?: string;
-  part_name?: string;
-  school_name: string;
-  score: number;
-  studentName: string;
-  time_spent: number;
-  rank?: number;
-}
 
 interface FilterFetchData {
   levelId: string | number;
@@ -138,7 +127,7 @@ export default function Leaderboard() {
       setRanks(data); // Trigger Flip Animation ngay khi có data mới
     },
     {
-      enabled: filterFetch.levelId === "",
+      enabled:  Boolean(filterFetch.levelId),
     },
   );
 

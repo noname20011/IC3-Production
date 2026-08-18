@@ -7073,17 +7073,17 @@
           },
           {
             "id": 2,
-            "value": "Một khuynh hướng cánh tả ủng hộ bình đẳng xã hội, chủ nghĩa tự do và các ý tưởng cách mạng",
+            "value": "Một khuynh hướng cánh tả ủng hộ bình đẳng xã hội, Chủ nghĩa tự do và các ý tưởng cách mạng",
             "isCorrect": true
           },
           {
             "id": 3,
-            "value": "Thành kiến của cánh hữu ủng hộ các doanh nghiệp tự do, quyền sở hữu tư nhân và các ý tưởng bảo thủ về mặt xã hội",
+            "value": "Khuynh hướng cánh hữu ủng hộ doanh nghiệp tự do, quyền sở hữu tư nhân và các ý tưởng bảo thủ về mặt xã hội",
             "isCorrect": false
           },
           {
             "id": 4,
-            "value": "Tất cả các câu chuyện đăng trên internet đều có quan điểm trung lập",
+            "value": "Tất cả các câu chuyện đăng trên Internet đều có quan điểm trung lập",
             "isCorrect": true
           }
         ]
@@ -14817,7 +14817,7 @@
           {
             "id": 3,
             "value": "Sử dụng nền tối với phông chữ có màu xanh nước biển, nâu hoặc đen",
-            "isCorrect": true
+            "isCorrect": false
           },
           { "id": 4, "value": "Tránh phối màu đơn sắc", "isCorrect": false },
           {
@@ -14845,7 +14845,7 @@
           {
             "id": 3,
             "value": "Sử dụng cùng một phông chữ cho cả tiêu đề và nội dung",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 4,
@@ -14908,7 +14908,7 @@
       {
         "id": 30,
         "type": "truefalse",
-        "text": "Đối với mỗi câu lệnh, hãy Chọn Đúng nếu nó là một yếu tố hoặc Sai nếu nó không phải là một yếu tố",
+        "text": "Các tranh chấp về bản quyền sử dụng hợp lý (Fair Use copyright) được giải quyết bằng cách xem xét các yếu tố về tác phẩm bị sao chép bất hợp pháp. Thẩm phán sẽ sử dụng những yếu tố nào để xác định xem sử dụng hợp lý (Fair Use copyright) có bị vi phạm hay không? Đối với mỗi câu lệnh, hãy chọn Đúng nếu nó là một yếu tố hoặc Sai nếu nó không phải là một yếu tố.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
         "statements": [
           {
@@ -15041,7 +15041,7 @@
           {
             "id": 2,
             "value": "Cho khách hàng biết công ty đánh giá cao doanh nghiệp của họ thế nào",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 3,
@@ -15436,7 +15436,7 @@
       {
         "id": 51,
         "type": "truefalse",
-        "text": "Hãy chọn Đúng nếu nó sẽ mở rộng sự hiểu biết và học hỏi lẫn nhau hoặc Sai nếu không",
+        "text": "Bạn là sinh viên mới tốt nghiệp tại một trường đại học. Một trong những trách nhiệm của bạn là dạy kèm cho sinh viên đăng ký các khóa học Giao tiếp Kinh doanh năm đầu tiên. Kỳ thi giữa kỳ đang đến gần và bạn đang ôn tập các chủ đề với một nhóm 30 sinh viên. Bạn nhận thấy hầu hế các sinh viên đều nhầm lẫn về thông tin bạn đang trình bày. Bạn nhận ra rằng bạn phải tham gia với họ theo những cách để mở rộng sự hiểu biết và học hỏi lẫn nhau. Đối với mỗi lần tương tác, hãy chọn Đúng nếu nó sẽ mở rộng sự hiểu biết và học hỏi lẫn nhau hoặc Sai nếu không.",
         "optionsOfTrueFalseType": ["Đúng", "Sai"],
         "statements": [
           {
@@ -15885,7 +15885,7 @@
           { "id": 2, "value": "Một cái gì đó bạn có", "isCorrect": true },
           { "id": 3, "value": "Một cái gì đó bạn thấy", "isCorrect": false },
           { "id": 4, "value": "Thứ gì đó bạn ngửi thấy", "isCorrect": false },
-          { "id": 5, "value": "Một cái gì đó bạn biết", "isCorrect": false }
+          { "id": 5, "value": "Một cái gì đó bạn tưởng tượng", "isCorrect": false }
         ]
       },
       {
@@ -15949,7 +15949,7 @@
       },
       {
         "id": 75,
-        "type": "multiple",
+        "type": "single",
         "text": "Người giám sát của bạn đã thăng chức cho bạn làm người quản lý ban đêm tại một cửa hàng bán lẻ nhỏ. Anh ấy cung cấp cho bạn một danh sách các trách nhiệm mà chỉ bạn mới phải thực hiện. 1/ Đóng máy tính tiền, đếm tiền và khóa trong két. 2/ Kiểm kê bất kỳ thùng hàng nào đến ngày hôm đó. 3/ Đặt báo thức. 4/ Khóa cửa hàng Câu trả lời nào phù hợp nhất để cung cấp cho người giám sát của bạn để đảm bảo rằng bạn xác định và hiểu các hướng dẫn của họ?",
         "options": [
           {
@@ -15960,12 +15960,12 @@
           {
             "id": 2,
             "value": "Điều gì sẽ xảy ra nếu không có lô hàng để kiểm kê?",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 3,
             "value": "Điều gì xảy ra nếu tôi không có thời gian để làm tất cả những công việc này?",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "id": 4,
@@ -16066,7 +16066,7 @@
         "text": "Bạn đang tìm hiểu về quyền và nghĩa vụ của việc chia sẻ tài sản trí tuệ. Cụ thể, bạn đang làm việc để hiểu ý nghĩa của 'Vi phạm' và 'Chiếm đoạt'.",
         "pairs": [
           {
-            "left": { "value": "Vi phạm bản quyền" },
+            "left": { "value": "Vi phạm bằng sáng chế" },
             "right": {
               "value": "Sử dụng hoặc bán một sáng chế mà không được phép của chủ sở hữu quyền sở hữu trí tuệ."
             },
@@ -16087,7 +16087,7 @@
             "isCorrect": true
           },
           {
-            "left": { "value": "Vi phạm Bằng sáng chế" },
+            "left": { "value": "Vi phạm bản quyền" },
             "right": {
               "value": "Sao chép, phân phối, trưng bày hoặc biểu diễn một tác phẩm hoặc tạo ra các tác phẩm phái sinh mà không được phép của chủ bản quyền."
             },

@@ -27,7 +27,7 @@ type Tab = "passwords" | "schools" | "tests" | "parts" | "questions";
 
 interface DataManagementProps {
   onNavigate: (screen: string) => void;
-  onOpenPartQuestions?: (partId: number) => void;
+  onOpenPartQuestions?: (partId: string | null) => void;
   initialTab?: Tab;
 }
 
@@ -683,7 +683,7 @@ function TestsTab() {
 function PartsTab({
   onOpenPartQuestions,
 }: {
-  onOpenPartQuestions?: (partId: number) => void;
+  onOpenPartQuestions?: (partId: string | null) => void;
 }) {
   const navigate = useNavigate();
   const allParts = Object.values(partsByLevel).flat();
@@ -786,7 +786,7 @@ function PartsTab({
                     {onOpenPartQuestions && (
                       <button
                         onClick={() => {
-                          onOpenPartQuestions(p.id)
+                          onOpenPartQuestions(p.id.toString())
                           navigate(`/admin/${p.id}/question/management`)
                         }}
                         className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#c8a46e]/10 border border-[#c8a46e]/20 text-[10px] font-bold text-[#c8a46e] hover:bg-[#c8a46e]/20 transition-all opacity-0 group-hover:opacity-100"
