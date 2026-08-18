@@ -5,7 +5,7 @@ import { useHandleMutation } from "@/hooks/useBaseQuery";
 import { quizService } from "@/services";
 import scrollToAnchorWithOffset from "@/utils/scrollToAnchorElement";
 import { Circle, Flag, X } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useCustomContext } from "../../../hooks/use-context";
 import {
   AnswerMap,
@@ -28,7 +28,8 @@ import { AnswerListReview, QuestionScore } from "../../../types/questionScore";
 import ReviewQuestionBody from "../quizz/ReviewQuestionBody";
 import QuestionAnswerListDrawer from "./QuestionReviewListDrawer";
 import UserReviewPanel from "./UserReviewPanel";
-import { useNavigate } from "react-router-dom";
+import { LeaderBoard } from "@/types/leaderboard";
+import CongratsPopup from "./CongratsPopup";
 
 interface TestViewScreenProps {
   questions: QuestionTypeEntity[];
@@ -172,12 +173,13 @@ const TestReviewScreen = ({
   questions,
   answers,
   flagged,
-  partId
+  partId,
 }: TestViewScreenProps) => {
   // get saved state from localStorage
   const userData = JSON.parse(localStorage.getItem("student") || "{}");
   const timedDoTest = JSON.parse(localStorage.getItem("timeDoTest") || "{}")
   const {showList, setShowList } = useCustomContext();
+  const [showConfirmAnnounce, setShowConfirmAnnounce] = useState(false);
 
   const answerListReview: AnswerListReview[] =
     questions
@@ -194,6 +196,11 @@ const TestReviewScreen = ({
       [['quiz-submit' ]]
     );
 
+    const { mutate: mutateTop1 } = useHandleMutation(
+      (newClass) => quizService.sendTop1BySocket(newClass),
+      [['quiz-submit-top-1' ]]
+    );
+
   useEffect(() => {
     const id = setTimeout(() => {
       const payload = {
@@ -203,17 +210,38 @@ const TestReviewScreen = ({
         classId: userData?.classId,
         partId: partId
       };
-      mutate(payload, {
-        onSuccess: (response) => {
-          // Chỉ khi API thành công mới chuyển trạng thái UI
-            toast({ description: "Nộp bài thành công. Hãy tới bảng xếp hạng", variant: "success" });
-            localStorage.removeItem("quiz_state");
-            localStorage.removeItem("timeDoTest");
-          },
-        onError: (error) => {
-          toast({ description: "Có lỗi! Hãy kiểm tra kết nối mạng.", variant: "error"});
-        }
-      });
+      // check user has score better than top 1 in sessionStorage
+      const rankTop1: LeaderBoard[] = JSON.parse(sessionStorage.getItem("rank-top-1") || "[]");
+      const getTopInPart = rankTop1.find((rank) => rank.part_id === partId);
+      
+      if (!getTopInPart || 
+        payload.score > getTopInPart.score ||
+        (payload.score === getTopInPart.score && payload.timeSpent < getTopInPart.time_spent)) {
+        payload.classId = localStorage.getItem("school") || "";
+        mutateTop1(payload, {
+          onSuccess: () => {
+            // Chỉ khi API thành công mới chuyển trạng thái UI
+              toast({ description: "Nộp bài thành công. Hãy tới bảng xếp hạng", variant: "success" });
+              localStorage.removeItem("quiz_state");
+              localStorage.removeItem("timeDoTest");
+            },
+          onError: (error) => {
+            toast({ description: "Có lỗi! Hãy kiểm tra kết nối mạng.", variant: "error"});
+          }
+        });
+      } else {
+        mutate(payload, {
+          onSuccess: (response) => {
+            // Chỉ khi API thành công mới chuyển trạng thái UI
+              toast({ description: "Nộp bài thành công. Hãy tới bảng xếp hạng", variant: "success" });
+              localStorage.removeItem("quiz_state");
+              localStorage.removeItem("timeDoTest");
+            },
+          onError: (error) => {
+            toast({ description: "Có lỗi! Hãy kiểm tra kết nối mạng.", variant: "error"});
+          }
+        });
+      }
     }, 500)
     return () => clearTimeout(id);
   }, [])
@@ -382,6 +410,7 @@ const TestReviewScreen = ({
         </div>
       </Button>
 
+      <CongratsPopup showConfirmAnnounce={showConfirmAnnounce} setShowConfirmAnnounce={setShowConfirmAnnounce}/>
     </div>
   );
 };

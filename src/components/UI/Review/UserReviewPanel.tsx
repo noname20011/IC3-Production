@@ -19,7 +19,8 @@ export default function UserReviewPanel({
   const percent = (points / totalScore) * 100;
   const { partId } = useParams(); 
   const navigate = useNavigate();
-
+  localStorage.setItem("score", points.toString());
+  
   return (
     <div id="view-score" className="w-full md:w-[320px] rounded-2xl p-5 bg-gradient-to-b from-[#1a1510] to-[#181818] border border-white/10 shadow-xl relative">
       {/* Avatar + Info */}

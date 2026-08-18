@@ -1,4 +1,4 @@
-import { LeaderBoard } from "@/pages/LeaderboardPage";
+import { LeaderBoard } from "@/types/leaderboard";
 import { QuizLevel } from "../../types";
 
 export const MOCK_LEVELS: QuizLevel[] = [

@@ -1503,7 +1503,7 @@ function QuestionEditor({
 
 // ─── Main Component ─────────────────────────────────────────────────────────────
 interface QuestionManagerProps {
-  partId: number;
+  partId: string | null;
   onBack: () => void;
   onNavigate: (screen: string) => void;
 }
@@ -1513,11 +1513,11 @@ export default function QuestionManager({
   onBack,
   onNavigate,
 }: QuestionManagerProps) {
-  const part = allParts.find((p) => p.id === partId);
+  const part = allParts.find((p) => p.id === Number(partId));
   const level = levels.find((l) => l.id === part?.levelId);
 
   const [questions, setQuestions] = useState<Question[]>(() =>
-    getQuestionsForPart(partId),
+    getQuestionsForPart(Number(partId)),
   );
   const [selected, setSelected] = useState<Question | null>(
     questions[0] ?? null,

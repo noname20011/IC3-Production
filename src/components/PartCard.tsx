@@ -46,6 +46,7 @@ export default function PartCard(props: PartCardProps) {
         sessionStorage.setItem("rawTest", JSON.stringify(raw));
         sessionStorage.setItem("uiQuestions", JSON.stringify(ui));
         setChoosePart(part.id);
+        
       }}
       className="glass-card p-8 group relative overflow-hidden h-full flex flex-col justify-between hover:border-primary/40 group"
     >
