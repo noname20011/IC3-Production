@@ -12,6 +12,7 @@ declare module "*.png" {
 
 interface ImportMetaEnv {
   readonly VITE_API_URL: string;
+  readonly VITE_PASSWORD_EXAM: string;
   // Thêm các biến khác ở đây...
 }
 

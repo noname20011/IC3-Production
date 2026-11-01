@@ -16,7 +16,7 @@ import DataManagement from "@/pages/admin/DataManagement";
 import { Login } from "@/pages/admin/Login";
 import LoginPage from "@/pages/admin/Loginv1";
 import QuestionManager from "@/pages/admin/QuestionsComponent";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { useStompSubscription } from "./hooks/useStompSubscription";
@@ -30,7 +30,6 @@ export default function App() {
 
   const nav = (s: string) => setScreen(s);
   const navToPart = (partId: string | null) => { setSelectedPartId(partId); nav("questionmgr"); };
-  
   const [shoolId, setShoolId] = useState(localStorage.getItem("school") || "");
   const [messageNotify, setMessageNotify] = useState("");  
   
@@ -42,7 +41,7 @@ export default function App() {
 
   // Socket
   const handleTop1Notification = useCallback((data: any) => {
-    console.log("🔥 WebSocket notification:", data);
+    // console.log("🔥 WebSocket notification:", data);
 
     sessionStorage.setItem(
       "rank-top-1",
