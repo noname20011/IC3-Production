@@ -94,7 +94,7 @@ export default function PartsPage(props: PartPageProps) {
 
   const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (formData.password !== "OT626") {
+    if (formData.password !== import.meta.env.VITE_PASSWORD_EXAM) {
       toast({ description: "Password is incorrect", variant: "error" });
       return;
     }
