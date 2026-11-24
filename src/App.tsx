@@ -20,6 +20,7 @@ import { useCallback, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import { useStompSubscription } from "./hooks/useStompSubscription";
+import RandomPickerPage from "./pages/Random-Picker";
 
 export default function App() {
   const location = useLocation();
@@ -77,6 +78,7 @@ export default function App() {
             <Route path="/level/:levelId/parts" element={<PartPage takeRanksBySchool={takeRanksBySchool}/>} />
             <Route path="/leaderboard" element={<LeaderboardPage />} />
             <Route path="/quiz/:levelId/:partId" element={<QuizPage/>} />
+            <Route path="/random-picker" element={<RandomPickerPage />} />
             <Route path="*" element={<NotFoundPage/>} />
 
             {/* ADMIN */}
