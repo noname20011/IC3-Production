@@ -130,6 +130,15 @@ const Header = (props: HeaderProps) => {
           </div>
 
           <div className="flex items-center gap-3">
+            {/* Random Picker */}
+            <a href="/random-picker" className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg">
+              <span className="text-2xl">
+                  🎲
+                </span>
+              <span className="text-sm font-normal text-[#c8a46e]">
+                  Random Picker
+                </span>
+            </a>
             {/* Time */}
             <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1510] border border-[#2e2418] rounded-lg">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none">

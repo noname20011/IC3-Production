@@ -170,7 +170,7 @@
 }
 
 .picker-panel-names {
-  min-height: 435px;
+  min-height: 400px;
 }
 
 .picker-panel-settings {
@@ -301,7 +301,7 @@
 }
 
 .picker-choice-emoji {
-  display: block;
+  margin-right: 10px;
   margin-bottom: 3px;
   font-size: 18px;
 }
