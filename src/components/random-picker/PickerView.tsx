@@ -81,7 +81,7 @@ function SetupView(props: PickerViewProps) {
           <div className="picker-hero">
             <span className="picker-hero-doodle" aria-hidden="true">✳</span>
             <h1 className="picker-heading" id="picker-title">
-              Who’s behind<br /><span>the emoji?</span>
+              Who’s behind<br /><span>the mask?</span>
             </h1>
           </div>
 
@@ -118,7 +118,7 @@ function SetupView(props: PickerViewProps) {
 
               <fieldset className="picker-option-group" style={{ border: 0, padding: 0, marginInline: 0 }}>
                 <legend className="picker-option-label">Emoji world</legend>
-                <div className="w-auto">
+                <div className="w-full">
                   {categoryOptions.map((option) => (
                     <button
                       className="picker-choice"
@@ -196,7 +196,7 @@ function GameView(props: PickerViewProps) {
   const rows = Math.ceil(Math.max(props.totalCount, 1) / columns);
   const density = props.totalCount > 24 ? 'packed' : props.totalCount > 10 ? 'dense' : 'normal';
   const playfieldStyle = {
-    minHeight: `${Math.max(470, rows * 92)}px`,
+    minHeight: `${Math.max(570, rows * 92)}px`,
   } as CSSProperties;
   const driftPaths = [
     ['-7px -4px', '7px 8px'],
@@ -268,6 +268,12 @@ function GameView(props: PickerViewProps) {
           const style = {
             left: `${item.x}%`,
             top: `${item.y}%`,
+            width: '64px',
+            height: '64px',
+            minWidth: '64px',
+            minHeight: '64px',
+            fontSize: '48px',
+            flexShrink: 0,
             '--item-duration': `${item.duration}s`,
             '--item-delay': `${item.delay}s`,
             ...Object.fromEntries(item.path.flatMap((point, pathIndex) => [

@@ -16,13 +16,7 @@ export default function RandomPickerPage() {
   type GameItem = PickerViewProps["items"][number];
   type StoredGameItem = Omit<GameItem, "revealed" | "disappearing" | "held">;
 
-  const DEFAULT_NAMES = [
-    "Nguyễn An",
-    "Trần Bình",
-    "Lê Minh",
-    "Phạm Huy",
-    "Hoàng Nam",
-  ];
+  const DEFAULT_NAMES = [""];
   const DEFAULT_SETTINGS: PickerSettings = {
     category: "mixed",
     movementMode: "floating",
